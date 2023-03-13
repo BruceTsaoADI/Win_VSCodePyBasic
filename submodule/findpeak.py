@@ -1,4 +1,4 @@
-filepath = r'.\data\lvtemporary_813804.tmp.csv'
+filepath = r'..\data\lvtemporary_813804.tmp.csv'
 with open(filepath, 'r') as fo:
     ''' read file and skip first 2 lines '''
     fo_read_list = fo.readlines()[1:]
@@ -16,7 +16,7 @@ for i in range(len(ampl_list) - 4):
     if values.index(max_value) == 2:        # append qualified peak
         peaks.append((max_value, i+2))
 peaks.sort(reverse=True)
-print(len((sorted((peaks), reverse=True))))
+print(sorted((peaks), reverse=True))
 [print(f'ampl = {i[0]:>8.3f}, index = {i[1]:>3}') for i in peaks]
 
 
