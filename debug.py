@@ -1,50 +1,79 @@
-filepath = r'.\data\lvtemporary_813804.tmp.csv'
-with open(filepath, 'r') as fo:
-    ''' read file and skip first row (column header) '''
-    fo_read_lines = fo.readlines()[1:]
-
-fo_read_lines = [i.rstrip('\n') for i in fo_read_lines]       # remove '\n' for lines
-
-''' Fixed points'''
-peaks = []
-for i in range(len(fo_read_lines) - 4):
-    ''' select 5 amplitudes at a time. If the index of max value is in the middle of selected points in both reverse and non-reverse list, then it's a peak. '''
-    frequencies = []
-    amplitudes = []
-    for line in fo_read_lines[i:i+5]:
-        ''' select 5 points for comparison at a time '''
-        freq, ampl = line.split(',')
-        frequencies.append(float(freq))
-        amplitudes.append(float(ampl))
-
-    ampl_max = max(amplitudes)                      # find max
-    amplitudes_rev = list(reversed(amplitudes))     # reverse amplitudes
-    if amplitudes.index(ampl_max) == 2 and amplitudes_rev.index(ampl_max) == 2:        # append qualified peak
-        ''' max value must located in both reversed and non-reversed list '''
-        peaks.append((amplitudes[2], frequencies[2], i+2))
-peaks.sort(reverse=True)
-print(f'Find {len(peaks)} peaks.')
-[print(f'ampl = {p[0]:>9.4f}, freq = {p[1]:>8.2f}, index= {p[2]:>4}') for p in peaks]
+import matplotlib.pyplot as plt
+import math
 
 
-''' Variable points '''
-# peaks = []
-# select_len = 5                                  # specify select points. (odd value only)
-# index_mid = int((select_len - 1) / 2)           # index of the middle point.
-# for i in range(len(fo_read_lines) - select_len - 1):
-#     ''' select n amplitudes at a time. If the index of max value is in the middle of selected points in both reverse and non-reverse list, then it's a peak. '''
-#     frequencies = []
-#     amplitudes = []
-#     for line in fo_read_lines[i:i+select_len]:
-#         ''' select n points for comparison at a time '''
-#         freq, ampl = line.split(',')
-#         frequencies.append(float(freq))
-#         amplitudes.append(float(ampl))
-#     ampl_max = max(amplitudes)                      # find max
-#     amplitudes_rev = list(reversed(amplitudes))     # reverse amplitudes
-#     if amplitudes.index(ampl_max) == index_mid and amplitudes_rev.index(ampl_max) == index_mid:        # append qualified peak
-#         ''' max value must located in both reversed and non-reversed list '''
-#         peaks.append((amplitudes[index_mid], frequencies[index_mid], i+index_mid))
-# peaks.sort(reverse=True)
-# print(f'Find {len(peaks)} peaks.')
-# [print(f'ampl = {p[0]:>9.4f}, freq = {p[1]:>8.2f}, index= {p[2]:>4}') for p in peaks]
+def ra_f(freq):
+    numerator = (12194 ** 2) * (freq ** 4)
+    denominator1 = (freq ** 2 + 20.6 ** 2)
+    denominator2 = ((freq ** 2 + 107.7 ** 2) * (freq ** 2 + 737.9 ** 2)) ** 0.5
+    denominator3 = (freq ** 2 + 12194 ** 2)
+    ra = numerator / (denominator1 * denominator2 * denominator3)
+    return ra
+
+
+def a_f(freq):
+    a = 20 * math.log(ra_f(freq), 10) + 2
+    return a
+
+
+def rb_f(freq):
+    numerator = (12194 ** 2) * (freq ** 3)
+    denominator1 = (freq ** 2 + 20.6 ** 2)
+    denominator2 = ((freq ** 2 + 158.5 ** 2)) ** 0.5
+    denominator3 = (freq ** 2 + 12194 ** 2)
+    rb = numerator / (denominator1 * denominator2 * denominator3)
+    return rb
+
+
+def b_f(freq):
+    b = 20 * math.log(rb_f(freq), 10) + 0.17
+    return b
+
+
+def rc_f(freq):
+    numerator = (12194 ** 2) * (freq ** 2)
+    denominator1 = (freq ** 2 + 20.6 ** 2)
+    denominator2 = (freq ** 2 + 12194 ** 2)
+    rc = numerator / (denominator1 * denominator2)
+    return rc
+
+
+def c_f(freq):
+    c = 20 * math.log(rc_f(freq), 10) + 0.06
+    return c
+
+
+def rd_f(freq):
+    h = ((1037918.48 - freq ** 2) ** 2 + 1080768.16 * (freq ** 2)) / (
+                (9837328 - freq ** 2) ** 2 + 11723776 * (freq ** 2))
+    rd = (freq / (6.8966888496476 * 10 ** -5)) * (h / (freq ** 2 + 79919029) * (freq ** 2 + 1345600)) ** 0.5
+    return rd
+
+
+def d_f(freq):
+    d = 20 * math.log(rd_f(freq), 10)
+    return d
+
+
+freq_in = list(range(20, 20000, 1))
+
+ra_out = [ra_f(i) for i in freq_in]
+# plt.plot(freq_in, ra_out)
+
+a_out = [a_f(i) for i in freq_in]
+plt.xscale("log")
+# plt.plot(freq_in, a_out)
+
+b_out = [b_f(i) for i in freq_in]
+plt.xscale("log")
+# plt.plot(freq_in, b_out)
+
+c_out = [c_f(i) for i in freq_in]
+plt.xscale("log")
+# plt.plot(freq_in, c_out)
+
+d_out = [d_f(i) for i in freq_in]
+plt.xscale("log")
+plt.plot(freq_in, d_out)
+
+plt.show()
