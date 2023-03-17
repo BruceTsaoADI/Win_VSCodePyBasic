@@ -20,6 +20,8 @@ DICT_HEX2BIN = {
 
 while True:
     hexin = input('\nEnter hex value: ')
+    if hexin.startswith('0x'):
+        hexin = hexin[2:]
     check = [c.lower() in DICT_HEX2BIN for c in hexin]
     if False in check:
         print('Please enter legal hex value. 0~9, A, B, C, D, E. (capital insensitive)')
