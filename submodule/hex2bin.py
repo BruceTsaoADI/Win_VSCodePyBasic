@@ -18,15 +18,51 @@ DICT_HEX2BIN = {
         }
 
 
+def hex_to_bin(hexin):
+    binout = ''
+    for h in hexin.lower():
+        binout += DICT_HEX2BIN[h] + '-'
+    print(binout[:-1])
+        
+    binout_nodash = binout.replace('-', '')
+    str_bit = f'{"Bit":<7}'
+    len_bit = len(binout_nodash)
+    for i in range(len(binout_nodash)):
+        str_bit += f'{len_bit-1-i:^3}'
+    print(str_bit)
+    
+    str_val = f'{"Value":<7}'
+    for i in range(len(binout_nodash)):
+        str_val += f'{binout_nodash[i]:^3}'
+    print(str_val)
+
+
 while True:
-    hexin = input('\nEnter hex value: ')
+    hexin = input('\nEnter hex value ("q" to quit): ')
+    if hexin.lower() == 'q':
+        exit()
+        
     if hexin.startswith('0x'):
         hexin = hexin[2:]
     check = [c.lower() in DICT_HEX2BIN for c in hexin]
+    
     if False in check:
         print('Please enter legal hex value. 0~9, A, B, C, D, E. (capital insensitive)')
     else:
-        binout = ''
-        for h in hexin.lower():
-            binout += DICT_HEX2BIN[h] + '-'
-        print(binout[:-1])
+        hex_to_bin(hexin)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
