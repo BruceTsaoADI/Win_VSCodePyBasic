@@ -1,79 +1,38 @@
-import matplotlib.pyplot as plt
-import math
+import os
+
+filters = ['adv_platform_block_read']
+
+print('\n'*2)
+print('*'*20 + str(filters) + '*'*20 + '\n')
+
+path_dir = r'C:\Users\btsao\OneDrive - Analog Devices, Inc\Documents\BruceTsao\06_MCU\Maxim\Project\EVK_32670\20231212_ADV7671A\ARM\ADV7671A'
+c_headers = []
+c_files = []
+c_path_files = []
+for root, dirs, files in os.walk(path_dir):
+    for file in files:
+        ''' collect filtered files '''
+        if file.endswith('.h'):
+            c_headers.append(file)
+            c_path_files.append(os.path.join(root, file))
+        elif file.endswith('.c'):
+            c_files.append(file)
+            c_path_files.append(os.path.join(root, file))
+
+num_result = 0
+for path in c_path_files:
+    with open(path, 'r') as fo:
+        lines = fo.readlines()
+        index_line = 1
+        for line in lines:
+            for filter in filters:
+                if filter in line:
+                    num_result += 1
+                    print(f'{path}({index_line})'  )
+                    print(line)
+            index_line += 1
+
+print(f'Find {num_result} results.')
 
 
-def ra_f(freq):
-    numerator = (12194 ** 2) * (freq ** 4)
-    denominator1 = (freq ** 2 + 20.6 ** 2)
-    denominator2 = ((freq ** 2 + 107.7 ** 2) * (freq ** 2 + 737.9 ** 2)) ** 0.5
-    denominator3 = (freq ** 2 + 12194 ** 2)
-    ra = numerator / (denominator1 * denominator2 * denominator3)
-    return ra
 
-
-def a_f(freq):
-    a = 20 * math.log(ra_f(freq), 10) + 2
-    return a
-
-
-def rb_f(freq):
-    numerator = (12194 ** 2) * (freq ** 3)
-    denominator1 = (freq ** 2 + 20.6 ** 2)
-    denominator2 = ((freq ** 2 + 158.5 ** 2)) ** 0.5
-    denominator3 = (freq ** 2 + 12194 ** 2)
-    rb = numerator / (denominator1 * denominator2 * denominator3)
-    return rb
-
-
-def b_f(freq):
-    b = 20 * math.log(rb_f(freq), 10) + 0.17
-    return b
-
-
-def rc_f(freq):
-    numerator = (12194 ** 2) * (freq ** 2)
-    denominator1 = (freq ** 2 + 20.6 ** 2)
-    denominator2 = (freq ** 2 + 12194 ** 2)
-    rc = numerator / (denominator1 * denominator2)
-    return rc
-
-
-def c_f(freq):
-    c = 20 * math.log(rc_f(freq), 10) + 0.06
-    return c
-
-
-def rd_f(freq):
-    h = ((1037918.48 - freq ** 2) ** 2 + 1080768.16 * (freq ** 2)) / (
-                (9837328 - freq ** 2) ** 2 + 11723776 * (freq ** 2))
-    rd = (freq / (6.8966888496476 * 10 ** -5)) * (h / (freq ** 2 + 79919029) * (freq ** 2 + 1345600)) ** 0.5
-    return rd
-
-
-def d_f(freq):
-    d = 20 * math.log(rd_f(freq), 10)
-    return d
-
-
-freq_in = list(range(20, 20000, 1))
-
-ra_out = [ra_f(i) for i in freq_in]
-# plt.plot(freq_in, ra_out)
-
-a_out = [a_f(i) for i in freq_in]
-plt.xscale("log")
-# plt.plot(freq_in, a_out)
-
-b_out = [b_f(i) for i in freq_in]
-plt.xscale("log")
-# plt.plot(freq_in, b_out)
-
-c_out = [c_f(i) for i in freq_in]
-plt.xscale("log")
-# plt.plot(freq_in, c_out)
-
-d_out = [d_f(i) for i in freq_in]
-plt.xscale("log")
-plt.plot(freq_in, d_out)
-
-plt.show()
