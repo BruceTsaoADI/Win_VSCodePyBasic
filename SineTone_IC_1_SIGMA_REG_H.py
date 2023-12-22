@@ -1,0 +1,5445 @@
+
+#ifndef __SINETONE_IC_1_SIGMA_REG_H__
+#define __SINETONE_IC_1_SIGMA_REG_H__
+
+
+""" VENDOR_ID  - Registers (IC 1_Sigma) """
+REG_VENDOR_ID_IC_1_Sigma_ADDR = 49152
+
+REG_VENDOR_ID_IC_1_Sigma_BYTE = 0
+
+REG_VENDOR_ID_IC_1_Sigma_VALUE = 65
+
+
+""" DEVICE_ID1  - Registers (IC 1_Sigma) """
+REG_DEVICE_ID1_IC_1_Sigma_ADDR = 49153
+
+REG_DEVICE_ID1_IC_1_Sigma_BYTE = 0
+
+REG_DEVICE_ID1_IC_1_Sigma_VALUE = 23
+
+
+""" DEVICE_ID2  - Registers (IC 1_Sigma) """
+REG_DEVICE_ID2_IC_1_Sigma_ADDR = 49154
+
+REG_DEVICE_ID2_IC_1_Sigma_BYTE = 0
+
+REG_DEVICE_ID2_IC_1_Sigma_VALUE = 135
+
+
+""" REVISION  - Registers (IC 1_Sigma) """
+REG_REVISION_IC_1_Sigma_ADDR = 49155
+
+REG_REVISION_IC_1_Sigma_BYTE = 0
+
+REG_REVISION_IC_1_Sigma_VALUE = 0
+
+
+""" ADC_DAC_HP_PWR  - Registers (IC 1_Sigma) """
+REG_ADC_DAC_HP_PWR_IC_1_Sigma_ADDR = 49156
+
+REG_ADC_DAC_HP_PWR_IC_1_Sigma_BYTE = 1
+
+REG_ADC_DAC_HP_PWR_IC_1_Sigma_VALUE = 63
+
+
+""" PLL_MB_PGA_PWR  - Registers (IC 1_Sigma) """
+REG_PLL_MB_PGA_PWR_IC_1_Sigma_ADDR = 49157
+
+REG_PLL_MB_PGA_PWR_IC_1_Sigma_BYTE = 1
+
+REG_PLL_MB_PGA_PWR_IC_1_Sigma_VALUE = 3
+
+
+""" DMIC_PWR  - Registers (IC 1_Sigma) """
+REG_DMIC_PWR_IC_1_Sigma_ADDR = 49158
+
+REG_DMIC_PWR_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_PWR_IC_1_Sigma_VALUE = 0
+
+
+""" SAI_CLK_PWR  - Registers (IC 1_Sigma) """
+REG_SAI_CLK_PWR_IC_1_Sigma_ADDR = 49159
+
+REG_SAI_CLK_PWR_IC_1_Sigma_BYTE = 1
+
+REG_SAI_CLK_PWR_IC_1_Sigma_VALUE = 0
+
+
+""" DSP_PWR  - Registers (IC 1_Sigma) """
+REG_DSP_PWR_IC_1_Sigma_ADDR = 49160
+
+REG_DSP_PWR_IC_1_Sigma_BYTE = 1
+
+REG_DSP_PWR_IC_1_Sigma_VALUE = 17
+
+
+""" ASRC_PWR  - Registers (IC 1_Sigma) """
+REG_ASRC_PWR_IC_1_Sigma_ADDR = 49161
+
+REG_ASRC_PWR_IC_1_Sigma_BYTE = 1
+
+REG_ASRC_PWR_IC_1_Sigma_VALUE = 0
+
+
+""" FINT_PWR  - Registers (IC 1_Sigma) """
+REG_FINT_PWR_IC_1_Sigma_ADDR = 49162
+
+REG_FINT_PWR_IC_1_Sigma_BYTE = 1
+
+REG_FINT_PWR_IC_1_Sigma_VALUE = 0
+
+
+""" FDEC_PWR  - Registers (IC 1_Sigma) """
+REG_FDEC_PWR_IC_1_Sigma_ADDR = 49163
+
+REG_FDEC_PWR_IC_1_Sigma_BYTE = 1
+
+REG_FDEC_PWR_IC_1_Sigma_VALUE = 0
+
+
+""" KEEPS  - Registers (IC 1_Sigma) """
+REG_KEEPS_IC_1_Sigma_ADDR = 49164
+
+REG_KEEPS_IC_1_Sigma_BYTE = 1
+
+REG_KEEPS_IC_1_Sigma_VALUE = 16
+
+
+""" CHIP_PWR  - Registers (IC 1_Sigma) """
+REG_CHIP_PWR_IC_1_Sigma_ADDR = 49165
+
+REG_CHIP_PWR_IC_1_Sigma_BYTE = 1
+
+REG_CHIP_PWR_IC_1_Sigma_VALUE = 23
+
+
+""" CLK_CTRL1  - Registers (IC 1_Sigma) """
+REG_CLK_CTRL1_IC_1_Sigma_ADDR = 49166
+
+REG_CLK_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_CLK_CTRL1_IC_1_Sigma_VALUE = 200
+
+
+""" CLK_CTRL2  - Registers (IC 1_Sigma) """
+REG_CLK_CTRL2_IC_1_Sigma_ADDR = 49167
+
+REG_CLK_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_CLK_CTRL2_IC_1_Sigma_VALUE = 0
+
+
+""" CLK_CTRL3  - Registers (IC 1_Sigma) """
+REG_CLK_CTRL3_IC_1_Sigma_ADDR = 49168
+
+REG_CLK_CTRL3_IC_1_Sigma_BYTE = 2
+
+REG_CLK_CTRL3_IC_1_Sigma_VALUE = 2
+
+
+""" CLK_CTRL5  - Registers (IC 1_Sigma) """
+REG_CLK_CTRL5_IC_1_Sigma_ADDR = 49170
+
+REG_CLK_CTRL5_IC_1_Sigma_BYTE = 2
+
+REG_CLK_CTRL5_IC_1_Sigma_VALUE = 0
+
+
+""" CLK_CTRL7  - Registers (IC 1_Sigma) """
+REG_CLK_CTRL7_IC_1_Sigma_ADDR = 49172
+
+REG_CLK_CTRL7_IC_1_Sigma_BYTE = 2
+
+REG_CLK_CTRL7_IC_1_Sigma_VALUE = 0
+
+
+""" CLK_CTRL9  - Registers (IC 1_Sigma) """
+REG_CLK_CTRL9_IC_1_Sigma_ADDR = 49174
+
+REG_CLK_CTRL9_IC_1_Sigma_BYTE = 1
+
+REG_CLK_CTRL9_IC_1_Sigma_VALUE = 0
+
+
+""" ADC_CTRL1  - Registers (IC 1_Sigma) """
+REG_ADC_CTRL1_IC_1_Sigma_ADDR = 49175
+
+REG_ADC_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_ADC_CTRL1_IC_1_Sigma_VALUE = 34
+
+
+""" ADC_CTRL2  - Registers (IC 1_Sigma) """
+REG_ADC_CTRL2_IC_1_Sigma_ADDR = 49176
+
+REG_ADC_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_ADC_CTRL2_IC_1_Sigma_VALUE = 0
+
+
+""" ADC_CTRL3  - Registers (IC 1_Sigma) """
+REG_ADC_CTRL3_IC_1_Sigma_ADDR = 49177
+
+REG_ADC_CTRL3_IC_1_Sigma_BYTE = 1
+
+REG_ADC_CTRL3_IC_1_Sigma_VALUE = 0
+
+
+""" ADC_CTRL4  - Registers (IC 1_Sigma) """
+REG_ADC_CTRL4_IC_1_Sigma_ADDR = 49178
+
+REG_ADC_CTRL4_IC_1_Sigma_BYTE = 1
+
+REG_ADC_CTRL4_IC_1_Sigma_VALUE = 64
+
+
+""" ADC_CTRL5  - Registers (IC 1_Sigma) """
+REG_ADC_CTRL5_IC_1_Sigma_ADDR = 49179
+
+REG_ADC_CTRL5_IC_1_Sigma_BYTE = 1
+
+REG_ADC_CTRL5_IC_1_Sigma_VALUE = 38
+
+
+""" ADC_MUTES  - Registers (IC 1_Sigma) """
+REG_ADC_MUTES_IC_1_Sigma_ADDR = 49180
+
+REG_ADC_MUTES_IC_1_Sigma_BYTE = 1
+
+REG_ADC_MUTES_IC_1_Sigma_VALUE = 0
+
+
+""" ADC0_VOL  - Registers (IC 1_Sigma) """
+REG_ADC0_VOL_IC_1_Sigma_ADDR = 49181
+
+REG_ADC0_VOL_IC_1_Sigma_BYTE = 1
+
+REG_ADC0_VOL_IC_1_Sigma_VALUE = 64
+
+
+""" ADC1_VOL  - Registers (IC 1_Sigma) """
+REG_ADC1_VOL_IC_1_Sigma_ADDR = 49182
+
+REG_ADC1_VOL_IC_1_Sigma_BYTE = 1
+
+REG_ADC1_VOL_IC_1_Sigma_VALUE = 64
+
+
+""" ADC2_VOL  - Registers (IC 1_Sigma) """
+REG_ADC2_VOL_IC_1_Sigma_ADDR = 49183
+
+REG_ADC2_VOL_IC_1_Sigma_BYTE = 1
+
+REG_ADC2_VOL_IC_1_Sigma_VALUE = 64
+
+
+""" ADC3_VOL  - Registers (IC 1_Sigma) """
+REG_ADC3_VOL_IC_1_Sigma_ADDR = 49184
+
+REG_ADC3_VOL_IC_1_Sigma_BYTE = 1
+
+REG_ADC3_VOL_IC_1_Sigma_VALUE = 64
+
+
+""" PGA0_CTRL1  - Registers (IC 1_Sigma) """
+REG_PGA0_CTRL1_IC_1_Sigma_ADDR = 49185
+
+REG_PGA0_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_PGA0_CTRL1_IC_1_Sigma_VALUE = 0
+
+
+""" PGA0_CTRL2  - Registers (IC 1_Sigma) """
+REG_PGA0_CTRL2_IC_1_Sigma_ADDR = 49186
+
+REG_PGA0_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_PGA0_CTRL2_IC_1_Sigma_VALUE = 0
+
+
+""" PGA1_CTRL1  - Registers (IC 1_Sigma) """
+REG_PGA1_CTRL1_IC_1_Sigma_ADDR = 49187
+
+REG_PGA1_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_PGA1_CTRL1_IC_1_Sigma_VALUE = 0
+
+
+""" PGA1_CTRL2  - Registers (IC 1_Sigma) """
+REG_PGA1_CTRL2_IC_1_Sigma_ADDR = 49188
+
+REG_PGA1_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_PGA1_CTRL2_IC_1_Sigma_VALUE = 0
+
+
+""" PGA2_CTRL1  - Registers (IC 1_Sigma) """
+REG_PGA2_CTRL1_IC_1_Sigma_ADDR = 49189
+
+REG_PGA2_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_PGA2_CTRL1_IC_1_Sigma_VALUE = 0
+
+
+""" PGA2_CTRL2  - Registers (IC 1_Sigma) """
+REG_PGA2_CTRL2_IC_1_Sigma_ADDR = 49190
+
+REG_PGA2_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_PGA2_CTRL2_IC_1_Sigma_VALUE = 0
+
+
+""" PGA3_CTRL1  - Registers (IC 1_Sigma) """
+REG_PGA3_CTRL1_IC_1_Sigma_ADDR = 49191
+
+REG_PGA3_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_PGA3_CTRL1_IC_1_Sigma_VALUE = 0
+
+
+""" PGA3_CTRL2  - Registers (IC 1_Sigma) """
+REG_PGA3_CTRL2_IC_1_Sigma_ADDR = 49192
+
+REG_PGA3_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_PGA3_CTRL2_IC_1_Sigma_VALUE = 0
+
+
+""" PGA_CTRL  - Registers (IC 1_Sigma) """
+REG_PGA_CTRL_IC_1_Sigma_ADDR = 49193
+
+REG_PGA_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_PGA_CTRL_IC_1_Sigma_VALUE = 0
+
+
+""" MBIAS_CTRL  - Registers (IC 1_Sigma) """
+REG_MBIAS_CTRL_IC_1_Sigma_ADDR = 49194
+
+REG_MBIAS_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_MBIAS_CTRL_IC_1_Sigma_VALUE = 0
+
+
+""" DMIC_CTRL1  - Registers (IC 1_Sigma) """
+REG_DMIC_CTRL1_IC_1_Sigma_ADDR = 49195
+
+REG_DMIC_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_CTRL1_IC_1_Sigma_VALUE = 51
+
+
+""" DMIC_CTRL2  - Registers (IC 1_Sigma) """
+REG_DMIC_CTRL2_IC_1_Sigma_ADDR = 49196
+
+REG_DMIC_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_CTRL2_IC_1_Sigma_VALUE = 1
+
+
+""" DMIC_CTRL3  - Registers (IC 1_Sigma) """
+REG_DMIC_CTRL3_IC_1_Sigma_ADDR = 49197
+
+REG_DMIC_CTRL3_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_CTRL3_IC_1_Sigma_VALUE = 1
+
+
+""" DMIC_CTRL4  - Registers (IC 1_Sigma) """
+REG_DMIC_CTRL4_IC_1_Sigma_ADDR = 49198
+
+REG_DMIC_CTRL4_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_CTRL4_IC_1_Sigma_VALUE = 1
+
+
+""" DMIC_CTRL5  - Registers (IC 1_Sigma) """
+REG_DMIC_CTRL5_IC_1_Sigma_ADDR = 49199
+
+REG_DMIC_CTRL5_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_CTRL5_IC_1_Sigma_VALUE = 1
+
+
+""" DMIC_CTRL6  - Registers (IC 1_Sigma) """
+REG_DMIC_CTRL6_IC_1_Sigma_ADDR = 49200
+
+REG_DMIC_CTRL6_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_CTRL6_IC_1_Sigma_VALUE = 4
+
+
+""" DMIC_MUTES  - Registers (IC 1_Sigma) """
+REG_DMIC_MUTES_IC_1_Sigma_ADDR = 49201
+
+REG_DMIC_MUTES_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_MUTES_IC_1_Sigma_VALUE = 0
+
+
+""" DMIC_VOL0  - Registers (IC 1_Sigma) """
+REG_DMIC_VOL0_IC_1_Sigma_ADDR = 49202
+
+REG_DMIC_VOL0_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_VOL0_IC_1_Sigma_VALUE = 64
+
+
+""" DMIC_VOL1  - Registers (IC 1_Sigma) """
+REG_DMIC_VOL1_IC_1_Sigma_ADDR = 49203
+
+REG_DMIC_VOL1_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_VOL1_IC_1_Sigma_VALUE = 64
+
+
+""" DMIC_VOL2  - Registers (IC 1_Sigma) """
+REG_DMIC_VOL2_IC_1_Sigma_ADDR = 49204
+
+REG_DMIC_VOL2_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_VOL2_IC_1_Sigma_VALUE = 64
+
+
+""" DMIC_VOL3  - Registers (IC 1_Sigma) """
+REG_DMIC_VOL3_IC_1_Sigma_ADDR = 49205
+
+REG_DMIC_VOL3_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_VOL3_IC_1_Sigma_VALUE = 64
+
+
+""" DMIC_VOL4  - Registers (IC 1_Sigma) """
+REG_DMIC_VOL4_IC_1_Sigma_ADDR = 49206
+
+REG_DMIC_VOL4_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_VOL4_IC_1_Sigma_VALUE = 64
+
+
+""" DMIC_VOL5  - Registers (IC 1_Sigma) """
+REG_DMIC_VOL5_IC_1_Sigma_ADDR = 49207
+
+REG_DMIC_VOL5_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_VOL5_IC_1_Sigma_VALUE = 64
+
+
+""" DMIC_VOL6  - Registers (IC 1_Sigma) """
+REG_DMIC_VOL6_IC_1_Sigma_ADDR = 49208
+
+REG_DMIC_VOL6_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_VOL6_IC_1_Sigma_VALUE = 64
+
+
+""" DMIC_VOL7  - Registers (IC 1_Sigma) """
+REG_DMIC_VOL7_IC_1_Sigma_ADDR = 49209
+
+REG_DMIC_VOL7_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_VOL7_IC_1_Sigma_VALUE = 64
+
+
+""" DAC_CTRL1  - Registers (IC 1_Sigma) """
+REG_DAC_CTRL1_IC_1_Sigma_ADDR = 49210
+
+REG_DAC_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_DAC_CTRL1_IC_1_Sigma_VALUE = 2
+
+
+""" DAC_CTRL2  - Registers (IC 1_Sigma) """
+REG_DAC_CTRL2_IC_1_Sigma_ADDR = 49211
+
+REG_DAC_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_DAC_CTRL2_IC_1_Sigma_VALUE = 0
+
+
+""" DAC_VOL0  - Registers (IC 1_Sigma) """
+REG_DAC_VOL0_IC_1_Sigma_ADDR = 49212
+
+REG_DAC_VOL0_IC_1_Sigma_BYTE = 1
+
+REG_DAC_VOL0_IC_1_Sigma_VALUE = 64
+
+
+""" DAC_VOL1  - Registers (IC 1_Sigma) """
+REG_DAC_VOL1_IC_1_Sigma_ADDR = 49213
+
+REG_DAC_VOL1_IC_1_Sigma_BYTE = 1
+
+REG_DAC_VOL1_IC_1_Sigma_VALUE = 64
+
+
+""" DAC_ROUTE0  - Registers (IC 1_Sigma) """
+REG_DAC_ROUTE0_IC_1_Sigma_ADDR = 49214
+
+REG_DAC_ROUTE0_IC_1_Sigma_BYTE = 1
+
+REG_DAC_ROUTE0_IC_1_Sigma_VALUE = 48
+
+
+""" DAC_ROUTE1  - Registers (IC 1_Sigma) """
+REG_DAC_ROUTE1_IC_1_Sigma_ADDR = 49215
+
+REG_DAC_ROUTE1_IC_1_Sigma_BYTE = 1
+
+REG_DAC_ROUTE1_IC_1_Sigma_VALUE = 49
+
+
+""" HP_CTRL  - Registers (IC 1_Sigma) """
+REG_HP_CTRL_IC_1_Sigma_ADDR = 49216
+
+REG_HP_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_HP_CTRL_IC_1_Sigma_VALUE = 0
+
+
+""" FDEC_CTRL1  - Registers (IC 1_Sigma) """
+REG_FDEC_CTRL1_IC_1_Sigma_ADDR = 49217
+
+REG_FDEC_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_FDEC_CTRL1_IC_1_Sigma_VALUE = 37
+
+
+""" FDEC_CTRL2  - Registers (IC 1_Sigma) """
+REG_FDEC_CTRL2_IC_1_Sigma_ADDR = 49218
+
+REG_FDEC_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_FDEC_CTRL2_IC_1_Sigma_VALUE = 37
+
+
+""" FDEC_CTRL3  - Registers (IC 1_Sigma) """
+REG_FDEC_CTRL3_IC_1_Sigma_ADDR = 49219
+
+REG_FDEC_CTRL3_IC_1_Sigma_BYTE = 1
+
+REG_FDEC_CTRL3_IC_1_Sigma_VALUE = 37
+
+
+""" FDEC_CTRL4  - Registers (IC 1_Sigma) """
+REG_FDEC_CTRL4_IC_1_Sigma_ADDR = 49220
+
+REG_FDEC_CTRL4_IC_1_Sigma_BYTE = 1
+
+REG_FDEC_CTRL4_IC_1_Sigma_VALUE = 37
+
+
+""" FDEC_ROUTE0  - Registers (IC 1_Sigma) """
+REG_FDEC_ROUTE0_IC_1_Sigma_ADDR = 49221
+
+REG_FDEC_ROUTE0_IC_1_Sigma_BYTE = 1
+
+REG_FDEC_ROUTE0_IC_1_Sigma_VALUE = 0
+
+
+""" FDEC_ROUTE1  - Registers (IC 1_Sigma) """
+REG_FDEC_ROUTE1_IC_1_Sigma_ADDR = 49222
+
+REG_FDEC_ROUTE1_IC_1_Sigma_BYTE = 1
+
+REG_FDEC_ROUTE1_IC_1_Sigma_VALUE = 0
+
+
+""" FDEC_ROUTE2  - Registers (IC 1_Sigma) """
+REG_FDEC_ROUTE2_IC_1_Sigma_ADDR = 49223
+
+REG_FDEC_ROUTE2_IC_1_Sigma_BYTE = 1
+
+REG_FDEC_ROUTE2_IC_1_Sigma_VALUE = 0
+
+
+""" FDEC_ROUTE3  - Registers (IC 1_Sigma) """
+REG_FDEC_ROUTE3_IC_1_Sigma_ADDR = 49224
+
+REG_FDEC_ROUTE3_IC_1_Sigma_BYTE = 1
+
+REG_FDEC_ROUTE3_IC_1_Sigma_VALUE = 0
+
+
+""" FDEC_ROUTE4  - Registers (IC 1_Sigma) """
+REG_FDEC_ROUTE4_IC_1_Sigma_ADDR = 49225
+
+REG_FDEC_ROUTE4_IC_1_Sigma_BYTE = 1
+
+REG_FDEC_ROUTE4_IC_1_Sigma_VALUE = 0
+
+
+""" FDEC_ROUTE5  - Registers (IC 1_Sigma) """
+REG_FDEC_ROUTE5_IC_1_Sigma_ADDR = 49226
+
+REG_FDEC_ROUTE5_IC_1_Sigma_BYTE = 1
+
+REG_FDEC_ROUTE5_IC_1_Sigma_VALUE = 0
+
+
+""" FDEC_ROUTE6  - Registers (IC 1_Sigma) """
+REG_FDEC_ROUTE6_IC_1_Sigma_ADDR = 49227
+
+REG_FDEC_ROUTE6_IC_1_Sigma_BYTE = 1
+
+REG_FDEC_ROUTE6_IC_1_Sigma_VALUE = 0
+
+
+""" FDEC_ROUTE7  - Registers (IC 1_Sigma) """
+REG_FDEC_ROUTE7_IC_1_Sigma_ADDR = 49228
+
+REG_FDEC_ROUTE7_IC_1_Sigma_BYTE = 1
+
+REG_FDEC_ROUTE7_IC_1_Sigma_VALUE = 0
+
+
+""" FINT_CTRL1  - Registers (IC 1_Sigma) """
+REG_FINT_CTRL1_IC_1_Sigma_ADDR = 49229
+
+REG_FINT_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_FINT_CTRL1_IC_1_Sigma_VALUE = 82
+
+
+""" FINT_CTRL2  - Registers (IC 1_Sigma) """
+REG_FINT_CTRL2_IC_1_Sigma_ADDR = 49230
+
+REG_FINT_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_FINT_CTRL2_IC_1_Sigma_VALUE = 82
+
+
+""" FINT_CTRL3  - Registers (IC 1_Sigma) """
+REG_FINT_CTRL3_IC_1_Sigma_ADDR = 49231
+
+REG_FINT_CTRL3_IC_1_Sigma_BYTE = 1
+
+REG_FINT_CTRL3_IC_1_Sigma_VALUE = 82
+
+
+""" FINT_CTRL4  - Registers (IC 1_Sigma) """
+REG_FINT_CTRL4_IC_1_Sigma_ADDR = 49232
+
+REG_FINT_CTRL4_IC_1_Sigma_BYTE = 1
+
+REG_FINT_CTRL4_IC_1_Sigma_VALUE = 82
+
+
+""" FINT_ROUTE0  - Registers (IC 1_Sigma) """
+REG_FINT_ROUTE0_IC_1_Sigma_ADDR = 49233
+
+REG_FINT_ROUTE0_IC_1_Sigma_BYTE = 1
+
+REG_FINT_ROUTE0_IC_1_Sigma_VALUE = 0
+
+
+""" FINT_ROUTE1  - Registers (IC 1_Sigma) """
+REG_FINT_ROUTE1_IC_1_Sigma_ADDR = 49234
+
+REG_FINT_ROUTE1_IC_1_Sigma_BYTE = 1
+
+REG_FINT_ROUTE1_IC_1_Sigma_VALUE = 0
+
+
+""" FINT_ROUTE2  - Registers (IC 1_Sigma) """
+REG_FINT_ROUTE2_IC_1_Sigma_ADDR = 49235
+
+REG_FINT_ROUTE2_IC_1_Sigma_BYTE = 1
+
+REG_FINT_ROUTE2_IC_1_Sigma_VALUE = 0
+
+
+""" FINT_ROUTE3  - Registers (IC 1_Sigma) """
+REG_FINT_ROUTE3_IC_1_Sigma_ADDR = 49236
+
+REG_FINT_ROUTE3_IC_1_Sigma_BYTE = 1
+
+REG_FINT_ROUTE3_IC_1_Sigma_VALUE = 0
+
+
+""" FINT_ROUTE4  - Registers (IC 1_Sigma) """
+REG_FINT_ROUTE4_IC_1_Sigma_ADDR = 49237
+
+REG_FINT_ROUTE4_IC_1_Sigma_BYTE = 1
+
+REG_FINT_ROUTE4_IC_1_Sigma_VALUE = 0
+
+
+""" FINT_ROUTE5  - Registers (IC 1_Sigma) """
+REG_FINT_ROUTE5_IC_1_Sigma_ADDR = 49238
+
+REG_FINT_ROUTE5_IC_1_Sigma_BYTE = 1
+
+REG_FINT_ROUTE5_IC_1_Sigma_VALUE = 0
+
+
+""" FINT_ROUTE6  - Registers (IC 1_Sigma) """
+REG_FINT_ROUTE6_IC_1_Sigma_ADDR = 49239
+
+REG_FINT_ROUTE6_IC_1_Sigma_BYTE = 1
+
+REG_FINT_ROUTE6_IC_1_Sigma_VALUE = 0
+
+
+""" FINT_ROUTE7  - Registers (IC 1_Sigma) """
+REG_FINT_ROUTE7_IC_1_Sigma_ADDR = 49240
+
+REG_FINT_ROUTE7_IC_1_Sigma_BYTE = 1
+
+REG_FINT_ROUTE7_IC_1_Sigma_VALUE = 0
+
+
+""" ASRCI_CTRL  - Registers (IC 1_Sigma) """
+REG_ASRCI_CTRL_IC_1_Sigma_ADDR = 49241
+
+REG_ASRCI_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_ASRCI_CTRL_IC_1_Sigma_VALUE = 2
+
+
+""" ASRCI_ROUTE01  - Registers (IC 1_Sigma) """
+REG_ASRCI_ROUTE01_IC_1_Sigma_ADDR = 49242
+
+REG_ASRCI_ROUTE01_IC_1_Sigma_BYTE = 1
+
+REG_ASRCI_ROUTE01_IC_1_Sigma_VALUE = 0
+
+
+""" ASRCI_ROUTE23  - Registers (IC 1_Sigma) """
+REG_ASRCI_ROUTE23_IC_1_Sigma_ADDR = 49243
+
+REG_ASRCI_ROUTE23_IC_1_Sigma_BYTE = 1
+
+REG_ASRCI_ROUTE23_IC_1_Sigma_VALUE = 0
+
+
+""" ASRCO_CTRL  - Registers (IC 1_Sigma) """
+REG_ASRCO_CTRL_IC_1_Sigma_ADDR = 49244
+
+REG_ASRCO_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_ASRCO_CTRL_IC_1_Sigma_VALUE = 2
+
+
+""" ASRCO_ROUTE0  - Registers (IC 1_Sigma) """
+REG_ASRCO_ROUTE0_IC_1_Sigma_ADDR = 49245
+
+REG_ASRCO_ROUTE0_IC_1_Sigma_BYTE = 1
+
+REG_ASRCO_ROUTE0_IC_1_Sigma_VALUE = 0
+
+
+""" ASRCO_ROUTE1  - Registers (IC 1_Sigma) """
+REG_ASRCO_ROUTE1_IC_1_Sigma_ADDR = 49246
+
+REG_ASRCO_ROUTE1_IC_1_Sigma_BYTE = 1
+
+REG_ASRCO_ROUTE1_IC_1_Sigma_VALUE = 0
+
+
+""" ASRCO_ROUTE2  - Registers (IC 1_Sigma) """
+REG_ASRCO_ROUTE2_IC_1_Sigma_ADDR = 49247
+
+REG_ASRCO_ROUTE2_IC_1_Sigma_BYTE = 1
+
+REG_ASRCO_ROUTE2_IC_1_Sigma_VALUE = 0
+
+
+""" ASRCO_ROUTE3  - Registers (IC 1_Sigma) """
+REG_ASRCO_ROUTE3_IC_1_Sigma_ADDR = 49248
+
+REG_ASRCO_ROUTE3_IC_1_Sigma_BYTE = 1
+
+REG_ASRCO_ROUTE3_IC_1_Sigma_VALUE = 0
+
+
+""" FDSP_RUN  - Registers (IC 1_Sigma) """
+REG_FDSP_RUN_IC_1_Sigma_ADDR = 49249
+
+REG_FDSP_RUN_IC_1_Sigma_BYTE = 1
+
+REG_FDSP_RUN_IC_1_Sigma_VALUE = 1
+
+
+""" FDSP_CTRL1  - Registers (IC 1_Sigma) """
+REG_FDSP_CTRL1_IC_1_Sigma_ADDR = 49250
+
+REG_FDSP_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_FDSP_CTRL1_IC_1_Sigma_VALUE = 112
+
+
+""" FDSP_CTRL2  - Registers (IC 1_Sigma) """
+REG_FDSP_CTRL2_IC_1_Sigma_ADDR = 49251
+
+REG_FDSP_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_FDSP_CTRL2_IC_1_Sigma_VALUE = 63
+
+
+""" FDSP_CTRL3  - Registers (IC 1_Sigma) """
+REG_FDSP_CTRL3_IC_1_Sigma_ADDR = 49252
+
+REG_FDSP_CTRL3_IC_1_Sigma_BYTE = 1
+
+REG_FDSP_CTRL3_IC_1_Sigma_VALUE = 0
+
+
+""" FDSP_CTRL4  - Registers (IC 1_Sigma) """
+REG_FDSP_CTRL4_IC_1_Sigma_ADDR = 49253
+
+REG_FDSP_CTRL4_IC_1_Sigma_BYTE = 1
+
+REG_FDSP_CTRL4_IC_1_Sigma_VALUE = 0
+
+
+""" FDSP_CTRL5  - Registers (IC 1_Sigma) """
+REG_FDSP_CTRL5_IC_1_Sigma_ADDR = 49254
+
+REG_FDSP_CTRL5_IC_1_Sigma_BYTE = 2
+
+REG_FDSP_CTRL5_IC_1_Sigma_VALUE = 127
+
+
+""" FDSP_CTRL7  - Registers (IC 1_Sigma) """
+REG_FDSP_CTRL7_IC_1_Sigma_ADDR = 49256
+
+REG_FDSP_CTRL7_IC_1_Sigma_BYTE = 1
+
+REG_FDSP_CTRL7_IC_1_Sigma_VALUE = 0
+
+
+""" FDSP_CTRL8  - Registers (IC 1_Sigma) """
+REG_FDSP_CTRL8_IC_1_Sigma_ADDR = 49257
+
+REG_FDSP_CTRL8_IC_1_Sigma_BYTE = 1
+
+REG_FDSP_CTRL8_IC_1_Sigma_VALUE = 0
+
+
+""" FDSP_SL_ADDR  - Registers (IC 1_Sigma) """
+REG_FDSP_SL_ADDR_IC_1_Sigma_ADDR = 49258
+
+REG_FDSP_SL_ADDR_IC_1_Sigma_BYTE = 1
+
+REG_FDSP_SL_ADDR_IC_1_Sigma_VALUE = 0
+
+
+""" FDSP_SL_P0  - Registers (IC 1_Sigma) """
+REG_FDSP_SL_P0_IC_1_Sigma_ADDR = 49259
+
+REG_FDSP_SL_P0_IC_1_Sigma_BYTE = 4
+
+REG_FDSP_SL_P0_IC_1_Sigma_VALUE = 0
+
+
+""" FDSP_SL_P1  - Registers (IC 1_Sigma) """
+REG_FDSP_SL_P1_IC_1_Sigma_ADDR = 49263
+
+REG_FDSP_SL_P1_IC_1_Sigma_BYTE = 4
+
+REG_FDSP_SL_P1_IC_1_Sigma_VALUE = 0
+
+
+""" FDSP_SL_P2  - Registers (IC 1_Sigma) """
+REG_FDSP_SL_P2_IC_1_Sigma_ADDR = 49267
+
+REG_FDSP_SL_P2_IC_1_Sigma_BYTE = 4
+
+REG_FDSP_SL_P2_IC_1_Sigma_VALUE = 0
+
+
+""" FDSP_SL_P3  - Registers (IC 1_Sigma) """
+REG_FDSP_SL_P3_IC_1_Sigma_ADDR = 49271
+
+REG_FDSP_SL_P3_IC_1_Sigma_BYTE = 4
+
+REG_FDSP_SL_P3_IC_1_Sigma_VALUE = 0
+
+
+""" FDSP_SL_P4  - Registers (IC 1_Sigma) """
+REG_FDSP_SL_P4_IC_1_Sigma_ADDR = 49275
+
+REG_FDSP_SL_P4_IC_1_Sigma_BYTE = 4
+
+REG_FDSP_SL_P4_IC_1_Sigma_VALUE = 0
+
+
+""" FDSP_SL_UPDATE  - Registers (IC 1_Sigma) """
+REG_FDSP_SL_UPDATE_IC_1_Sigma_ADDR = 49279
+
+REG_FDSP_SL_UPDATE_IC_1_Sigma_BYTE = 1
+
+REG_FDSP_SL_UPDATE_IC_1_Sigma_VALUE = 0
+
+
+""" SDSP_CTRL1  - Registers (IC 1_Sigma) """
+REG_SDSP_CTRL1_IC_1_Sigma_ADDR = 49280
+
+REG_SDSP_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_SDSP_CTRL1_IC_1_Sigma_VALUE = 1
+
+
+""" SDSP_CTRL2  - Registers (IC 1_Sigma) """
+REG_SDSP_CTRL2_IC_1_Sigma_ADDR = 49281
+
+REG_SDSP_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_SDSP_CTRL2_IC_1_Sigma_VALUE = 1
+
+
+""" SDSP_CTRL3  - Registers (IC 1_Sigma) """
+REG_SDSP_CTRL3_IC_1_Sigma_ADDR = 49282
+
+REG_SDSP_CTRL3_IC_1_Sigma_BYTE = 1
+
+REG_SDSP_CTRL3_IC_1_Sigma_VALUE = 0
+
+
+""" SDSP_CTRL4  - Registers (IC 1_Sigma) """
+REG_SDSP_CTRL4_IC_1_Sigma_ADDR = 49283
+
+REG_SDSP_CTRL4_IC_1_Sigma_BYTE = 3
+
+REG_SDSP_CTRL4_IC_1_Sigma_VALUE = 0
+
+
+""" SDSP_CTRL7  - Registers (IC 1_Sigma) """
+REG_SDSP_CTRL7_IC_1_Sigma_ADDR = 49286
+
+REG_SDSP_CTRL7_IC_1_Sigma_BYTE = 2
+
+REG_SDSP_CTRL7_IC_1_Sigma_VALUE = 2036
+
+
+""" SDSP_CTRL9  - Registers (IC 1_Sigma) """
+REG_SDSP_CTRL9_IC_1_Sigma_ADDR = 49288
+
+REG_SDSP_CTRL9_IC_1_Sigma_BYTE = 2
+
+REG_SDSP_CTRL9_IC_1_Sigma_VALUE = 2047
+
+
+""" SDSP_CTRL11  - Registers (IC 1_Sigma) """
+REG_SDSP_CTRL11_IC_1_Sigma_ADDR = 49290
+
+REG_SDSP_CTRL11_IC_1_Sigma_BYTE = 1
+
+REG_SDSP_CTRL11_IC_1_Sigma_VALUE = 0
+
+
+""" MP_CTRL1  - Registers (IC 1_Sigma) """
+REG_MP_CTRL1_IC_1_Sigma_ADDR = 49291
+
+REG_MP_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_MP_CTRL1_IC_1_Sigma_VALUE = 0
+
+
+""" MP_CTRL2  - Registers (IC 1_Sigma) """
+REG_MP_CTRL2_IC_1_Sigma_ADDR = 49292
+
+REG_MP_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_MP_CTRL2_IC_1_Sigma_VALUE = 0
+
+
+""" MP_CTRL3  - Registers (IC 1_Sigma) """
+REG_MP_CTRL3_IC_1_Sigma_ADDR = 49293
+
+REG_MP_CTRL3_IC_1_Sigma_BYTE = 1
+
+REG_MP_CTRL3_IC_1_Sigma_VALUE = 0
+
+
+""" MP_CTRL4  - Registers (IC 1_Sigma) """
+REG_MP_CTRL4_IC_1_Sigma_ADDR = 49294
+
+REG_MP_CTRL4_IC_1_Sigma_BYTE = 1
+
+REG_MP_CTRL4_IC_1_Sigma_VALUE = 0
+
+
+""" MP_CTRL5  - Registers (IC 1_Sigma) """
+REG_MP_CTRL5_IC_1_Sigma_ADDR = 49295
+
+REG_MP_CTRL5_IC_1_Sigma_BYTE = 1
+
+REG_MP_CTRL5_IC_1_Sigma_VALUE = 0
+
+
+""" MP_CTRL6  - Registers (IC 1_Sigma) """
+REG_MP_CTRL6_IC_1_Sigma_ADDR = 49296
+
+REG_MP_CTRL6_IC_1_Sigma_BYTE = 1
+
+REG_MP_CTRL6_IC_1_Sigma_VALUE = 0
+
+
+""" MP_CTRL7  - Registers (IC 1_Sigma) """
+REG_MP_CTRL7_IC_1_Sigma_ADDR = 49297
+
+REG_MP_CTRL7_IC_1_Sigma_BYTE = 1
+
+REG_MP_CTRL7_IC_1_Sigma_VALUE = 16
+
+
+""" MP_CTRL8  - Registers (IC 1_Sigma) """
+REG_MP_CTRL8_IC_1_Sigma_ADDR = 49298
+
+REG_MP_CTRL8_IC_1_Sigma_BYTE = 1
+
+REG_MP_CTRL8_IC_1_Sigma_VALUE = 0
+
+
+""" MP_CTRL9  - Registers (IC 1_Sigma) """
+REG_MP_CTRL9_IC_1_Sigma_ADDR = 49299
+
+REG_MP_CTRL9_IC_1_Sigma_BYTE = 1
+
+REG_MP_CTRL9_IC_1_Sigma_VALUE = 0
+
+
+""" FSYNC0_CTRL  - Registers (IC 1_Sigma) """
+REG_FSYNC0_CTRL_IC_1_Sigma_ADDR = 49300
+
+REG_FSYNC0_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_FSYNC0_CTRL_IC_1_Sigma_VALUE = 5
+
+
+""" BCLK0_CTRL  - Registers (IC 1_Sigma) """
+REG_BCLK0_CTRL_IC_1_Sigma_ADDR = 49301
+
+REG_BCLK0_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_BCLK0_CTRL_IC_1_Sigma_VALUE = 5
+
+
+""" SDATAO0_CTRL  - Registers (IC 1_Sigma) """
+REG_SDATAO0_CTRL_IC_1_Sigma_ADDR = 49302
+
+REG_SDATAO0_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_SDATAO0_CTRL_IC_1_Sigma_VALUE = 4
+
+
+""" SDATAI0_CTRL  - Registers (IC 1_Sigma) """
+REG_SDATAI0_CTRL_IC_1_Sigma_ADDR = 49303
+
+REG_SDATAI0_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_SDATAI0_CTRL_IC_1_Sigma_VALUE = 5
+
+
+""" FSYNC1_CTRL  - Registers (IC 1_Sigma) """
+REG_FSYNC1_CTRL_IC_1_Sigma_ADDR = 49304
+
+REG_FSYNC1_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_FSYNC1_CTRL_IC_1_Sigma_VALUE = 5
+
+
+""" BCLK1_CTRL  - Registers (IC 1_Sigma) """
+REG_BCLK1_CTRL_IC_1_Sigma_ADDR = 49305
+
+REG_BCLK1_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_BCLK1_CTRL_IC_1_Sigma_VALUE = 5
+
+
+""" SDATAO1_CTRL  - Registers (IC 1_Sigma) """
+REG_SDATAO1_CTRL_IC_1_Sigma_ADDR = 49306
+
+REG_SDATAO1_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_SDATAO1_CTRL_IC_1_Sigma_VALUE = 5
+
+
+""" SDATAI1_CTRL  - Registers (IC 1_Sigma) """
+REG_SDATAI1_CTRL_IC_1_Sigma_ADDR = 49307
+
+REG_SDATAI1_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_SDATAI1_CTRL_IC_1_Sigma_VALUE = 5
+
+
+""" DMIC_CLK0_CTRL  - Registers (IC 1_Sigma) """
+REG_DMIC_CLK0_CTRL_IC_1_Sigma_ADDR = 49308
+
+REG_DMIC_CLK0_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_CLK0_CTRL_IC_1_Sigma_VALUE = 5
+
+
+""" DMIC_CLK1_CTRL  - Registers (IC 1_Sigma) """
+REG_DMIC_CLK1_CTRL_IC_1_Sigma_ADDR = 49309
+
+REG_DMIC_CLK1_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_DMIC_CLK1_CTRL_IC_1_Sigma_VALUE = 5
+
+
+""" DMIC01_CTRL  - Registers (IC 1_Sigma) """
+REG_DMIC01_CTRL_IC_1_Sigma_ADDR = 49310
+
+REG_DMIC01_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_DMIC01_CTRL_IC_1_Sigma_VALUE = 5
+
+
+""" DMIC23_CTRL  - Registers (IC 1_Sigma) """
+REG_DMIC23_CTRL_IC_1_Sigma_ADDR = 49311
+
+REG_DMIC23_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_DMIC23_CTRL_IC_1_Sigma_VALUE = 5
+
+
+""" I2C_SPI_CTRL  - Registers (IC 1_Sigma) """
+REG_I2C_SPI_CTRL_IC_1_Sigma_ADDR = 49312
+
+REG_I2C_SPI_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_I2C_SPI_CTRL_IC_1_Sigma_VALUE = 0
+
+
+""" IRQ_CTRL1  - Registers (IC 1_Sigma) """
+REG_IRQ_CTRL1_IC_1_Sigma_ADDR = 49313
+
+REG_IRQ_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_IRQ_CTRL1_IC_1_Sigma_VALUE = 0
+
+
+""" IRQ1_MASK1  - Registers (IC 1_Sigma) """
+REG_IRQ1_MASK1_IC_1_Sigma_ADDR = 49314
+
+REG_IRQ1_MASK1_IC_1_Sigma_BYTE = 1
+
+REG_IRQ1_MASK1_IC_1_Sigma_VALUE = 243
+
+
+""" IRQ1_MASK2  - Registers (IC 1_Sigma) """
+REG_IRQ1_MASK2_IC_1_Sigma_ADDR = 49315
+
+REG_IRQ1_MASK2_IC_1_Sigma_BYTE = 1
+
+REG_IRQ1_MASK2_IC_1_Sigma_VALUE = 255
+
+
+""" IRQ1_MASK3  - Registers (IC 1_Sigma) """
+REG_IRQ1_MASK3_IC_1_Sigma_ADDR = 49316
+
+REG_IRQ1_MASK3_IC_1_Sigma_BYTE = 1
+
+REG_IRQ1_MASK3_IC_1_Sigma_VALUE = 31
+
+
+""" IRQ2_MASK1  - Registers (IC 1_Sigma) """
+REG_IRQ2_MASK1_IC_1_Sigma_ADDR = 49317
+
+REG_IRQ2_MASK1_IC_1_Sigma_BYTE = 1
+
+REG_IRQ2_MASK1_IC_1_Sigma_VALUE = 243
+
+
+""" IRQ2_MASK2  - Registers (IC 1_Sigma) """
+REG_IRQ2_MASK2_IC_1_Sigma_ADDR = 49318
+
+REG_IRQ2_MASK2_IC_1_Sigma_BYTE = 1
+
+REG_IRQ2_MASK2_IC_1_Sigma_VALUE = 255
+
+
+""" IRQ2_MASK3  - Registers (IC 1_Sigma) """
+REG_IRQ2_MASK3_IC_1_Sigma_ADDR = 49319
+
+REG_IRQ2_MASK3_IC_1_Sigma_BYTE = 1
+
+REG_IRQ2_MASK3_IC_1_Sigma_VALUE = 31
+
+
+""" RESETS  - Registers (IC 1_Sigma) """
+REG_RESETS_IC_1_Sigma_ADDR = 49320
+
+REG_RESETS_IC_1_Sigma_BYTE = 1
+
+REG_RESETS_IC_1_Sigma_VALUE = 0
+
+
+""" READ_LAMBDA  - Registers (IC 1_Sigma) """
+REG_READ_LAMBDA_IC_1_Sigma_ADDR = 49321
+
+REG_READ_LAMBDA_IC_1_Sigma_BYTE = 0
+
+REG_READ_LAMBDA_IC_1_Sigma_VALUE = 63
+
+
+""" STATUS1  - Registers (IC 1_Sigma) """
+REG_STATUS1_IC_1_Sigma_ADDR = 49322
+
+REG_STATUS1_IC_1_Sigma_BYTE = 0
+
+REG_STATUS1_IC_1_Sigma_VALUE = 0
+
+
+""" STATUS2  - Registers (IC 1_Sigma) """
+REG_STATUS2_IC_1_Sigma_ADDR = 49323
+
+REG_STATUS2_IC_1_Sigma_BYTE = 0
+
+REG_STATUS2_IC_1_Sigma_VALUE = 0
+
+
+""" GPI1  - Registers (IC 1_Sigma) """
+REG_GPI1_IC_1_Sigma_ADDR = 49324
+
+REG_GPI1_IC_1_Sigma_BYTE = 0
+
+REG_GPI1_IC_1_Sigma_VALUE = 0
+
+
+""" GPI2  - Registers (IC 1_Sigma) """
+REG_GPI2_IC_1_Sigma_ADDR = 49325
+
+REG_GPI2_IC_1_Sigma_BYTE = 0
+
+REG_GPI2_IC_1_Sigma_VALUE = 0
+
+
+""" DSP_STATUS  - Registers (IC 1_Sigma) """
+REG_DSP_STATUS_IC_1_Sigma_ADDR = 49326
+
+REG_DSP_STATUS_IC_1_Sigma_BYTE = 0
+
+REG_DSP_STATUS_IC_1_Sigma_VALUE = 0
+
+
+""" IRQ1_STATUS1  - Registers (IC 1_Sigma) """
+REG_IRQ1_STATUS1_IC_1_Sigma_ADDR = 49327
+
+REG_IRQ1_STATUS1_IC_1_Sigma_BYTE = 0
+
+REG_IRQ1_STATUS1_IC_1_Sigma_VALUE = 0
+
+
+""" IRQ1_STATUS2  - Registers (IC 1_Sigma) """
+REG_IRQ1_STATUS2_IC_1_Sigma_ADDR = 49328
+
+REG_IRQ1_STATUS2_IC_1_Sigma_BYTE = 0
+
+REG_IRQ1_STATUS2_IC_1_Sigma_VALUE = 0
+
+
+""" IRQ1_STATUS3  - Registers (IC 1_Sigma) """
+REG_IRQ1_STATUS3_IC_1_Sigma_ADDR = 49329
+
+REG_IRQ1_STATUS3_IC_1_Sigma_BYTE = 0
+
+REG_IRQ1_STATUS3_IC_1_Sigma_VALUE = 0
+
+
+""" IRQ2_STATUS1  - Registers (IC 1_Sigma) """
+REG_IRQ2_STATUS1_IC_1_Sigma_ADDR = 49330
+
+REG_IRQ2_STATUS1_IC_1_Sigma_BYTE = 0
+
+REG_IRQ2_STATUS1_IC_1_Sigma_VALUE = 0
+
+
+""" IRQ2_STATUS2  - Registers (IC 1_Sigma) """
+REG_IRQ2_STATUS2_IC_1_Sigma_ADDR = 49331
+
+REG_IRQ2_STATUS2_IC_1_Sigma_BYTE = 0
+
+REG_IRQ2_STATUS2_IC_1_Sigma_VALUE = 0
+
+
+""" IRQ2_STATUS3  - Registers (IC 1_Sigma) """
+REG_IRQ2_STATUS3_IC_1_Sigma_ADDR = 49332
+
+REG_IRQ2_STATUS3_IC_1_Sigma_BYTE = 0
+
+REG_IRQ2_STATUS3_IC_1_Sigma_VALUE = 0
+
+
+""" SPT0_CTRL1  - Registers (IC 1_Sigma) """
+REG_SPT0_CTRL1_IC_1_Sigma_ADDR = 49333
+
+REG_SPT0_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_CTRL1_IC_1_Sigma_VALUE = 0
+
+
+""" SPT0_CTRL2  - Registers (IC 1_Sigma) """
+REG_SPT0_CTRL2_IC_1_Sigma_ADDR = 49334
+
+REG_SPT0_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_CTRL2_IC_1_Sigma_VALUE = 0
+
+
+""" SPT0_ROUTE0  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE0_IC_1_Sigma_ADDR = 49335
+
+REG_SPT0_ROUTE0_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE0_IC_1_Sigma_VALUE = 16
+
+
+""" SPT0_ROUTE1  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE1_IC_1_Sigma_ADDR = 49336
+
+REG_SPT0_ROUTE1_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE1_IC_1_Sigma_VALUE = 17
+
+
+""" SPT0_ROUTE2  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE2_IC_1_Sigma_ADDR = 49337
+
+REG_SPT0_ROUTE2_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE2_IC_1_Sigma_VALUE = 63
+
+
+""" SPT0_ROUTE3  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE3_IC_1_Sigma_ADDR = 49338
+
+REG_SPT0_ROUTE3_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE3_IC_1_Sigma_VALUE = 63
+
+
+""" SPT0_ROUTE4  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE4_IC_1_Sigma_ADDR = 49339
+
+REG_SPT0_ROUTE4_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE4_IC_1_Sigma_VALUE = 63
+
+
+""" SPT0_ROUTE5  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE5_IC_1_Sigma_ADDR = 49340
+
+REG_SPT0_ROUTE5_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE5_IC_1_Sigma_VALUE = 63
+
+
+""" SPT0_ROUTE6  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE6_IC_1_Sigma_ADDR = 49341
+
+REG_SPT0_ROUTE6_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE6_IC_1_Sigma_VALUE = 63
+
+
+""" SPT0_ROUTE7  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE7_IC_1_Sigma_ADDR = 49342
+
+REG_SPT0_ROUTE7_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE7_IC_1_Sigma_VALUE = 63
+
+
+""" SPT0_ROUTE8  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE8_IC_1_Sigma_ADDR = 49343
+
+REG_SPT0_ROUTE8_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE8_IC_1_Sigma_VALUE = 63
+
+
+""" SPT0_ROUTE9  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE9_IC_1_Sigma_ADDR = 49344
+
+REG_SPT0_ROUTE9_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE9_IC_1_Sigma_VALUE = 63
+
+
+""" SPT0_ROUTE10  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE10_IC_1_Sigma_ADDR = 49345
+
+REG_SPT0_ROUTE10_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE10_IC_1_Sigma_VALUE = 63
+
+
+""" SPT0_ROUTE11  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE11_IC_1_Sigma_ADDR = 49346
+
+REG_SPT0_ROUTE11_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE11_IC_1_Sigma_VALUE = 63
+
+
+""" SPT0_ROUTE12  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE12_IC_1_Sigma_ADDR = 49347
+
+REG_SPT0_ROUTE12_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE12_IC_1_Sigma_VALUE = 63
+
+
+""" SPT0_ROUTE13  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE13_IC_1_Sigma_ADDR = 49348
+
+REG_SPT0_ROUTE13_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE13_IC_1_Sigma_VALUE = 63
+
+
+""" SPT0_ROUTE14  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE14_IC_1_Sigma_ADDR = 49349
+
+REG_SPT0_ROUTE14_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE14_IC_1_Sigma_VALUE = 63
+
+
+""" SPT0_ROUTE15  - Registers (IC 1_Sigma) """
+REG_SPT0_ROUTE15_IC_1_Sigma_ADDR = 49350
+
+REG_SPT0_ROUTE15_IC_1_Sigma_BYTE = 1
+
+REG_SPT0_ROUTE15_IC_1_Sigma_VALUE = 63
+
+
+""" SPT1_CTRL1  - Registers (IC 1_Sigma) """
+REG_SPT1_CTRL1_IC_1_Sigma_ADDR = 49351
+
+REG_SPT1_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_CTRL1_IC_1_Sigma_VALUE = 0
+
+
+""" SPT1_CTRL2  - Registers (IC 1_Sigma) """
+REG_SPT1_CTRL2_IC_1_Sigma_ADDR = 49352
+
+REG_SPT1_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_CTRL2_IC_1_Sigma_VALUE = 0
+
+
+""" SPT1_ROUTE0  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE0_IC_1_Sigma_ADDR = 49353
+
+REG_SPT1_ROUTE0_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE0_IC_1_Sigma_VALUE = 16
+
+
+""" SPT1_ROUTE1  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE1_IC_1_Sigma_ADDR = 49354
+
+REG_SPT1_ROUTE1_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE1_IC_1_Sigma_VALUE = 17
+
+
+""" SPT1_ROUTE2  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE2_IC_1_Sigma_ADDR = 49355
+
+REG_SPT1_ROUTE2_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE2_IC_1_Sigma_VALUE = 63
+
+
+""" SPT1_ROUTE3  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE3_IC_1_Sigma_ADDR = 49356
+
+REG_SPT1_ROUTE3_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE3_IC_1_Sigma_VALUE = 63
+
+
+""" SPT1_ROUTE4  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE4_IC_1_Sigma_ADDR = 49357
+
+REG_SPT1_ROUTE4_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE4_IC_1_Sigma_VALUE = 63
+
+
+""" SPT1_ROUTE5  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE5_IC_1_Sigma_ADDR = 49358
+
+REG_SPT1_ROUTE5_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE5_IC_1_Sigma_VALUE = 63
+
+
+""" SPT1_ROUTE6  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE6_IC_1_Sigma_ADDR = 49359
+
+REG_SPT1_ROUTE6_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE6_IC_1_Sigma_VALUE = 63
+
+
+""" SPT1_ROUTE7  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE7_IC_1_Sigma_ADDR = 49360
+
+REG_SPT1_ROUTE7_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE7_IC_1_Sigma_VALUE = 63
+
+
+""" SPT1_ROUTE8  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE8_IC_1_Sigma_ADDR = 49361
+
+REG_SPT1_ROUTE8_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE8_IC_1_Sigma_VALUE = 63
+
+
+""" SPT1_ROUTE9  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE9_IC_1_Sigma_ADDR = 49362
+
+REG_SPT1_ROUTE9_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE9_IC_1_Sigma_VALUE = 63
+
+
+""" SPT1_ROUTE10  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE10_IC_1_Sigma_ADDR = 49363
+
+REG_SPT1_ROUTE10_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE10_IC_1_Sigma_VALUE = 63
+
+
+""" SPT1_ROUTE11  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE11_IC_1_Sigma_ADDR = 49364
+
+REG_SPT1_ROUTE11_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE11_IC_1_Sigma_VALUE = 63
+
+
+""" SPT1_ROUTE12  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE12_IC_1_Sigma_ADDR = 49365
+
+REG_SPT1_ROUTE12_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE12_IC_1_Sigma_VALUE = 63
+
+
+""" SPT1_ROUTE13  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE13_IC_1_Sigma_ADDR = 49366
+
+REG_SPT1_ROUTE13_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE13_IC_1_Sigma_VALUE = 63
+
+
+""" SPT1_ROUTE14  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE14_IC_1_Sigma_ADDR = 49367
+
+REG_SPT1_ROUTE14_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE14_IC_1_Sigma_VALUE = 63
+
+
+""" SPT1_ROUTE15  - Registers (IC 1_Sigma) """
+REG_SPT1_ROUTE15_IC_1_Sigma_ADDR = 49368
+
+REG_SPT1_ROUTE15_IC_1_Sigma_BYTE = 1
+
+REG_SPT1_ROUTE15_IC_1_Sigma_VALUE = 63
+
+
+""" MP_CTRL10  - Registers (IC 1_Sigma) """
+REG_MP_CTRL10_IC_1_Sigma_ADDR = 49369
+
+REG_MP_CTRL10_IC_1_Sigma_BYTE = 1
+
+REG_MP_CTRL10_IC_1_Sigma_VALUE = 0
+
+
+""" SELFBOOT_CTRL  - Registers (IC 1_Sigma) """
+REG_SELFBOOT_CTRL_IC_1_Sigma_ADDR = 49370
+
+REG_SELFBOOT_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_SELFBOOT_CTRL_IC_1_Sigma_VALUE = 65
+
+
+""" SW_EN_CTRL  - Registers (IC 1_Sigma) """
+REG_SW_EN_CTRL_IC_1_Sigma_ADDR = 49371
+
+REG_SW_EN_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_SW_EN_CTRL_IC_1_Sigma_VALUE = 65
+
+
+""" PDM_CTRL1  - Registers (IC 1_Sigma) """
+REG_PDM_CTRL1_IC_1_Sigma_ADDR = 49372
+
+REG_PDM_CTRL1_IC_1_Sigma_BYTE = 1
+
+REG_PDM_CTRL1_IC_1_Sigma_VALUE = 2
+
+
+""" PDM_CTRL2  - Registers (IC 1_Sigma) """
+REG_PDM_CTRL2_IC_1_Sigma_ADDR = 49373
+
+REG_PDM_CTRL2_IC_1_Sigma_BYTE = 1
+
+REG_PDM_CTRL2_IC_1_Sigma_VALUE = 196
+
+
+""" PDM_VOL0  - Registers (IC 1_Sigma) """
+REG_PDM_VOL0_IC_1_Sigma_ADDR = 49374
+
+REG_PDM_VOL0_IC_1_Sigma_BYTE = 1
+
+REG_PDM_VOL0_IC_1_Sigma_VALUE = 64
+
+
+""" PDM_VOL1  - Registers (IC 1_Sigma) """
+REG_PDM_VOL1_IC_1_Sigma_ADDR = 49375
+
+REG_PDM_VOL1_IC_1_Sigma_BYTE = 1
+
+REG_PDM_VOL1_IC_1_Sigma_VALUE = 64
+
+
+""" PDM_ROUTE0  - Registers (IC 1_Sigma) """
+REG_PDM_ROUTE0_IC_1_Sigma_ADDR = 49376
+
+REG_PDM_ROUTE0_IC_1_Sigma_BYTE = 1
+
+REG_PDM_ROUTE0_IC_1_Sigma_VALUE = 0
+
+
+""" PDM_ROUTE1  - Registers (IC 1_Sigma) """
+REG_PDM_ROUTE1_IC_1_Sigma_ADDR = 49377
+
+REG_PDM_ROUTE1_IC_1_Sigma_BYTE = 1
+
+REG_PDM_ROUTE1_IC_1_Sigma_VALUE = 1
+
+
+""" SDSP_MEM_SPEED_CTRL  - Registers (IC 1_Sigma) """
+REG_SDSP_MEM_SPEED_CTRL_IC_1_Sigma_ADDR = 52256
+
+REG_SDSP_MEM_SPEED_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_SDSP_MEM_SPEED_CTRL_IC_1_Sigma_VALUE = 0
+
+
+""" SDSP_MEM_SLEEP_CTRL  - Registers (IC 1_Sigma) """
+REG_SDSP_MEM_SLEEP_CTRL_IC_1_Sigma_ADDR = 52257
+
+REG_SDSP_MEM_SLEEP_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_SDSP_MEM_SLEEP_CTRL_IC_1_Sigma_VALUE = 0
+
+
+""" FDSP_MEM_SPEED_CTRL  - Registers (IC 1_Sigma) """
+REG_FDSP_MEM_SPEED_CTRL_IC_1_Sigma_ADDR = 52258
+
+REG_FDSP_MEM_SPEED_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_FDSP_MEM_SPEED_CTRL_IC_1_Sigma_VALUE = 0
+
+
+""" FDSP_MEM_SLEEP_CTRL  - Registers (IC 1_Sigma) """
+REG_FDSP_MEM_SLEEP_CTRL_IC_1_Sigma_ADDR = 52259
+
+REG_FDSP_MEM_SLEEP_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_FDSP_MEM_SLEEP_CTRL_IC_1_Sigma_VALUE = 0
+
+
+""" I2C_PAD_CTRL  - Registers (IC 1_Sigma) """
+REG_I2C_PAD_CTRL_IC_1_Sigma_ADDR = 52260
+
+REG_I2C_PAD_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_I2C_PAD_CTRL_IC_1_Sigma_VALUE = 0
+
+
+""" TEST_PAD0_CTRL  - Registers (IC 1_Sigma) """
+REG_TEST_PAD0_CTRL_IC_1_Sigma_ADDR = 52261
+
+REG_TEST_PAD0_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_TEST_PAD0_CTRL_IC_1_Sigma_VALUE = 0
+
+
+""" TEST_PAD1_CTRL  - Registers (IC 1_Sigma) """
+REG_TEST_PAD1_CTRL_IC_1_Sigma_ADDR = 52262
+
+REG_TEST_PAD1_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_TEST_PAD1_CTRL_IC_1_Sigma_VALUE = 0
+
+
+""" ADC01_BIAS_OVERRIDE  - Registers (IC 1_Sigma) """
+REG_ADC01_BIAS_OVERRIDE_IC_1_Sigma_ADDR = 52263
+
+REG_ADC01_BIAS_OVERRIDE_IC_1_Sigma_BYTE = 1
+
+REG_ADC01_BIAS_OVERRIDE_IC_1_Sigma_VALUE = 0
+
+
+""" ADC23_BIAS_OVERRIDE  - Registers (IC 1_Sigma) """
+REG_ADC23_BIAS_OVERRIDE_IC_1_Sigma_ADDR = 52264
+
+REG_ADC23_BIAS_OVERRIDE_IC_1_Sigma_BYTE = 1
+
+REG_ADC23_BIAS_OVERRIDE_IC_1_Sigma_VALUE = 0
+
+
+""" TEMP_ADC_BIAS  - Registers (IC 1_Sigma) """
+REG_TEMP_ADC_BIAS_IC_1_Sigma_ADDR = 52265
+
+REG_TEMP_ADC_BIAS_IC_1_Sigma_BYTE = 1
+
+REG_TEMP_ADC_BIAS_IC_1_Sigma_VALUE = 0
+
+
+""" MBIAS_TEST  - Registers (IC 1_Sigma) """
+REG_MBIAS_TEST_IC_1_Sigma_ADDR = 52266
+
+REG_MBIAS_TEST_IC_1_Sigma_BYTE = 1
+
+REG_MBIAS_TEST_IC_1_Sigma_VALUE = 0
+
+
+""" FDSP_TEST_MODES  - Registers (IC 1_Sigma) """
+REG_FDSP_TEST_MODES_IC_1_Sigma_ADDR = 52272
+
+REG_FDSP_TEST_MODES_IC_1_Sigma_BYTE = 1
+
+REG_FDSP_TEST_MODES_IC_1_Sigma_VALUE = 0
+
+
+""" FAULT_DISABLE  - Registers (IC 1_Sigma) """
+REG_FAULT_DISABLE_IC_1_Sigma_ADDR = 52273
+
+REG_FAULT_DISABLE_IC_1_Sigma_BYTE = 1
+
+REG_FAULT_DISABLE_IC_1_Sigma_VALUE = 0
+
+
+""" ALDO_CTRL  - Registers (IC 1_Sigma) """
+REG_ALDO_CTRL_IC_1_Sigma_ADDR = 52274
+
+REG_ALDO_CTRL_IC_1_Sigma_BYTE = 1
+
+REG_ALDO_CTRL_IC_1_Sigma_VALUE = 0
+
+
+""" PMU_TEST  - Registers (IC 1_Sigma) """
+REG_PMU_TEST_IC_1_Sigma_ADDR = 52275
+
+REG_PMU_TEST_IC_1_Sigma_BYTE = 1
+
+REG_PMU_TEST_IC_1_Sigma_VALUE = 0
+
+
+""" DUMMY_SPI_ENABLE  - Registers (IC 1_Sigma) """
+REG_DUMMY_SPI_ENABLE_IC_1_Sigma_ADDR = 52479
+
+REG_DUMMY_SPI_ENABLE_IC_1_Sigma_BYTE = 1
+
+REG_DUMMY_SPI_ENABLE_IC_1_Sigma_VALUE = 0
+
+
+""" PLLCalculator  - Registers (IC 1_Sigma) """
+REG_PLLCALCULATOR_IC_1_Sigma_ADDR = 52480
+
+REG_PLLCALCULATOR_IC_1_Sigma_BYTE = 4
+
+REG_PLLCALCULATOR_IC_1_Sigma_VALUE = 412316860
+
+
+
+"""
+ *
+ * Control register's field descriptions
+ *
+ """
+
+""" VENDOR_ID (IC 1_Sigma) """
+R0_VENDOR_IC_1_Sigma = 65
+
+R0_VENDOR_IC_1_Sigma_MASK = 255
+
+R0_VENDOR_IC_1_Sigma_SHIFT = 0
+
+
+""" DEVICE_ID1 (IC 1_Sigma) """
+R1_DEVICE1_IC_1_Sigma = 23
+
+R1_DEVICE1_IC_1_Sigma_MASK = 255
+
+R1_DEVICE1_IC_1_Sigma_SHIFT = 0
+
+
+""" DEVICE_ID2 (IC 1_Sigma) """
+R2_DEVICE2_IC_1_Sigma = 135
+
+R2_DEVICE2_IC_1_Sigma_MASK = 255
+
+R2_DEVICE2_IC_1_Sigma_SHIFT = 0
+
+
+""" REVISION (IC 1_Sigma) """
+R3_REV_IC_1_Sigma = 0
+
+R3_REV_IC_1_Sigma_MASK = 255
+
+R3_REV_IC_1_Sigma_SHIFT = 0
+
+
+""" ADC_DAC_HP_PWR (IC 1_Sigma) """
+R4_ADC0_EN_IC_1_Sigma = 1
+
+R4_ADC1_EN_IC_1_Sigma = 1
+
+R4_ADC2_EN_IC_1_Sigma = 1
+
+R4_ADC3_EN_IC_1_Sigma = 1
+
+R4_PB0_EN_IC_1_Sigma = 1
+
+R4_PB1_EN_IC_1_Sigma = 1
+
+R4_ADC0_EN_IC_1_Sigma_MASK = 1
+
+R4_ADC0_EN_IC_1_Sigma_SHIFT = 0
+
+R4_ADC1_EN_IC_1_Sigma_MASK = 2
+
+R4_ADC1_EN_IC_1_Sigma_SHIFT = 1
+
+R4_ADC2_EN_IC_1_Sigma_MASK = 4
+
+R4_ADC2_EN_IC_1_Sigma_SHIFT = 2
+
+R4_ADC3_EN_IC_1_Sigma_MASK = 8
+
+R4_ADC3_EN_IC_1_Sigma_SHIFT = 3
+
+R4_PB0_EN_IC_1_Sigma_MASK = 16
+
+R4_PB0_EN_IC_1_Sigma_SHIFT = 4
+
+R4_PB1_EN_IC_1_Sigma_MASK = 32
+
+R4_PB1_EN_IC_1_Sigma_SHIFT = 5
+
+
+""" PLL_MB_PGA_PWR (IC 1_Sigma) """
+R5_PLL_EN_IC_1_Sigma = 1
+
+R5_XTAL_EN_IC_1_Sigma = 1
+
+R5_MBIAS0_EN_IC_1_Sigma = 0
+
+R5_MBIAS1_EN_IC_1_Sigma = 0
+
+R5_PGA0_EN_IC_1_Sigma = 0
+
+R5_PGA1_EN_IC_1_Sigma = 0
+
+R5_PGA2_EN_IC_1_Sigma = 0
+
+R5_PGA3_EN_IC_1_Sigma = 0
+
+R5_PLL_EN_IC_1_Sigma_MASK = 1
+
+R5_PLL_EN_IC_1_Sigma_SHIFT = 0
+
+R5_XTAL_EN_IC_1_Sigma_MASK = 2
+
+R5_XTAL_EN_IC_1_Sigma_SHIFT = 1
+
+R5_MBIAS0_EN_IC_1_Sigma_MASK = 4
+
+R5_MBIAS0_EN_IC_1_Sigma_SHIFT = 2
+
+R5_MBIAS1_EN_IC_1_Sigma_MASK = 8
+
+R5_MBIAS1_EN_IC_1_Sigma_SHIFT = 3
+
+R5_PGA0_EN_IC_1_Sigma_MASK = 16
+
+R5_PGA0_EN_IC_1_Sigma_SHIFT = 4
+
+R5_PGA1_EN_IC_1_Sigma_MASK = 32
+
+R5_PGA1_EN_IC_1_Sigma_SHIFT = 5
+
+R5_PGA2_EN_IC_1_Sigma_MASK = 64
+
+R5_PGA2_EN_IC_1_Sigma_SHIFT = 6
+
+R5_PGA3_EN_IC_1_Sigma_MASK = 128
+
+R5_PGA3_EN_IC_1_Sigma_SHIFT = 7
+
+
+""" DMIC_PWR (IC 1_Sigma) """
+R6_DMIC0_EN_IC_1_Sigma = 0
+
+R6_DMIC1_EN_IC_1_Sigma = 0
+
+R6_DMIC2_EN_IC_1_Sigma = 0
+
+R6_DMIC3_EN_IC_1_Sigma = 0
+
+R6_DMIC4_EN_IC_1_Sigma = 0
+
+R6_DMIC5_EN_IC_1_Sigma = 0
+
+R6_DMIC6_EN_IC_1_Sigma = 0
+
+R6_DMIC7_EN_IC_1_Sigma = 0
+
+R6_DMIC0_EN_IC_1_Sigma_MASK = 1
+
+R6_DMIC0_EN_IC_1_Sigma_SHIFT = 0
+
+R6_DMIC1_EN_IC_1_Sigma_MASK = 2
+
+R6_DMIC1_EN_IC_1_Sigma_SHIFT = 1
+
+R6_DMIC2_EN_IC_1_Sigma_MASK = 4
+
+R6_DMIC2_EN_IC_1_Sigma_SHIFT = 2
+
+R6_DMIC3_EN_IC_1_Sigma_MASK = 8
+
+R6_DMIC3_EN_IC_1_Sigma_SHIFT = 3
+
+R6_DMIC4_EN_IC_1_Sigma_MASK = 16
+
+R6_DMIC4_EN_IC_1_Sigma_SHIFT = 4
+
+R6_DMIC5_EN_IC_1_Sigma_MASK = 32
+
+R6_DMIC5_EN_IC_1_Sigma_SHIFT = 5
+
+R6_DMIC6_EN_IC_1_Sigma_MASK = 64
+
+R6_DMIC6_EN_IC_1_Sigma_SHIFT = 6
+
+R6_DMIC7_EN_IC_1_Sigma_MASK = 128
+
+R6_DMIC7_EN_IC_1_Sigma_SHIFT = 7
+
+
+""" SAI_CLK_PWR (IC 1_Sigma) """
+R7_SPT0_IN_EN_IC_1_Sigma = 0
+
+R7_SPT0_OUT_EN_IC_1_Sigma = 0
+
+R7_SPT1_IN_EN_IC_1_Sigma = 0
+
+R7_SPT1_OUT_EN_IC_1_Sigma = 0
+
+R7_DMIC_CLK0_EN_IC_1_Sigma = 0
+
+R7_DMIC_CLK1_EN_IC_1_Sigma = 0
+
+R7_PDM0_EN_IC_1_Sigma = 0
+
+R7_PDM1_EN_IC_1_Sigma = 0
+
+R7_SPT0_IN_EN_IC_1_Sigma_MASK = 1
+
+R7_SPT0_IN_EN_IC_1_Sigma_SHIFT = 0
+
+R7_SPT0_OUT_EN_IC_1_Sigma_MASK = 2
+
+R7_SPT0_OUT_EN_IC_1_Sigma_SHIFT = 1
+
+R7_SPT1_IN_EN_IC_1_Sigma_MASK = 4
+
+R7_SPT1_IN_EN_IC_1_Sigma_SHIFT = 2
+
+R7_SPT1_OUT_EN_IC_1_Sigma_MASK = 8
+
+R7_SPT1_OUT_EN_IC_1_Sigma_SHIFT = 3
+
+R7_DMIC_CLK0_EN_IC_1_Sigma_MASK = 16
+
+R7_DMIC_CLK0_EN_IC_1_Sigma_SHIFT = 4
+
+R7_DMIC_CLK1_EN_IC_1_Sigma_MASK = 32
+
+R7_DMIC_CLK1_EN_IC_1_Sigma_SHIFT = 5
+
+R7_PDM0_EN_IC_1_Sigma_MASK = 64
+
+R7_PDM0_EN_IC_1_Sigma_SHIFT = 6
+
+R7_PDM1_EN_IC_1_Sigma_MASK = 128
+
+R7_PDM1_EN_IC_1_Sigma_SHIFT = 7
+
+
+""" DSP_PWR (IC 1_Sigma) """
+R8_FDSP_EN_IC_1_Sigma = 1
+
+R8_SDSP_EN_IC_1_Sigma = 1
+
+R8_FDSP_EN_IC_1_Sigma_MASK = 1
+
+R8_FDSP_EN_IC_1_Sigma_SHIFT = 0
+
+R8_SDSP_EN_IC_1_Sigma_MASK = 16
+
+R8_SDSP_EN_IC_1_Sigma_SHIFT = 4
+
+
+""" ASRC_PWR (IC 1_Sigma) """
+R9_ASRCI0_EN_IC_1_Sigma = 0
+
+R9_ASRCI1_EN_IC_1_Sigma = 0
+
+R9_ASRCI2_EN_IC_1_Sigma = 0
+
+R9_ASRCI3_EN_IC_1_Sigma = 0
+
+R9_ASRCO0_EN_IC_1_Sigma = 0
+
+R9_ASRCO1_EN_IC_1_Sigma = 0
+
+R9_ASRCO2_EN_IC_1_Sigma = 0
+
+R9_ASRCO3_EN_IC_1_Sigma = 0
+
+R9_ASRCI0_EN_IC_1_Sigma_MASK = 1
+
+R9_ASRCI0_EN_IC_1_Sigma_SHIFT = 0
+
+R9_ASRCI1_EN_IC_1_Sigma_MASK = 2
+
+R9_ASRCI1_EN_IC_1_Sigma_SHIFT = 1
+
+R9_ASRCI2_EN_IC_1_Sigma_MASK = 4
+
+R9_ASRCI2_EN_IC_1_Sigma_SHIFT = 2
+
+R9_ASRCI3_EN_IC_1_Sigma_MASK = 8
+
+R9_ASRCI3_EN_IC_1_Sigma_SHIFT = 3
+
+R9_ASRCO0_EN_IC_1_Sigma_MASK = 16
+
+R9_ASRCO0_EN_IC_1_Sigma_SHIFT = 4
+
+R9_ASRCO1_EN_IC_1_Sigma_MASK = 32
+
+R9_ASRCO1_EN_IC_1_Sigma_SHIFT = 5
+
+R9_ASRCO2_EN_IC_1_Sigma_MASK = 64
+
+R9_ASRCO2_EN_IC_1_Sigma_SHIFT = 6
+
+R9_ASRCO3_EN_IC_1_Sigma_MASK = 128
+
+R9_ASRCO3_EN_IC_1_Sigma_SHIFT = 7
+
+
+""" FINT_PWR (IC 1_Sigma) """
+R10_FINT0_EN_IC_1_Sigma = 0
+
+R10_FINT1_EN_IC_1_Sigma = 0
+
+R10_FINT2_EN_IC_1_Sigma = 0
+
+R10_FINT3_EN_IC_1_Sigma = 0
+
+R10_FINT4_EN_IC_1_Sigma = 0
+
+R10_FINT5_EN_IC_1_Sigma = 0
+
+R10_FINT6_EN_IC_1_Sigma = 0
+
+R10_FINT7_EN_IC_1_Sigma = 0
+
+R10_FINT0_EN_IC_1_Sigma_MASK = 1
+
+R10_FINT0_EN_IC_1_Sigma_SHIFT = 0
+
+R10_FINT1_EN_IC_1_Sigma_MASK = 2
+
+R10_FINT1_EN_IC_1_Sigma_SHIFT = 1
+
+R10_FINT2_EN_IC_1_Sigma_MASK = 4
+
+R10_FINT2_EN_IC_1_Sigma_SHIFT = 2
+
+R10_FINT3_EN_IC_1_Sigma_MASK = 8
+
+R10_FINT3_EN_IC_1_Sigma_SHIFT = 3
+
+R10_FINT4_EN_IC_1_Sigma_MASK = 16
+
+R10_FINT4_EN_IC_1_Sigma_SHIFT = 4
+
+R10_FINT5_EN_IC_1_Sigma_MASK = 32
+
+R10_FINT5_EN_IC_1_Sigma_SHIFT = 5
+
+R10_FINT6_EN_IC_1_Sigma_MASK = 64
+
+R10_FINT6_EN_IC_1_Sigma_SHIFT = 6
+
+R10_FINT7_EN_IC_1_Sigma_MASK = 128
+
+R10_FINT7_EN_IC_1_Sigma_SHIFT = 7
+
+
+""" FDEC_PWR (IC 1_Sigma) """
+R11_FDEC0_EN_IC_1_Sigma = 0
+
+R11_FDEC1_EN_IC_1_Sigma = 0
+
+R11_FDEC2_EN_IC_1_Sigma = 0
+
+R11_FDEC3_EN_IC_1_Sigma = 0
+
+R11_FDEC4_EN_IC_1_Sigma = 0
+
+R11_FDEC5_EN_IC_1_Sigma = 0
+
+R11_FDEC6_EN_IC_1_Sigma = 0
+
+R11_FDEC7_EN_IC_1_Sigma = 0
+
+R11_FDEC0_EN_IC_1_Sigma_MASK = 1
+
+R11_FDEC0_EN_IC_1_Sigma_SHIFT = 0
+
+R11_FDEC1_EN_IC_1_Sigma_MASK = 2
+
+R11_FDEC1_EN_IC_1_Sigma_SHIFT = 1
+
+R11_FDEC2_EN_IC_1_Sigma_MASK = 4
+
+R11_FDEC2_EN_IC_1_Sigma_SHIFT = 2
+
+R11_FDEC3_EN_IC_1_Sigma_MASK = 8
+
+R11_FDEC3_EN_IC_1_Sigma_SHIFT = 3
+
+R11_FDEC4_EN_IC_1_Sigma_MASK = 16
+
+R11_FDEC4_EN_IC_1_Sigma_SHIFT = 4
+
+R11_FDEC5_EN_IC_1_Sigma_MASK = 32
+
+R11_FDEC5_EN_IC_1_Sigma_SHIFT = 5
+
+R11_FDEC6_EN_IC_1_Sigma_MASK = 64
+
+R11_FDEC6_EN_IC_1_Sigma_SHIFT = 6
+
+R11_FDEC7_EN_IC_1_Sigma_MASK = 128
+
+R11_FDEC7_EN_IC_1_Sigma_SHIFT = 7
+
+
+""" KEEPS (IC 1_Sigma) """
+R12_KEEP_FDSP_IC_1_Sigma = 0
+
+R12_KEEP_SDSP_IC_1_Sigma = 0
+
+R12_CM_KEEP_ALIVE_IC_1_Sigma = 1
+
+R12_KEEP_FDSP_IC_1_Sigma_MASK = 1
+
+R12_KEEP_FDSP_IC_1_Sigma_SHIFT = 0
+
+R12_KEEP_SDSP_IC_1_Sigma_MASK = 2
+
+R12_KEEP_SDSP_IC_1_Sigma_SHIFT = 1
+
+R12_CM_KEEP_ALIVE_IC_1_Sigma_MASK = 16
+
+R12_CM_KEEP_ALIVE_IC_1_Sigma_SHIFT = 4
+
+
+""" CHIP_PWR (IC 1_Sigma) """
+R13_POWER_EN_IC_1_Sigma = 1
+
+R13_MASTER_BLOCK_EN_IC_1_Sigma = 1
+
+R13_CM_STARTUP_OVER_IC_1_Sigma = 1
+
+R13_DLDO_CTRL_IC_1_Sigma = 1
+
+R13_POWER_EN_IC_1_Sigma_MASK = 1
+
+R13_POWER_EN_IC_1_Sigma_SHIFT = 0
+
+R13_MASTER_BLOCK_EN_IC_1_Sigma_MASK = 2
+
+R13_MASTER_BLOCK_EN_IC_1_Sigma_SHIFT = 1
+
+R13_CM_STARTUP_OVER_IC_1_Sigma_MASK = 4
+
+R13_CM_STARTUP_OVER_IC_1_Sigma_SHIFT = 2
+
+R13_DLDO_CTRL_IC_1_Sigma_MASK = 48
+
+R13_DLDO_CTRL_IC_1_Sigma_SHIFT = 4
+
+
+""" CLK_CTRL1 (IC 1_Sigma) """
+R14_PLL_SOURCE_IC_1_Sigma = 0
+
+R14_XTAL_MODE_IC_1_Sigma = 1
+
+R14_PLL_TYPE_IC_1_Sigma = 0
+
+R14_PLL_BYPASS_IC_1_Sigma = 0
+
+R14_SYNC_SOURCE_IC_1_Sigma = 3
+
+R14_PLL_SOURCE_IC_1_Sigma_MASK = 7
+
+R14_PLL_SOURCE_IC_1_Sigma_SHIFT = 0
+
+R14_XTAL_MODE_IC_1_Sigma_MASK = 8
+
+R14_XTAL_MODE_IC_1_Sigma_SHIFT = 3
+
+R14_PLL_TYPE_IC_1_Sigma_MASK = 16
+
+R14_PLL_TYPE_IC_1_Sigma_SHIFT = 4
+
+R14_PLL_BYPASS_IC_1_Sigma_MASK = 32
+
+R14_PLL_BYPASS_IC_1_Sigma_SHIFT = 5
+
+R14_SYNC_SOURCE_IC_1_Sigma_MASK = 192
+
+R14_SYNC_SOURCE_IC_1_Sigma_SHIFT = 6
+
+
+""" CLK_CTRL2 (IC 1_Sigma) """
+R15_PLL_INPUT_PRESCALER_IC_1_Sigma = 0
+
+R15_PLL_INPUT_PRESCALER_IC_1_Sigma_MASK = 7
+
+R15_PLL_INPUT_PRESCALER_IC_1_Sigma_SHIFT = 0
+
+
+""" CLK_CTRL3 (IC 1_Sigma) """
+R16_PLL_INTEGER_DIVIDER_IC_1_Sigma = 2
+
+R16_PLL_INTEGER_DIVIDER_IC_1_Sigma_MASK = 8191
+
+R16_PLL_INTEGER_DIVIDER_IC_1_Sigma_SHIFT = 0
+
+
+""" CLK_CTRL5 (IC 1_Sigma) """
+R17_PLL_NUMERATOR_IC_1_Sigma = 0
+
+R17_PLL_NUMERATOR_IC_1_Sigma_MASK = 65535
+
+R17_PLL_NUMERATOR_IC_1_Sigma_SHIFT = 0
+
+
+""" CLK_CTRL7 (IC 1_Sigma) """
+R18_PLL_DENOMINATOR_IC_1_Sigma = 0
+
+R18_PLL_DENOMINATOR_IC_1_Sigma_MASK = 65535
+
+R18_PLL_DENOMINATOR_IC_1_Sigma_SHIFT = 0
+
+
+""" CLK_CTRL9 (IC 1_Sigma) """
+R19_PLL_UPDATE_IC_1_Sigma = 0
+
+R19_PLL_UPDATE_IC_1_Sigma_MASK = 1
+
+R19_PLL_UPDATE_IC_1_Sigma_SHIFT = 0
+
+
+""" ADC_CTRL1 (IC 1_Sigma) """
+R20_ADC01_FS_IC_1_Sigma = 2
+
+R20_ADC01_DEC_ORDER_IC_1_Sigma = 0
+
+R20_ADC23_FS_IC_1_Sigma = 2
+
+R20_ADC23_DEC_ORDER_IC_1_Sigma = 0
+
+R20_ADC01_FS_IC_1_Sigma_MASK = 7
+
+R20_ADC01_FS_IC_1_Sigma_SHIFT = 0
+
+R20_ADC01_DEC_ORDER_IC_1_Sigma_MASK = 8
+
+R20_ADC01_DEC_ORDER_IC_1_Sigma_SHIFT = 3
+
+R20_ADC23_FS_IC_1_Sigma_MASK = 112
+
+R20_ADC23_FS_IC_1_Sigma_SHIFT = 4
+
+R20_ADC23_DEC_ORDER_IC_1_Sigma_MASK = 128
+
+R20_ADC23_DEC_ORDER_IC_1_Sigma_SHIFT = 7
+
+
+""" ADC_CTRL2 (IC 1_Sigma) """
+R21_ADC01_IBIAS_IC_1_Sigma = 0
+
+R21_ADC23_IBIAS_IC_1_Sigma = 0
+
+R21_ADC01_IBIAS_IC_1_Sigma_MASK = 7
+
+R21_ADC01_IBIAS_IC_1_Sigma_SHIFT = 0
+
+R21_ADC23_IBIAS_IC_1_Sigma_MASK = 112
+
+R21_ADC23_IBIAS_IC_1_Sigma_SHIFT = 4
+
+
+""" ADC_CTRL3 (IC 1_Sigma) """
+R22_ADC0_HPF_EN_IC_1_Sigma = 0
+
+R22_ADC1_HPF_EN_IC_1_Sigma = 0
+
+R22_ADC2_HPF_EN_IC_1_Sigma = 0
+
+R22_ADC3_HPF_EN_IC_1_Sigma = 0
+
+R22_ADC0_HPF_EN_IC_1_Sigma_MASK = 1
+
+R22_ADC0_HPF_EN_IC_1_Sigma_SHIFT = 0
+
+R22_ADC1_HPF_EN_IC_1_Sigma_MASK = 2
+
+R22_ADC1_HPF_EN_IC_1_Sigma_SHIFT = 1
+
+R22_ADC2_HPF_EN_IC_1_Sigma_MASK = 4
+
+R22_ADC2_HPF_EN_IC_1_Sigma_SHIFT = 2
+
+R22_ADC3_HPF_EN_IC_1_Sigma_MASK = 8
+
+R22_ADC3_HPF_EN_IC_1_Sigma_SHIFT = 3
+
+
+""" ADC_CTRL4 (IC 1_Sigma) """
+R23_ADC01_FCOMP_IC_1_Sigma = 0
+
+R23_ADC23_FCOMP_IC_1_Sigma = 0
+
+R23_ADC_HARD_VOL_IC_1_Sigma = 0
+
+R23_ADC_VOL_LINK_IC_1_Sigma = 0
+
+R23_ADC_VOL_ZC_IC_1_Sigma = 1
+
+R23_ADC01_FCOMP_IC_1_Sigma_MASK = 1
+
+R23_ADC01_FCOMP_IC_1_Sigma_SHIFT = 0
+
+R23_ADC23_FCOMP_IC_1_Sigma_MASK = 2
+
+R23_ADC23_FCOMP_IC_1_Sigma_SHIFT = 1
+
+R23_ADC_HARD_VOL_IC_1_Sigma_MASK = 16
+
+R23_ADC_HARD_VOL_IC_1_Sigma_SHIFT = 4
+
+R23_ADC_VOL_LINK_IC_1_Sigma_MASK = 32
+
+R23_ADC_VOL_LINK_IC_1_Sigma_SHIFT = 5
+
+R23_ADC_VOL_ZC_IC_1_Sigma_MASK = 64
+
+R23_ADC_VOL_ZC_IC_1_Sigma_SHIFT = 6
+
+
+""" ADC_CTRL5 (IC 1_Sigma) """
+R24_ADC_AIN_CHRG_TIME_IC_1_Sigma = 6
+
+R24_DIFF_INPUT_IC_1_Sigma = 0
+
+R24_ADC_CHOP_EN_IC_1_Sigma = 1
+
+R24_ADC_AIN_CHRG_TIME_IC_1_Sigma_MASK = 15
+
+R24_ADC_AIN_CHRG_TIME_IC_1_Sigma_SHIFT = 0
+
+R24_DIFF_INPUT_IC_1_Sigma_MASK = 16
+
+R24_DIFF_INPUT_IC_1_Sigma_SHIFT = 4
+
+R24_ADC_CHOP_EN_IC_1_Sigma_MASK = 32
+
+R24_ADC_CHOP_EN_IC_1_Sigma_SHIFT = 5
+
+
+""" ADC_MUTES (IC 1_Sigma) """
+R25_ADC0_MUTE_IC_1_Sigma = 0
+
+R25_ADC1_MUTE_IC_1_Sigma = 0
+
+R25_ADC2_MUTE_IC_1_Sigma = 0
+
+R25_ADC3_MUTE_IC_1_Sigma = 0
+
+R25_ADC0_MUTE_IC_1_Sigma_MASK = 1
+
+R25_ADC0_MUTE_IC_1_Sigma_SHIFT = 0
+
+R25_ADC1_MUTE_IC_1_Sigma_MASK = 2
+
+R25_ADC1_MUTE_IC_1_Sigma_SHIFT = 1
+
+R25_ADC2_MUTE_IC_1_Sigma_MASK = 4
+
+R25_ADC2_MUTE_IC_1_Sigma_SHIFT = 2
+
+R25_ADC3_MUTE_IC_1_Sigma_MASK = 8
+
+R25_ADC3_MUTE_IC_1_Sigma_SHIFT = 3
+
+
+""" ADC0_VOL (IC 1_Sigma) """
+R26_ADC0_VOL_IC_1_Sigma = 64
+
+R26_ADC0_VOL_IC_1_Sigma_MASK = 255
+
+R26_ADC0_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" ADC1_VOL (IC 1_Sigma) """
+R27_ADC1_VOL_IC_1_Sigma = 64
+
+R27_ADC1_VOL_IC_1_Sigma_MASK = 255
+
+R27_ADC1_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" ADC2_VOL (IC 1_Sigma) """
+R28_ADC2_VOL_IC_1_Sigma = 64
+
+R28_ADC2_VOL_IC_1_Sigma_MASK = 255
+
+R28_ADC2_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" ADC3_VOL (IC 1_Sigma) """
+R29_ADC3_VOL_IC_1_Sigma = 64
+
+R29_ADC3_VOL_IC_1_Sigma_MASK = 255
+
+R29_ADC3_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" PGA0_CTRL1 (IC 1_Sigma) """
+R30_PGA0_GAIN_COARSE_IC_1_Sigma = 0
+
+R30_PGA0_BOOST_IC_1_Sigma = 0
+
+R30_PGA0_SLEW_DIS_IC_1_Sigma = 0
+
+R30_PGA0_GAIN_COARSE_IC_1_Sigma_MASK = 63
+
+R30_PGA0_GAIN_COARSE_IC_1_Sigma_SHIFT = 0
+
+R30_PGA0_BOOST_IC_1_Sigma_MASK = 64
+
+R30_PGA0_BOOST_IC_1_Sigma_SHIFT = 6
+
+R30_PGA0_SLEW_DIS_IC_1_Sigma_MASK = 128
+
+R30_PGA0_SLEW_DIS_IC_1_Sigma_SHIFT = 7
+
+
+""" PGA0_CTRL2 (IC 1_Sigma) """
+R31_PGA0_GAIN_FINE_IC_1_Sigma = 0
+
+R31_PGA0_GAIN_FINE_IC_1_Sigma_MASK = 31
+
+R31_PGA0_GAIN_FINE_IC_1_Sigma_SHIFT = 0
+
+
+""" PGA1_CTRL1 (IC 1_Sigma) """
+R32_PGA1_GAIN_COARSE_IC_1_Sigma = 0
+
+R32_PGA1_BOOST_IC_1_Sigma = 0
+
+R32_PGA1_SLEW_DIS_IC_1_Sigma = 0
+
+R32_PGA1_GAIN_COARSE_IC_1_Sigma_MASK = 63
+
+R32_PGA1_GAIN_COARSE_IC_1_Sigma_SHIFT = 0
+
+R32_PGA1_BOOST_IC_1_Sigma_MASK = 64
+
+R32_PGA1_BOOST_IC_1_Sigma_SHIFT = 6
+
+R32_PGA1_SLEW_DIS_IC_1_Sigma_MASK = 128
+
+R32_PGA1_SLEW_DIS_IC_1_Sigma_SHIFT = 7
+
+
+""" PGA1_CTRL2 (IC 1_Sigma) """
+R33_PGA1_GAIN_FINE_IC_1_Sigma = 0
+
+R33_PGA1_GAIN_FINE_IC_1_Sigma_MASK = 31
+
+R33_PGA1_GAIN_FINE_IC_1_Sigma_SHIFT = 0
+
+
+""" PGA2_CTRL1 (IC 1_Sigma) """
+R34_PGA2_GAIN_COARSE_IC_1_Sigma = 0
+
+R34_PGA2_BOOST_IC_1_Sigma = 0
+
+R34_PGA2_SLEW_DIS_IC_1_Sigma = 0
+
+R34_PGA2_GAIN_COARSE_IC_1_Sigma_MASK = 63
+
+R34_PGA2_GAIN_COARSE_IC_1_Sigma_SHIFT = 0
+
+R34_PGA2_BOOST_IC_1_Sigma_MASK = 64
+
+R34_PGA2_BOOST_IC_1_Sigma_SHIFT = 6
+
+R34_PGA2_SLEW_DIS_IC_1_Sigma_MASK = 128
+
+R34_PGA2_SLEW_DIS_IC_1_Sigma_SHIFT = 7
+
+
+""" PGA2_CTRL2 (IC 1_Sigma) """
+R35_PGA2_GAIN_FINE_IC_1_Sigma = 0
+
+R35_PGA2_GAIN_FINE_IC_1_Sigma_MASK = 31
+
+R35_PGA2_GAIN_FINE_IC_1_Sigma_SHIFT = 0
+
+
+""" PGA3_CTRL1 (IC 1_Sigma) """
+R36_PGA3_GAIN_COARSE_IC_1_Sigma = 0
+
+R36_PGA3_BOOST_IC_1_Sigma = 0
+
+R36_PGA3_SLEW_DIS_IC_1_Sigma = 0
+
+R36_PGA3_GAIN_COARSE_IC_1_Sigma_MASK = 63
+
+R36_PGA3_GAIN_COARSE_IC_1_Sigma_SHIFT = 0
+
+R36_PGA3_BOOST_IC_1_Sigma_MASK = 64
+
+R36_PGA3_BOOST_IC_1_Sigma_SHIFT = 6
+
+R36_PGA3_SLEW_DIS_IC_1_Sigma_MASK = 128
+
+R36_PGA3_SLEW_DIS_IC_1_Sigma_SHIFT = 7
+
+
+""" PGA3_CTRL2 (IC 1_Sigma) """
+R37_PGA3_GAIN_FINE_IC_1_Sigma = 0
+
+R37_PGA3_GAIN_FINE_IC_1_Sigma_MASK = 31
+
+R37_PGA3_GAIN_FINE_IC_1_Sigma_SHIFT = 0
+
+
+""" PGA_CTRL (IC 1_Sigma) """
+R38_PGA_SLEW_RATE_IC_1_Sigma = 0
+
+R38_PGA_GAIN_LINK_IC_1_Sigma = 0
+
+R38_PGA_SLEW_RATE_IC_1_Sigma_MASK = 3
+
+R38_PGA_SLEW_RATE_IC_1_Sigma_SHIFT = 0
+
+R38_PGA_GAIN_LINK_IC_1_Sigma_MASK = 16
+
+R38_PGA_GAIN_LINK_IC_1_Sigma_SHIFT = 4
+
+
+""" MBIAS_CTRL (IC 1_Sigma) """
+R39_MBIAS0_LEVEL_IC_1_Sigma = 0
+
+R39_MBIAS1_LEVEL_IC_1_Sigma = 0
+
+R39_MBIAS_IBIAS_IC_1_Sigma = 0
+
+R39_MBIAS0_LEVEL_IC_1_Sigma_MASK = 1
+
+R39_MBIAS0_LEVEL_IC_1_Sigma_SHIFT = 0
+
+R39_MBIAS1_LEVEL_IC_1_Sigma_MASK = 2
+
+R39_MBIAS1_LEVEL_IC_1_Sigma_SHIFT = 1
+
+R39_MBIAS_IBIAS_IC_1_Sigma_MASK = 48
+
+R39_MBIAS_IBIAS_IC_1_Sigma_SHIFT = 4
+
+
+""" DMIC_CTRL1 (IC 1_Sigma) """
+R40_DMIC_CLK0_RATE_IC_1_Sigma = 3
+
+R40_DMIC_CLK1_RATE_IC_1_Sigma = 3
+
+R40_DMIC_CLK0_RATE_IC_1_Sigma_MASK = 7
+
+R40_DMIC_CLK0_RATE_IC_1_Sigma_SHIFT = 0
+
+R40_DMIC_CLK1_RATE_IC_1_Sigma_MASK = 112
+
+R40_DMIC_CLK1_RATE_IC_1_Sigma_SHIFT = 4
+
+
+""" DMIC_CTRL2 (IC 1_Sigma) """
+R41_DMIC01_FS_IC_1_Sigma = 1
+
+R41_DMIC01_HPF_EN_IC_1_Sigma = 0
+
+R41_DMIC01_DEC_ORDER_IC_1_Sigma = 0
+
+R41_DMIC01_FCOMP_IC_1_Sigma = 0
+
+R41_DMIC01_EDGE_IC_1_Sigma = 0
+
+R41_DMIC01_MAP_IC_1_Sigma = 0
+
+R41_DMIC01_FS_IC_1_Sigma_MASK = 7
+
+R41_DMIC01_FS_IC_1_Sigma_SHIFT = 0
+
+R41_DMIC01_HPF_EN_IC_1_Sigma_MASK = 8
+
+R41_DMIC01_HPF_EN_IC_1_Sigma_SHIFT = 3
+
+R41_DMIC01_DEC_ORDER_IC_1_Sigma_MASK = 16
+
+R41_DMIC01_DEC_ORDER_IC_1_Sigma_SHIFT = 4
+
+R41_DMIC01_FCOMP_IC_1_Sigma_MASK = 32
+
+R41_DMIC01_FCOMP_IC_1_Sigma_SHIFT = 5
+
+R41_DMIC01_EDGE_IC_1_Sigma_MASK = 64
+
+R41_DMIC01_EDGE_IC_1_Sigma_SHIFT = 6
+
+R41_DMIC01_MAP_IC_1_Sigma_MASK = 128
+
+R41_DMIC01_MAP_IC_1_Sigma_SHIFT = 7
+
+
+""" DMIC_CTRL3 (IC 1_Sigma) """
+R42_DMIC23_FS_IC_1_Sigma = 1
+
+R42_DMIC23_HPF_EN_IC_1_Sigma = 0
+
+R42_DMIC23_DEC_ORDER_IC_1_Sigma = 0
+
+R42_DMIC23_FCOMP_IC_1_Sigma = 0
+
+R42_DMIC23_EDGE_IC_1_Sigma = 0
+
+R42_DMIC23_MAP_IC_1_Sigma = 0
+
+R42_DMIC23_FS_IC_1_Sigma_MASK = 7
+
+R42_DMIC23_FS_IC_1_Sigma_SHIFT = 0
+
+R42_DMIC23_HPF_EN_IC_1_Sigma_MASK = 8
+
+R42_DMIC23_HPF_EN_IC_1_Sigma_SHIFT = 3
+
+R42_DMIC23_DEC_ORDER_IC_1_Sigma_MASK = 16
+
+R42_DMIC23_DEC_ORDER_IC_1_Sigma_SHIFT = 4
+
+R42_DMIC23_FCOMP_IC_1_Sigma_MASK = 32
+
+R42_DMIC23_FCOMP_IC_1_Sigma_SHIFT = 5
+
+R42_DMIC23_EDGE_IC_1_Sigma_MASK = 64
+
+R42_DMIC23_EDGE_IC_1_Sigma_SHIFT = 6
+
+R42_DMIC23_MAP_IC_1_Sigma_MASK = 128
+
+R42_DMIC23_MAP_IC_1_Sigma_SHIFT = 7
+
+
+""" DMIC_CTRL4 (IC 1_Sigma) """
+R43_DMIC45_FS_IC_1_Sigma = 1
+
+R43_DMIC45_HPF_EN_IC_1_Sigma = 0
+
+R43_DMIC45_DEC_ORDER_IC_1_Sigma = 0
+
+R43_DMIC45_FCOMP_IC_1_Sigma = 0
+
+R43_DMIC45_EDGE_IC_1_Sigma = 0
+
+R43_DMIC45_MAP_IC_1_Sigma = 0
+
+R43_DMIC45_FS_IC_1_Sigma_MASK = 7
+
+R43_DMIC45_FS_IC_1_Sigma_SHIFT = 0
+
+R43_DMIC45_HPF_EN_IC_1_Sigma_MASK = 8
+
+R43_DMIC45_HPF_EN_IC_1_Sigma_SHIFT = 3
+
+R43_DMIC45_DEC_ORDER_IC_1_Sigma_MASK = 16
+
+R43_DMIC45_DEC_ORDER_IC_1_Sigma_SHIFT = 4
+
+R43_DMIC45_FCOMP_IC_1_Sigma_MASK = 32
+
+R43_DMIC45_FCOMP_IC_1_Sigma_SHIFT = 5
+
+R43_DMIC45_EDGE_IC_1_Sigma_MASK = 64
+
+R43_DMIC45_EDGE_IC_1_Sigma_SHIFT = 6
+
+R43_DMIC45_MAP_IC_1_Sigma_MASK = 128
+
+R43_DMIC45_MAP_IC_1_Sigma_SHIFT = 7
+
+
+""" DMIC_CTRL5 (IC 1_Sigma) """
+R44_DMIC67_FS_IC_1_Sigma = 1
+
+R44_DMIC67_HPF_EN_IC_1_Sigma = 0
+
+R44_DMIC67_DEC_ORDER_IC_1_Sigma = 0
+
+R44_DMIC67_FCOMP_IC_1_Sigma = 0
+
+R44_DMIC67_EDGE_IC_1_Sigma = 0
+
+R44_DMIC67_MAP_IC_1_Sigma = 0
+
+R44_DMIC67_FS_IC_1_Sigma_MASK = 7
+
+R44_DMIC67_FS_IC_1_Sigma_SHIFT = 0
+
+R44_DMIC67_HPF_EN_IC_1_Sigma_MASK = 8
+
+R44_DMIC67_HPF_EN_IC_1_Sigma_SHIFT = 3
+
+R44_DMIC67_DEC_ORDER_IC_1_Sigma_MASK = 16
+
+R44_DMIC67_DEC_ORDER_IC_1_Sigma_SHIFT = 4
+
+R44_DMIC67_FCOMP_IC_1_Sigma_MASK = 32
+
+R44_DMIC67_FCOMP_IC_1_Sigma_SHIFT = 5
+
+R44_DMIC67_EDGE_IC_1_Sigma_MASK = 64
+
+R44_DMIC67_EDGE_IC_1_Sigma_SHIFT = 6
+
+R44_DMIC67_MAP_IC_1_Sigma_MASK = 128
+
+R44_DMIC67_MAP_IC_1_Sigma_SHIFT = 7
+
+
+""" DMIC_CTRL6 (IC 1_Sigma) """
+R45_DMIC_HARD_VOL_IC_1_Sigma = 0
+
+R45_DMIC_VOL_LINK_IC_1_Sigma = 0
+
+R45_DMIC_VOL_ZC_IC_1_Sigma = 1
+
+R45_DMIC_HARD_VOL_IC_1_Sigma_MASK = 1
+
+R45_DMIC_HARD_VOL_IC_1_Sigma_SHIFT = 0
+
+R45_DMIC_VOL_LINK_IC_1_Sigma_MASK = 2
+
+R45_DMIC_VOL_LINK_IC_1_Sigma_SHIFT = 1
+
+R45_DMIC_VOL_ZC_IC_1_Sigma_MASK = 4
+
+R45_DMIC_VOL_ZC_IC_1_Sigma_SHIFT = 2
+
+
+""" DMIC_MUTES (IC 1_Sigma) """
+R46_DMIC0_MUTE_IC_1_Sigma = 0
+
+R46_DMIC1_MUTE_IC_1_Sigma = 0
+
+R46_DMIC2_MUTE_IC_1_Sigma = 0
+
+R46_DMIC3_MUTE_IC_1_Sigma = 0
+
+R46_DMIC4_MUTE_IC_1_Sigma = 0
+
+R46_DMIC5_MUTE_IC_1_Sigma = 0
+
+R46_DMIC6_MUTE_IC_1_Sigma = 0
+
+R46_DMIC7_MUTE_IC_1_Sigma = 0
+
+R46_DMIC0_MUTE_IC_1_Sigma_MASK = 1
+
+R46_DMIC0_MUTE_IC_1_Sigma_SHIFT = 0
+
+R46_DMIC1_MUTE_IC_1_Sigma_MASK = 2
+
+R46_DMIC1_MUTE_IC_1_Sigma_SHIFT = 1
+
+R46_DMIC2_MUTE_IC_1_Sigma_MASK = 4
+
+R46_DMIC2_MUTE_IC_1_Sigma_SHIFT = 2
+
+R46_DMIC3_MUTE_IC_1_Sigma_MASK = 8
+
+R46_DMIC3_MUTE_IC_1_Sigma_SHIFT = 3
+
+R46_DMIC4_MUTE_IC_1_Sigma_MASK = 16
+
+R46_DMIC4_MUTE_IC_1_Sigma_SHIFT = 4
+
+R46_DMIC5_MUTE_IC_1_Sigma_MASK = 32
+
+R46_DMIC5_MUTE_IC_1_Sigma_SHIFT = 5
+
+R46_DMIC6_MUTE_IC_1_Sigma_MASK = 64
+
+R46_DMIC6_MUTE_IC_1_Sigma_SHIFT = 6
+
+R46_DMIC7_MUTE_IC_1_Sigma_MASK = 128
+
+R46_DMIC7_MUTE_IC_1_Sigma_SHIFT = 7
+
+
+""" DMIC_VOL0 (IC 1_Sigma) """
+R47_DMIC0_VOL_IC_1_Sigma = 64
+
+R47_DMIC0_VOL_IC_1_Sigma_MASK = 255
+
+R47_DMIC0_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" DMIC_VOL1 (IC 1_Sigma) """
+R48_DMIC1_VOL_IC_1_Sigma = 64
+
+R48_DMIC1_VOL_IC_1_Sigma_MASK = 255
+
+R48_DMIC1_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" DMIC_VOL2 (IC 1_Sigma) """
+R49_DMIC2_VOL_IC_1_Sigma = 64
+
+R49_DMIC2_VOL_IC_1_Sigma_MASK = 255
+
+R49_DMIC2_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" DMIC_VOL3 (IC 1_Sigma) """
+R50_DMIC3_VOL_IC_1_Sigma = 64
+
+R50_DMIC3_VOL_IC_1_Sigma_MASK = 255
+
+R50_DMIC3_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" DMIC_VOL4 (IC 1_Sigma) """
+R51_DMIC4_VOL_IC_1_Sigma = 64
+
+R51_DMIC4_VOL_IC_1_Sigma_MASK = 255
+
+R51_DMIC4_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" DMIC_VOL5 (IC 1_Sigma) """
+R52_DMIC5_VOL_IC_1_Sigma = 64
+
+R52_DMIC5_VOL_IC_1_Sigma_MASK = 255
+
+R52_DMIC5_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" DMIC_VOL6 (IC 1_Sigma) """
+R53_DMIC6_VOL_IC_1_Sigma = 64
+
+R53_DMIC6_VOL_IC_1_Sigma_MASK = 255
+
+R53_DMIC6_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" DMIC_VOL7 (IC 1_Sigma) """
+R54_DMIC7_VOL_IC_1_Sigma = 64
+
+R54_DMIC7_VOL_IC_1_Sigma_MASK = 255
+
+R54_DMIC7_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" DAC_CTRL1 (IC 1_Sigma) """
+R55_DAC_FS_IC_1_Sigma = 2
+
+R55_DAC_FCOMP_IC_1_Sigma = 0
+
+R55_DAC_IBIAS_IC_1_Sigma = 0
+
+R55_DAC_LPM_IC_1_Sigma = 0
+
+R55_DAC_MORE_FILT_IC_1_Sigma = 0
+
+R55_DAC_FS_IC_1_Sigma_MASK = 7
+
+R55_DAC_FS_IC_1_Sigma_SHIFT = 0
+
+R55_DAC_FCOMP_IC_1_Sigma_MASK = 8
+
+R55_DAC_FCOMP_IC_1_Sigma_SHIFT = 3
+
+R55_DAC_IBIAS_IC_1_Sigma_MASK = 48
+
+R55_DAC_IBIAS_IC_1_Sigma_SHIFT = 4
+
+R55_DAC_LPM_IC_1_Sigma_MASK = 64
+
+R55_DAC_LPM_IC_1_Sigma_SHIFT = 6
+
+R55_DAC_MORE_FILT_IC_1_Sigma_MASK = 128
+
+R55_DAC_MORE_FILT_IC_1_Sigma_SHIFT = 7
+
+
+""" DAC_CTRL2 (IC 1_Sigma) """
+R56_DAC_VOL_LINK_IC_1_Sigma = 0
+
+R56_DAC_HARD_VOL_IC_1_Sigma = 0
+
+R56_DAC_VOL_ZC_IC_1_Sigma = 0
+
+R56_DAC_LPM_II_IC_1_Sigma = 0
+
+R56_DAC0_HPF_EN_IC_1_Sigma = 0
+
+R56_DAC1_HPF_EN_IC_1_Sigma = 0
+
+R56_DAC0_MUTE_IC_1_Sigma = 0
+
+R56_DAC1_MUTE_IC_1_Sigma = 0
+
+R56_DAC_VOL_LINK_IC_1_Sigma_MASK = 1
+
+R56_DAC_VOL_LINK_IC_1_Sigma_SHIFT = 0
+
+R56_DAC_HARD_VOL_IC_1_Sigma_MASK = 2
+
+R56_DAC_HARD_VOL_IC_1_Sigma_SHIFT = 1
+
+R56_DAC_VOL_ZC_IC_1_Sigma_MASK = 4
+
+R56_DAC_VOL_ZC_IC_1_Sigma_SHIFT = 2
+
+R56_DAC_LPM_II_IC_1_Sigma_MASK = 8
+
+R56_DAC_LPM_II_IC_1_Sigma_SHIFT = 3
+
+R56_DAC0_HPF_EN_IC_1_Sigma_MASK = 16
+
+R56_DAC0_HPF_EN_IC_1_Sigma_SHIFT = 4
+
+R56_DAC1_HPF_EN_IC_1_Sigma_MASK = 32
+
+R56_DAC1_HPF_EN_IC_1_Sigma_SHIFT = 5
+
+R56_DAC0_MUTE_IC_1_Sigma_MASK = 64
+
+R56_DAC0_MUTE_IC_1_Sigma_SHIFT = 6
+
+R56_DAC1_MUTE_IC_1_Sigma_MASK = 128
+
+R56_DAC1_MUTE_IC_1_Sigma_SHIFT = 7
+
+
+""" DAC_VOL0 (IC 1_Sigma) """
+R57_DAC0_VOL_IC_1_Sigma = 64
+
+R57_DAC0_VOL_IC_1_Sigma_MASK = 255
+
+R57_DAC0_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" DAC_VOL1 (IC 1_Sigma) """
+R58_DAC1_VOL_IC_1_Sigma = 64
+
+R58_DAC1_VOL_IC_1_Sigma_MASK = 255
+
+R58_DAC1_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" DAC_ROUTE0 (IC 1_Sigma) """
+R59_DAC0_ROUTE_IC_1_Sigma = 48
+
+R59_DAC0_ROUTE_IC_1_Sigma_MASK = 127
+
+R59_DAC0_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" DAC_ROUTE1 (IC 1_Sigma) """
+R60_DAC1_ROUTE_IC_1_Sigma = 49
+
+R60_DAC1_ROUTE_IC_1_Sigma_MASK = 127
+
+R60_DAC1_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" HP_CTRL (IC 1_Sigma) """
+R61_HP0_MODE_IC_1_Sigma = 0
+
+R61_HP1_MODE_IC_1_Sigma = 0
+
+R61_HP0_MODE_IC_1_Sigma_MASK = 1
+
+R61_HP0_MODE_IC_1_Sigma_SHIFT = 0
+
+R61_HP1_MODE_IC_1_Sigma_MASK = 16
+
+R61_HP1_MODE_IC_1_Sigma_SHIFT = 4
+
+
+""" FDEC_CTRL1 (IC 1_Sigma) """
+R62_FDEC01_IN_FS_IC_1_Sigma = 5
+
+R62_FDEC01_OUT_FS_IC_1_Sigma = 2
+
+R62_FDEC01_IN_FS_IC_1_Sigma_MASK = 7
+
+R62_FDEC01_IN_FS_IC_1_Sigma_SHIFT = 0
+
+R62_FDEC01_OUT_FS_IC_1_Sigma_MASK = 112
+
+R62_FDEC01_OUT_FS_IC_1_Sigma_SHIFT = 4
+
+
+""" FDEC_CTRL2 (IC 1_Sigma) """
+R63_FDEC23_IN_FS_IC_1_Sigma = 5
+
+R63_FDEC23_OUT_FS_IC_1_Sigma = 2
+
+R63_FDEC23_IN_FS_IC_1_Sigma_MASK = 7
+
+R63_FDEC23_IN_FS_IC_1_Sigma_SHIFT = 0
+
+R63_FDEC23_OUT_FS_IC_1_Sigma_MASK = 112
+
+R63_FDEC23_OUT_FS_IC_1_Sigma_SHIFT = 4
+
+
+""" FDEC_CTRL3 (IC 1_Sigma) """
+R64_FDEC45_IN_FS_IC_1_Sigma = 5
+
+R64_FDEC45_OUT_FS_IC_1_Sigma = 2
+
+R64_FDEC45_IN_FS_IC_1_Sigma_MASK = 7
+
+R64_FDEC45_IN_FS_IC_1_Sigma_SHIFT = 0
+
+R64_FDEC45_OUT_FS_IC_1_Sigma_MASK = 112
+
+R64_FDEC45_OUT_FS_IC_1_Sigma_SHIFT = 4
+
+
+""" FDEC_CTRL4 (IC 1_Sigma) """
+R65_FDEC67_IN_FS_IC_1_Sigma = 5
+
+R65_FDEC67_OUT_FS_IC_1_Sigma = 2
+
+R65_FDEC67_IN_FS_IC_1_Sigma_MASK = 7
+
+R65_FDEC67_IN_FS_IC_1_Sigma_SHIFT = 0
+
+R65_FDEC67_OUT_FS_IC_1_Sigma_MASK = 112
+
+R65_FDEC67_OUT_FS_IC_1_Sigma_SHIFT = 4
+
+
+""" FDEC_ROUTE0 (IC 1_Sigma) """
+R66_FDEC0_ROUTE_IC_1_Sigma = 0
+
+R66_FDEC0_ROUTE_IC_1_Sigma_MASK = 63
+
+R66_FDEC0_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FDEC_ROUTE1 (IC 1_Sigma) """
+R67_FDEC1_ROUTE_IC_1_Sigma = 0
+
+R67_FDEC1_ROUTE_IC_1_Sigma_MASK = 63
+
+R67_FDEC1_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FDEC_ROUTE2 (IC 1_Sigma) """
+R68_FDEC2_ROUTE_IC_1_Sigma = 0
+
+R68_FDEC2_ROUTE_IC_1_Sigma_MASK = 63
+
+R68_FDEC2_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FDEC_ROUTE3 (IC 1_Sigma) """
+R69_FDEC3_ROUTE_IC_1_Sigma = 0
+
+R69_FDEC3_ROUTE_IC_1_Sigma_MASK = 63
+
+R69_FDEC3_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FDEC_ROUTE4 (IC 1_Sigma) """
+R70_FDEC4_ROUTE_IC_1_Sigma = 0
+
+R70_FDEC4_ROUTE_IC_1_Sigma_MASK = 63
+
+R70_FDEC4_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FDEC_ROUTE5 (IC 1_Sigma) """
+R71_FDEC5_ROUTE_IC_1_Sigma = 0
+
+R71_FDEC5_ROUTE_IC_1_Sigma_MASK = 63
+
+R71_FDEC5_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FDEC_ROUTE6 (IC 1_Sigma) """
+R72_FDEC6_ROUTE_IC_1_Sigma = 0
+
+R72_FDEC6_ROUTE_IC_1_Sigma_MASK = 63
+
+R72_FDEC6_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FDEC_ROUTE7 (IC 1_Sigma) """
+R73_FDEC7_ROUTE_IC_1_Sigma = 0
+
+R73_FDEC7_ROUTE_IC_1_Sigma_MASK = 63
+
+R73_FDEC7_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FINT_CTRL1 (IC 1_Sigma) """
+R74_FINT01_IN_FS_IC_1_Sigma = 2
+
+R74_FINT01_OUT_FS_IC_1_Sigma = 5
+
+R74_FINT01_IN_FS_IC_1_Sigma_MASK = 7
+
+R74_FINT01_IN_FS_IC_1_Sigma_SHIFT = 0
+
+R74_FINT01_OUT_FS_IC_1_Sigma_MASK = 112
+
+R74_FINT01_OUT_FS_IC_1_Sigma_SHIFT = 4
+
+
+""" FINT_CTRL2 (IC 1_Sigma) """
+R75_FINT23_IN_FS_IC_1_Sigma = 2
+
+R75_FINT23_OUT_FS_IC_1_Sigma = 5
+
+R75_FINT23_IN_FS_IC_1_Sigma_MASK = 7
+
+R75_FINT23_IN_FS_IC_1_Sigma_SHIFT = 0
+
+R75_FINT23_OUT_FS_IC_1_Sigma_MASK = 112
+
+R75_FINT23_OUT_FS_IC_1_Sigma_SHIFT = 4
+
+
+""" FINT_CTRL3 (IC 1_Sigma) """
+R76_FINT45_IN_FS_IC_1_Sigma = 2
+
+R76_FINT45_OUT_FS_IC_1_Sigma = 5
+
+R76_FINT45_IN_FS_IC_1_Sigma_MASK = 7
+
+R76_FINT45_IN_FS_IC_1_Sigma_SHIFT = 0
+
+R76_FINT45_OUT_FS_IC_1_Sigma_MASK = 112
+
+R76_FINT45_OUT_FS_IC_1_Sigma_SHIFT = 4
+
+
+""" FINT_CTRL4 (IC 1_Sigma) """
+R77_FINT67_IN_FS_IC_1_Sigma = 2
+
+R77_FINT67_OUT_FS_IC_1_Sigma = 5
+
+R77_FINT67_IN_FS_IC_1_Sigma_MASK = 7
+
+R77_FINT67_IN_FS_IC_1_Sigma_SHIFT = 0
+
+R77_FINT67_OUT_FS_IC_1_Sigma_MASK = 112
+
+R77_FINT67_OUT_FS_IC_1_Sigma_SHIFT = 4
+
+
+""" FINT_ROUTE0 (IC 1_Sigma) """
+R78_FINT0_ROUTE_IC_1_Sigma = 0
+
+R78_FINT0_ROUTE_IC_1_Sigma_MASK = 127
+
+R78_FINT0_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FINT_ROUTE1 (IC 1_Sigma) """
+R79_FINT1_ROUTE_IC_1_Sigma = 0
+
+R79_FINT1_ROUTE_IC_1_Sigma_MASK = 127
+
+R79_FINT1_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FINT_ROUTE2 (IC 1_Sigma) """
+R80_FINT2_ROUTE_IC_1_Sigma = 0
+
+R80_FINT2_ROUTE_IC_1_Sigma_MASK = 127
+
+R80_FINT2_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FINT_ROUTE3 (IC 1_Sigma) """
+R81_FINT3_ROUTE_IC_1_Sigma = 0
+
+R81_FINT3_ROUTE_IC_1_Sigma_MASK = 127
+
+R81_FINT3_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FINT_ROUTE4 (IC 1_Sigma) """
+R82_FINT4_ROUTE_IC_1_Sigma = 0
+
+R82_FINT4_ROUTE_IC_1_Sigma_MASK = 127
+
+R82_FINT4_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FINT_ROUTE5 (IC 1_Sigma) """
+R83_FINT5_ROUTE_IC_1_Sigma = 0
+
+R83_FINT5_ROUTE_IC_1_Sigma_MASK = 127
+
+R83_FINT5_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FINT_ROUTE6 (IC 1_Sigma) """
+R84_FINT6_ROUTE_IC_1_Sigma = 0
+
+R84_FINT6_ROUTE_IC_1_Sigma_MASK = 127
+
+R84_FINT6_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FINT_ROUTE7 (IC 1_Sigma) """
+R85_FINT7_ROUTE_IC_1_Sigma = 0
+
+R85_FINT7_ROUTE_IC_1_Sigma_MASK = 127
+
+R85_FINT7_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" ASRCI_CTRL (IC 1_Sigma) """
+R86_ASRCI_OUT_FS_IC_1_Sigma = 2
+
+R86_ASRCI_LPM_II_IC_1_Sigma = 0
+
+R86_ASRCI_SOURCE_IC_1_Sigma = 0
+
+R86_ASRCI_LPM_IC_1_Sigma = 0
+
+R86_ASRCI_VFILT_IC_1_Sigma = 0
+
+R86_ASRCI_MORE_FILT_IC_1_Sigma = 0
+
+R86_ASRCI_OUT_FS_IC_1_Sigma_MASK = 7
+
+R86_ASRCI_OUT_FS_IC_1_Sigma_SHIFT = 0
+
+R86_ASRCI_LPM_II_IC_1_Sigma_MASK = 8
+
+R86_ASRCI_LPM_II_IC_1_Sigma_SHIFT = 3
+
+R86_ASRCI_SOURCE_IC_1_Sigma_MASK = 16
+
+R86_ASRCI_SOURCE_IC_1_Sigma_SHIFT = 4
+
+R86_ASRCI_LPM_IC_1_Sigma_MASK = 32
+
+R86_ASRCI_LPM_IC_1_Sigma_SHIFT = 5
+
+R86_ASRCI_VFILT_IC_1_Sigma_MASK = 64
+
+R86_ASRCI_VFILT_IC_1_Sigma_SHIFT = 6
+
+R86_ASRCI_MORE_FILT_IC_1_Sigma_MASK = 128
+
+R86_ASRCI_MORE_FILT_IC_1_Sigma_SHIFT = 7
+
+
+""" ASRCI_ROUTE01 (IC 1_Sigma) """
+R87_ASRCI0_ROUTE_IC_1_Sigma = 0
+
+R87_ASRCI1_ROUTE_IC_1_Sigma = 0
+
+R87_ASRCI0_ROUTE_IC_1_Sigma_MASK = 15
+
+R87_ASRCI0_ROUTE_IC_1_Sigma_SHIFT = 0
+
+R87_ASRCI1_ROUTE_IC_1_Sigma_MASK = 240
+
+R87_ASRCI1_ROUTE_IC_1_Sigma_SHIFT = 4
+
+
+""" ASRCI_ROUTE23 (IC 1_Sigma) """
+R88_ASRCI2_ROUTE_IC_1_Sigma = 0
+
+R88_ASRCI3_ROUTE_IC_1_Sigma = 0
+
+R88_ASRCI2_ROUTE_IC_1_Sigma_MASK = 15
+
+R88_ASRCI2_ROUTE_IC_1_Sigma_SHIFT = 0
+
+R88_ASRCI3_ROUTE_IC_1_Sigma_MASK = 240
+
+R88_ASRCI3_ROUTE_IC_1_Sigma_SHIFT = 4
+
+
+""" ASRCO_CTRL (IC 1_Sigma) """
+R89_ASRCO_IN_FS_IC_1_Sigma = 2
+
+R89_ASRCO_LPM_II_IC_1_Sigma = 0
+
+R89_ASRCO_SAI_SEL_IC_1_Sigma = 0
+
+R89_ASRCO_LPM_IC_1_Sigma = 0
+
+R89_ASRCO_VFILT_IC_1_Sigma = 0
+
+R89_ASRCO_MORE_FILT_IC_1_Sigma = 0
+
+R89_ASRCO_IN_FS_IC_1_Sigma_MASK = 7
+
+R89_ASRCO_IN_FS_IC_1_Sigma_SHIFT = 0
+
+R89_ASRCO_LPM_II_IC_1_Sigma_MASK = 8
+
+R89_ASRCO_LPM_II_IC_1_Sigma_SHIFT = 3
+
+R89_ASRCO_SAI_SEL_IC_1_Sigma_MASK = 16
+
+R89_ASRCO_SAI_SEL_IC_1_Sigma_SHIFT = 4
+
+R89_ASRCO_LPM_IC_1_Sigma_MASK = 32
+
+R89_ASRCO_LPM_IC_1_Sigma_SHIFT = 5
+
+R89_ASRCO_VFILT_IC_1_Sigma_MASK = 64
+
+R89_ASRCO_VFILT_IC_1_Sigma_SHIFT = 6
+
+R89_ASRCO_MORE_FILT_IC_1_Sigma_MASK = 128
+
+R89_ASRCO_MORE_FILT_IC_1_Sigma_SHIFT = 7
+
+
+""" ASRCO_ROUTE0 (IC 1_Sigma) """
+R90_ASRCO0_ROUTE_IC_1_Sigma = 0
+
+R90_ASRCO0_ROUTE_IC_1_Sigma_MASK = 63
+
+R90_ASRCO0_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" ASRCO_ROUTE1 (IC 1_Sigma) """
+R91_ASRCO1_ROUTE_IC_1_Sigma = 0
+
+R91_ASRCO1_ROUTE_IC_1_Sigma_MASK = 63
+
+R91_ASRCO1_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" ASRCO_ROUTE2 (IC 1_Sigma) """
+R92_ASRCO2_ROUTE_IC_1_Sigma = 0
+
+R92_ASRCO2_ROUTE_IC_1_Sigma_MASK = 63
+
+R92_ASRCO2_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" ASRCO_ROUTE3 (IC 1_Sigma) """
+R93_ASRCO3_ROUTE_IC_1_Sigma = 0
+
+R93_ASRCO3_ROUTE_IC_1_Sigma_MASK = 63
+
+R93_ASRCO3_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" FDSP_RUN (IC 1_Sigma) """
+R94_FDSP_RUN_IC_1_Sigma = 1
+
+R94_FDSP_RUN_IC_1_Sigma_MASK = 1
+
+R94_FDSP_RUN_IC_1_Sigma_SHIFT = 0
+
+
+""" FDSP_CTRL1 (IC 1_Sigma) """
+R95_FDSP_BANK_SEL_IC_1_Sigma = 0
+
+R95_FDSP_RAMP_MODE_IC_1_Sigma = 0
+
+R95_FDSP_ZERO_STATE_IC_1_Sigma = 0
+
+R95_FDSP_RAMP_RATE_IC_1_Sigma = 7
+
+R95_FDSP_BANK_SEL_IC_1_Sigma_MASK = 3
+
+R95_FDSP_BANK_SEL_IC_1_Sigma_SHIFT = 0
+
+R95_FDSP_RAMP_MODE_IC_1_Sigma_MASK = 4
+
+R95_FDSP_RAMP_MODE_IC_1_Sigma_SHIFT = 2
+
+R95_FDSP_ZERO_STATE_IC_1_Sigma_MASK = 8
+
+R95_FDSP_ZERO_STATE_IC_1_Sigma_SHIFT = 3
+
+R95_FDSP_RAMP_RATE_IC_1_Sigma_MASK = 240
+
+R95_FDSP_RAMP_RATE_IC_1_Sigma_SHIFT = 4
+
+
+""" FDSP_CTRL2 (IC 1_Sigma) """
+R96_FDSP_LAMBDA_IC_1_Sigma = 63
+
+R96_FDSP_LAMBDA_IC_1_Sigma_MASK = 63
+
+R96_FDSP_LAMBDA_IC_1_Sigma_SHIFT = 0
+
+
+""" FDSP_CTRL3 (IC 1_Sigma) """
+R97_FDSP_COPY_AB_IC_1_Sigma = 0
+
+R97_FDSP_COPY_AC_IC_1_Sigma = 0
+
+R97_FDSP_COPY_BA_IC_1_Sigma = 0
+
+R97_FDSP_COPY_BC_IC_1_Sigma = 0
+
+R97_FDSP_COPY_CA_IC_1_Sigma = 0
+
+R97_FDSP_COPY_CB_IC_1_Sigma = 0
+
+R97_FDSP_COPY_AB_IC_1_Sigma_MASK = 1
+
+R97_FDSP_COPY_AB_IC_1_Sigma_SHIFT = 0
+
+R97_FDSP_COPY_AC_IC_1_Sigma_MASK = 2
+
+R97_FDSP_COPY_AC_IC_1_Sigma_SHIFT = 1
+
+R97_FDSP_COPY_BA_IC_1_Sigma_MASK = 4
+
+R97_FDSP_COPY_BA_IC_1_Sigma_SHIFT = 2
+
+R97_FDSP_COPY_BC_IC_1_Sigma_MASK = 8
+
+R97_FDSP_COPY_BC_IC_1_Sigma_SHIFT = 3
+
+R97_FDSP_COPY_CA_IC_1_Sigma_MASK = 16
+
+R97_FDSP_COPY_CA_IC_1_Sigma_SHIFT = 4
+
+R97_FDSP_COPY_CB_IC_1_Sigma_MASK = 32
+
+R97_FDSP_COPY_CB_IC_1_Sigma_SHIFT = 5
+
+
+""" FDSP_CTRL4 (IC 1_Sigma) """
+R98_FDSP_RATE_SOURCE_IC_1_Sigma = 0
+
+R98_FDSP_EXP_ATK_SPEED_IC_1_Sigma = 0
+
+R98_FDSP_RATE_SOURCE_IC_1_Sigma_MASK = 15
+
+R98_FDSP_RATE_SOURCE_IC_1_Sigma_SHIFT = 0
+
+R98_FDSP_EXP_ATK_SPEED_IC_1_Sigma_MASK = 16
+
+R98_FDSP_EXP_ATK_SPEED_IC_1_Sigma_SHIFT = 4
+
+
+""" FDSP_CTRL5 (IC 1_Sigma) """
+R99_FDSP_RATE_DIV_IC_1_Sigma = 127
+
+R99_FDSP_RATE_DIV_IC_1_Sigma_MASK = 65535
+
+R99_FDSP_RATE_DIV_IC_1_Sigma_SHIFT = 0
+
+
+""" FDSP_CTRL7 (IC 1_Sigma) """
+R100_FDSP_MOD_N_IC_1_Sigma = 0
+
+R100_FDSP_MOD_N_IC_1_Sigma_MASK = 63
+
+R100_FDSP_MOD_N_IC_1_Sigma_SHIFT = 0
+
+
+""" FDSP_CTRL8 (IC 1_Sigma) """
+R101_FDSP_REG_COND0_IC_1_Sigma = 0
+
+R101_FDSP_REG_COND1_IC_1_Sigma = 0
+
+R101_FDSP_REG_COND2_IC_1_Sigma = 0
+
+R101_FDSP_REG_COND3_IC_1_Sigma = 0
+
+R101_FDSP_REG_COND4_IC_1_Sigma = 0
+
+R101_FDSP_REG_COND5_IC_1_Sigma = 0
+
+R101_FDSP_REG_COND6_IC_1_Sigma = 0
+
+R101_FDSP_REG_COND7_IC_1_Sigma = 0
+
+R101_FDSP_REG_COND0_IC_1_Sigma_MASK = 1
+
+R101_FDSP_REG_COND0_IC_1_Sigma_SHIFT = 0
+
+R101_FDSP_REG_COND1_IC_1_Sigma_MASK = 2
+
+R101_FDSP_REG_COND1_IC_1_Sigma_SHIFT = 1
+
+R101_FDSP_REG_COND2_IC_1_Sigma_MASK = 4
+
+R101_FDSP_REG_COND2_IC_1_Sigma_SHIFT = 2
+
+R101_FDSP_REG_COND3_IC_1_Sigma_MASK = 8
+
+R101_FDSP_REG_COND3_IC_1_Sigma_SHIFT = 3
+
+R101_FDSP_REG_COND4_IC_1_Sigma_MASK = 16
+
+R101_FDSP_REG_COND4_IC_1_Sigma_SHIFT = 4
+
+R101_FDSP_REG_COND5_IC_1_Sigma_MASK = 32
+
+R101_FDSP_REG_COND5_IC_1_Sigma_SHIFT = 5
+
+R101_FDSP_REG_COND6_IC_1_Sigma_MASK = 64
+
+R101_FDSP_REG_COND6_IC_1_Sigma_SHIFT = 6
+
+R101_FDSP_REG_COND7_IC_1_Sigma_MASK = 128
+
+R101_FDSP_REG_COND7_IC_1_Sigma_SHIFT = 7
+
+
+""" FDSP_SL_ADDR (IC 1_Sigma) """
+R102_FDSP_SL_ADDR_IC_1_Sigma = 0
+
+R102_FDSP_SL_ADDR_IC_1_Sigma_MASK = 63
+
+R102_FDSP_SL_ADDR_IC_1_Sigma_SHIFT = 0
+
+
+""" FDSP_SL_P0 (IC 1_Sigma) """
+R103_FDSP_SL_P0_IC_1_Sigma = 0
+
+R103_FDSP_SL_P0_IC_1_Sigma_MASK = 4294967295
+
+R103_FDSP_SL_P0_IC_1_Sigma_SHIFT = 0
+
+
+""" FDSP_SL_P1 (IC 1_Sigma) """
+R104_FDSP_SL_P1_IC_1_Sigma = 0
+
+R104_FDSP_SL_P1_IC_1_Sigma_MASK = 4294967295
+
+R104_FDSP_SL_P1_IC_1_Sigma_SHIFT = 0
+
+
+""" FDSP_SL_P2 (IC 1_Sigma) """
+R105_FDSP_SL_P2_IC_1_Sigma = 0
+
+R105_FDSP_SL_P2_IC_1_Sigma_MASK = 4294967295
+
+R105_FDSP_SL_P2_IC_1_Sigma_SHIFT = 0
+
+
+""" FDSP_SL_P3 (IC 1_Sigma) """
+R106_FDSP_SL_P3_IC_1_Sigma = 0
+
+R106_FDSP_SL_P3_IC_1_Sigma_MASK = 4294967295
+
+R106_FDSP_SL_P3_IC_1_Sigma_SHIFT = 0
+
+
+""" FDSP_SL_P4 (IC 1_Sigma) """
+R107_FDSP_SL_P4_IC_1_Sigma = 0
+
+R107_FDSP_SL_P4_IC_1_Sigma_MASK = 4294967295
+
+R107_FDSP_SL_P4_IC_1_Sigma_SHIFT = 0
+
+
+""" FDSP_SL_UPDATE (IC 1_Sigma) """
+R108_FDSP_SL_UPDATE_IC_1_Sigma = 0
+
+R108_FDSP_SL_UPDATE_IC_1_Sigma_MASK = 1
+
+R108_FDSP_SL_UPDATE_IC_1_Sigma_SHIFT = 0
+
+
+""" SDSP_CTRL1 (IC 1_Sigma) """
+R109_SDSP_RATE_SOURCE_IC_1_Sigma = 1
+
+R109_SDSP_SPEED_IC_1_Sigma = 0
+
+R109_SDSP_RATE_SOURCE_IC_1_Sigma_MASK = 15
+
+R109_SDSP_RATE_SOURCE_IC_1_Sigma_SHIFT = 0
+
+R109_SDSP_SPEED_IC_1_Sigma_MASK = 16
+
+R109_SDSP_SPEED_IC_1_Sigma_SHIFT = 4
+
+
+""" SDSP_CTRL2 (IC 1_Sigma) """
+R110_SDSP_RUN_IC_1_Sigma = 1
+
+R110_SDSP_RUN_IC_1_Sigma_MASK = 1
+
+R110_SDSP_RUN_IC_1_Sigma_SHIFT = 0
+
+
+""" SDSP_CTRL3 (IC 1_Sigma) """
+R111_SDSP_WDOG_EN_IC_1_Sigma = 0
+
+R111_SDSP_WDOG_MUTE_IC_1_Sigma = 0
+
+R111_SDSP_WDOG_EN_IC_1_Sigma_MASK = 1
+
+R111_SDSP_WDOG_EN_IC_1_Sigma_SHIFT = 0
+
+R111_SDSP_WDOG_MUTE_IC_1_Sigma_MASK = 16
+
+R111_SDSP_WDOG_MUTE_IC_1_Sigma_SHIFT = 4
+
+
+""" SDSP_CTRL4 (IC 1_Sigma) """
+R112_SDSP_WDOG_VAL_IC_1_Sigma = 0
+
+R112_SDSP_WDOG_VAL_IC_1_Sigma_MASK = 16777215
+
+R112_SDSP_WDOG_VAL_IC_1_Sigma_SHIFT = 0
+
+
+""" SDSP_CTRL7 (IC 1_Sigma) """
+R113_SDSP_MOD_DATA_MEM_IC_1_Sigma = 2036
+
+R113_SDSP_MOD_DATA_MEM_IC_1_Sigma_MASK = 4095
+
+R113_SDSP_MOD_DATA_MEM_IC_1_Sigma_SHIFT = 0
+
+
+""" SDSP_CTRL9 (IC 1_Sigma) """
+R114_SDSP_RATE_DIV_IC_1_Sigma = 2047
+
+R114_SDSP_RATE_DIV_IC_1_Sigma_MASK = 65535
+
+R114_SDSP_RATE_DIV_IC_1_Sigma_SHIFT = 0
+
+
+""" SDSP_CTRL11 (IC 1_Sigma) """
+R115_SDSP_INT0_IC_1_Sigma = 0
+
+R115_SDSP_INT1_IC_1_Sigma = 0
+
+R115_SDSP_INT2_IC_1_Sigma = 0
+
+R115_SDSP_INT3_IC_1_Sigma = 0
+
+R115_SDSP_INT0_IC_1_Sigma_MASK = 1
+
+R115_SDSP_INT0_IC_1_Sigma_SHIFT = 0
+
+R115_SDSP_INT1_IC_1_Sigma_MASK = 2
+
+R115_SDSP_INT1_IC_1_Sigma_SHIFT = 1
+
+R115_SDSP_INT2_IC_1_Sigma_MASK = 4
+
+R115_SDSP_INT2_IC_1_Sigma_SHIFT = 2
+
+R115_SDSP_INT3_IC_1_Sigma_MASK = 8
+
+R115_SDSP_INT3_IC_1_Sigma_SHIFT = 3
+
+
+""" MP_CTRL1 (IC 1_Sigma) """
+R116_MP0_MODE_IC_1_Sigma = 0
+
+R116_MP1_MODE_IC_1_Sigma = 0
+
+R116_MP0_MODE_IC_1_Sigma_MASK = 15
+
+R116_MP0_MODE_IC_1_Sigma_SHIFT = 0
+
+R116_MP1_MODE_IC_1_Sigma_MASK = 240
+
+R116_MP1_MODE_IC_1_Sigma_SHIFT = 4
+
+
+""" MP_CTRL2 (IC 1_Sigma) """
+R117_MP2_MODE_IC_1_Sigma = 0
+
+R117_MP3_MODE_IC_1_Sigma = 0
+
+R117_MP2_MODE_IC_1_Sigma_MASK = 15
+
+R117_MP2_MODE_IC_1_Sigma_SHIFT = 0
+
+R117_MP3_MODE_IC_1_Sigma_MASK = 240
+
+R117_MP3_MODE_IC_1_Sigma_SHIFT = 4
+
+
+""" MP_CTRL3 (IC 1_Sigma) """
+R118_MP4_MODE_IC_1_Sigma = 0
+
+R118_MP5_MODE_IC_1_Sigma = 0
+
+R118_MP4_MODE_IC_1_Sigma_MASK = 15
+
+R118_MP4_MODE_IC_1_Sigma_SHIFT = 0
+
+R118_MP5_MODE_IC_1_Sigma_MASK = 240
+
+R118_MP5_MODE_IC_1_Sigma_SHIFT = 4
+
+
+""" MP_CTRL4 (IC 1_Sigma) """
+R119_MP6_MODE_IC_1_Sigma = 0
+
+R119_MP7_MODE_IC_1_Sigma = 0
+
+R119_MP6_MODE_IC_1_Sigma_MASK = 15
+
+R119_MP6_MODE_IC_1_Sigma_SHIFT = 0
+
+R119_MP7_MODE_IC_1_Sigma_MASK = 240
+
+R119_MP7_MODE_IC_1_Sigma_SHIFT = 4
+
+
+""" MP_CTRL5 (IC 1_Sigma) """
+R120_MP8_MODE_IC_1_Sigma = 0
+
+R120_MP9_MODE_IC_1_Sigma = 0
+
+R120_MP8_MODE_IC_1_Sigma_MASK = 15
+
+R120_MP8_MODE_IC_1_Sigma_SHIFT = 0
+
+R120_MP9_MODE_IC_1_Sigma_MASK = 240
+
+R120_MP9_MODE_IC_1_Sigma_SHIFT = 4
+
+
+""" MP_CTRL6 (IC 1_Sigma) """
+R121_MP10_MODE_IC_1_Sigma = 0
+
+R121_MP11_MODE_IC_1_Sigma = 0
+
+R121_MP10_MODE_IC_1_Sigma_MASK = 15
+
+R121_MP10_MODE_IC_1_Sigma_SHIFT = 0
+
+R121_MP11_MODE_IC_1_Sigma_MASK = 240
+
+R121_MP11_MODE_IC_1_Sigma_SHIFT = 4
+
+
+""" MP_CTRL7 (IC 1_Sigma) """
+R122_GPI_DB_IC_1_Sigma = 0
+
+R122_MCLKO_RATE_IC_1_Sigma = 1
+
+R122_GPI_DB_IC_1_Sigma_MASK = 7
+
+R122_GPI_DB_IC_1_Sigma_SHIFT = 0
+
+R122_MCLKO_RATE_IC_1_Sigma_MASK = 112
+
+R122_MCLKO_RATE_IC_1_Sigma_SHIFT = 4
+
+
+""" MP_CTRL8 (IC 1_Sigma) """
+R123_GPIO0_OUT_IC_1_Sigma = 0
+
+R123_GPIO1_OUT_IC_1_Sigma = 0
+
+R123_GPIO2_OUT_IC_1_Sigma = 0
+
+R123_GPIO3_OUT_IC_1_Sigma = 0
+
+R123_GPIO4_OUT_IC_1_Sigma = 0
+
+R123_GPIO5_OUT_IC_1_Sigma = 0
+
+R123_GPIO6_OUT_IC_1_Sigma = 0
+
+R123_GPIO7_OUT_IC_1_Sigma = 0
+
+R123_GPIO0_OUT_IC_1_Sigma_MASK = 1
+
+R123_GPIO0_OUT_IC_1_Sigma_SHIFT = 0
+
+R123_GPIO1_OUT_IC_1_Sigma_MASK = 2
+
+R123_GPIO1_OUT_IC_1_Sigma_SHIFT = 1
+
+R123_GPIO2_OUT_IC_1_Sigma_MASK = 4
+
+R123_GPIO2_OUT_IC_1_Sigma_SHIFT = 2
+
+R123_GPIO3_OUT_IC_1_Sigma_MASK = 8
+
+R123_GPIO3_OUT_IC_1_Sigma_SHIFT = 3
+
+R123_GPIO4_OUT_IC_1_Sigma_MASK = 16
+
+R123_GPIO4_OUT_IC_1_Sigma_SHIFT = 4
+
+R123_GPIO5_OUT_IC_1_Sigma_MASK = 32
+
+R123_GPIO5_OUT_IC_1_Sigma_SHIFT = 5
+
+R123_GPIO6_OUT_IC_1_Sigma_MASK = 64
+
+R123_GPIO6_OUT_IC_1_Sigma_SHIFT = 6
+
+R123_GPIO7_OUT_IC_1_Sigma_MASK = 128
+
+R123_GPIO7_OUT_IC_1_Sigma_SHIFT = 7
+
+
+""" MP_CTRL9 (IC 1_Sigma) """
+R124_GPIO8_OUT_IC_1_Sigma = 0
+
+R124_GPIO9_OUT_IC_1_Sigma = 0
+
+R124_GPIO10_OUT_IC_1_Sigma = 0
+
+R124_GPIO11_OUT_IC_1_Sigma = 0
+
+R124_GPIO12_OUT_IC_1_Sigma = 0
+
+R124_GPIO8_OUT_IC_1_Sigma_MASK = 1
+
+R124_GPIO8_OUT_IC_1_Sigma_SHIFT = 0
+
+R124_GPIO9_OUT_IC_1_Sigma_MASK = 2
+
+R124_GPIO9_OUT_IC_1_Sigma_SHIFT = 1
+
+R124_GPIO10_OUT_IC_1_Sigma_MASK = 4
+
+R124_GPIO10_OUT_IC_1_Sigma_SHIFT = 2
+
+R124_GPIO11_OUT_IC_1_Sigma_MASK = 8
+
+R124_GPIO11_OUT_IC_1_Sigma_SHIFT = 3
+
+R124_GPIO12_OUT_IC_1_Sigma_MASK = 16
+
+R124_GPIO12_OUT_IC_1_Sigma_SHIFT = 4
+
+
+""" FSYNC0_CTRL (IC 1_Sigma) """
+R125_FSYNC0_DRIVE_IC_1_Sigma = 1
+
+R125_FSYNC0_SLEW_IC_1_Sigma = 1
+
+R125_FSYNC0_PULL_EN_IC_1_Sigma = 0
+
+R125_FSYNC0_PULL_SEL_IC_1_Sigma = 0
+
+R125_FSYNC0_DRIVE_IC_1_Sigma_MASK = 3
+
+R125_FSYNC0_DRIVE_IC_1_Sigma_SHIFT = 0
+
+R125_FSYNC0_SLEW_IC_1_Sigma_MASK = 4
+
+R125_FSYNC0_SLEW_IC_1_Sigma_SHIFT = 2
+
+R125_FSYNC0_PULL_EN_IC_1_Sigma_MASK = 16
+
+R125_FSYNC0_PULL_EN_IC_1_Sigma_SHIFT = 4
+
+R125_FSYNC0_PULL_SEL_IC_1_Sigma_MASK = 32
+
+R125_FSYNC0_PULL_SEL_IC_1_Sigma_SHIFT = 5
+
+
+""" BCLK0_CTRL (IC 1_Sigma) """
+R126_BCLK0_DRIVE_IC_1_Sigma = 1
+
+R126_BCLK0_SLEW_IC_1_Sigma = 1
+
+R126_BCLK0_PULL_EN_IC_1_Sigma = 0
+
+R126_BCLK0_PULL_SEL_IC_1_Sigma = 0
+
+R126_BCLK0_DRIVE_IC_1_Sigma_MASK = 3
+
+R126_BCLK0_DRIVE_IC_1_Sigma_SHIFT = 0
+
+R126_BCLK0_SLEW_IC_1_Sigma_MASK = 4
+
+R126_BCLK0_SLEW_IC_1_Sigma_SHIFT = 2
+
+R126_BCLK0_PULL_EN_IC_1_Sigma_MASK = 16
+
+R126_BCLK0_PULL_EN_IC_1_Sigma_SHIFT = 4
+
+R126_BCLK0_PULL_SEL_IC_1_Sigma_MASK = 32
+
+R126_BCLK0_PULL_SEL_IC_1_Sigma_SHIFT = 5
+
+
+""" SDATAO0_CTRL (IC 1_Sigma) """
+R127_SDATAO0_DRIVE_IC_1_Sigma = 0
+
+R127_SDATAO0_SLEW_IC_1_Sigma = 1
+
+R127_SDATAO0_DRIVE_IC_1_Sigma_MASK = 1
+
+R127_SDATAO0_DRIVE_IC_1_Sigma_SHIFT = 0
+
+R127_SDATAO0_SLEW_IC_1_Sigma_MASK = 4
+
+R127_SDATAO0_SLEW_IC_1_Sigma_SHIFT = 2
+
+
+""" SDATAI0_CTRL (IC 1_Sigma) """
+R128_SDATAI0_DRIVE_IC_1_Sigma = 1
+
+R128_SDATAI0_SLEW_IC_1_Sigma = 1
+
+R128_SDATAI0_PULL_EN_IC_1_Sigma = 0
+
+R128_SDATAI0_PULL_SEL_IC_1_Sigma = 0
+
+R128_SDATAI0_DRIVE_IC_1_Sigma_MASK = 3
+
+R128_SDATAI0_DRIVE_IC_1_Sigma_SHIFT = 0
+
+R128_SDATAI0_SLEW_IC_1_Sigma_MASK = 4
+
+R128_SDATAI0_SLEW_IC_1_Sigma_SHIFT = 2
+
+R128_SDATAI0_PULL_EN_IC_1_Sigma_MASK = 16
+
+R128_SDATAI0_PULL_EN_IC_1_Sigma_SHIFT = 4
+
+R128_SDATAI0_PULL_SEL_IC_1_Sigma_MASK = 32
+
+R128_SDATAI0_PULL_SEL_IC_1_Sigma_SHIFT = 5
+
+
+""" FSYNC1_CTRL (IC 1_Sigma) """
+R129_FSYNC1_DRIVE_IC_1_Sigma = 1
+
+R129_FSYNC1_SLEW_IC_1_Sigma = 1
+
+R129_FSYNC1_PULL_EN_IC_1_Sigma = 0
+
+R129_FSYNC1_PULL_SEL_IC_1_Sigma = 0
+
+R129_FSYNC1_DRIVE_IC_1_Sigma_MASK = 3
+
+R129_FSYNC1_DRIVE_IC_1_Sigma_SHIFT = 0
+
+R129_FSYNC1_SLEW_IC_1_Sigma_MASK = 4
+
+R129_FSYNC1_SLEW_IC_1_Sigma_SHIFT = 2
+
+R129_FSYNC1_PULL_EN_IC_1_Sigma_MASK = 16
+
+R129_FSYNC1_PULL_EN_IC_1_Sigma_SHIFT = 4
+
+R129_FSYNC1_PULL_SEL_IC_1_Sigma_MASK = 32
+
+R129_FSYNC1_PULL_SEL_IC_1_Sigma_SHIFT = 5
+
+
+""" BCLK1_CTRL (IC 1_Sigma) """
+R130_BCLK1_DRIVE_IC_1_Sigma = 1
+
+R130_BCLK1_SLEW_IC_1_Sigma = 1
+
+R130_BCLK1_PULL_EN_IC_1_Sigma = 0
+
+R130_BCLK1_PULL_SEL_IC_1_Sigma = 0
+
+R130_BCLK1_DRIVE_IC_1_Sigma_MASK = 3
+
+R130_BCLK1_DRIVE_IC_1_Sigma_SHIFT = 0
+
+R130_BCLK1_SLEW_IC_1_Sigma_MASK = 4
+
+R130_BCLK1_SLEW_IC_1_Sigma_SHIFT = 2
+
+R130_BCLK1_PULL_EN_IC_1_Sigma_MASK = 16
+
+R130_BCLK1_PULL_EN_IC_1_Sigma_SHIFT = 4
+
+R130_BCLK1_PULL_SEL_IC_1_Sigma_MASK = 32
+
+R130_BCLK1_PULL_SEL_IC_1_Sigma_SHIFT = 5
+
+
+""" SDATAO1_CTRL (IC 1_Sigma) """
+R131_SDATAO1_DRIVE_IC_1_Sigma = 1
+
+R131_SDATAO1_SLEW_IC_1_Sigma = 1
+
+R131_SDATAO1_PULL_EN_IC_1_Sigma = 0
+
+R131_SDATAO1_PULL_SEL_IC_1_Sigma = 0
+
+R131_SDATAO1_DRIVE_IC_1_Sigma_MASK = 3
+
+R131_SDATAO1_DRIVE_IC_1_Sigma_SHIFT = 0
+
+R131_SDATAO1_SLEW_IC_1_Sigma_MASK = 4
+
+R131_SDATAO1_SLEW_IC_1_Sigma_SHIFT = 2
+
+R131_SDATAO1_PULL_EN_IC_1_Sigma_MASK = 16
+
+R131_SDATAO1_PULL_EN_IC_1_Sigma_SHIFT = 4
+
+R131_SDATAO1_PULL_SEL_IC_1_Sigma_MASK = 32
+
+R131_SDATAO1_PULL_SEL_IC_1_Sigma_SHIFT = 5
+
+
+""" SDATAI1_CTRL (IC 1_Sigma) """
+R132_SDATAI1_DRIVE_IC_1_Sigma = 1
+
+R132_SDATAI1_SLEW_IC_1_Sigma = 1
+
+R132_SDATAI1_PULL_EN_IC_1_Sigma = 0
+
+R132_SDATAI1_PULL_SEL_IC_1_Sigma = 0
+
+R132_SDATAI1_DRIVE_IC_1_Sigma_MASK = 3
+
+R132_SDATAI1_DRIVE_IC_1_Sigma_SHIFT = 0
+
+R132_SDATAI1_SLEW_IC_1_Sigma_MASK = 4
+
+R132_SDATAI1_SLEW_IC_1_Sigma_SHIFT = 2
+
+R132_SDATAI1_PULL_EN_IC_1_Sigma_MASK = 16
+
+R132_SDATAI1_PULL_EN_IC_1_Sigma_SHIFT = 4
+
+R132_SDATAI1_PULL_SEL_IC_1_Sigma_MASK = 32
+
+R132_SDATAI1_PULL_SEL_IC_1_Sigma_SHIFT = 5
+
+
+""" DMIC_CLK0_CTRL (IC 1_Sigma) """
+R133_DMIC_CLK0_DRIVE_IC_1_Sigma = 1
+
+R133_DMIC_CLK0_SLEW_IC_1_Sigma = 1
+
+R133_DMIC_CLK0_PULL_EN_IC_1_Sigma = 0
+
+R133_DMIC_CLK0_PULL_SEL_IC_1_Sigma = 0
+
+R133_DMIC_CLK0_DRIVE_IC_1_Sigma_MASK = 3
+
+R133_DMIC_CLK0_DRIVE_IC_1_Sigma_SHIFT = 0
+
+R133_DMIC_CLK0_SLEW_IC_1_Sigma_MASK = 4
+
+R133_DMIC_CLK0_SLEW_IC_1_Sigma_SHIFT = 2
+
+R133_DMIC_CLK0_PULL_EN_IC_1_Sigma_MASK = 16
+
+R133_DMIC_CLK0_PULL_EN_IC_1_Sigma_SHIFT = 4
+
+R133_DMIC_CLK0_PULL_SEL_IC_1_Sigma_MASK = 32
+
+R133_DMIC_CLK0_PULL_SEL_IC_1_Sigma_SHIFT = 5
+
+
+""" DMIC_CLK1_CTRL (IC 1_Sigma) """
+R134_DMIC_CLK1_DRIVE_IC_1_Sigma = 1
+
+R134_DMIC_CLK1_SLEW_IC_1_Sigma = 1
+
+R134_DMIC_CLK1_PULL_EN_IC_1_Sigma = 0
+
+R134_DMIC_CLK1_PULL_SEL_IC_1_Sigma = 0
+
+R134_DMIC_CLK1_DRIVE_IC_1_Sigma_MASK = 3
+
+R134_DMIC_CLK1_DRIVE_IC_1_Sigma_SHIFT = 0
+
+R134_DMIC_CLK1_SLEW_IC_1_Sigma_MASK = 4
+
+R134_DMIC_CLK1_SLEW_IC_1_Sigma_SHIFT = 2
+
+R134_DMIC_CLK1_PULL_EN_IC_1_Sigma_MASK = 16
+
+R134_DMIC_CLK1_PULL_EN_IC_1_Sigma_SHIFT = 4
+
+R134_DMIC_CLK1_PULL_SEL_IC_1_Sigma_MASK = 32
+
+R134_DMIC_CLK1_PULL_SEL_IC_1_Sigma_SHIFT = 5
+
+
+""" DMIC01_CTRL (IC 1_Sigma) """
+R135_DMIC01_DRIVE_IC_1_Sigma = 1
+
+R135_DMIC01_SLEW_IC_1_Sigma = 1
+
+R135_DMIC01_PULL_EN_IC_1_Sigma = 0
+
+R135_DMIC01_PULL_SEL_IC_1_Sigma = 0
+
+R135_DMIC01_DRIVE_IC_1_Sigma_MASK = 3
+
+R135_DMIC01_DRIVE_IC_1_Sigma_SHIFT = 0
+
+R135_DMIC01_SLEW_IC_1_Sigma_MASK = 4
+
+R135_DMIC01_SLEW_IC_1_Sigma_SHIFT = 2
+
+R135_DMIC01_PULL_EN_IC_1_Sigma_MASK = 16
+
+R135_DMIC01_PULL_EN_IC_1_Sigma_SHIFT = 4
+
+R135_DMIC01_PULL_SEL_IC_1_Sigma_MASK = 32
+
+R135_DMIC01_PULL_SEL_IC_1_Sigma_SHIFT = 5
+
+
+""" DMIC23_CTRL (IC 1_Sigma) """
+R136_DMIC23_DRIVE_IC_1_Sigma = 1
+
+R136_DMIC23_SLEW_IC_1_Sigma = 1
+
+R136_DMIC23_PULL_EN_IC_1_Sigma = 0
+
+R136_DMIC23_PULL_SEL_IC_1_Sigma = 0
+
+R136_DMIC23_DRIVE_IC_1_Sigma_MASK = 3
+
+R136_DMIC23_DRIVE_IC_1_Sigma_SHIFT = 0
+
+R136_DMIC23_SLEW_IC_1_Sigma_MASK = 4
+
+R136_DMIC23_SLEW_IC_1_Sigma_SHIFT = 2
+
+R136_DMIC23_PULL_EN_IC_1_Sigma_MASK = 16
+
+R136_DMIC23_PULL_EN_IC_1_Sigma_SHIFT = 4
+
+R136_DMIC23_PULL_SEL_IC_1_Sigma_MASK = 32
+
+R136_DMIC23_PULL_SEL_IC_1_Sigma_SHIFT = 5
+
+
+""" I2C_SPI_CTRL (IC 1_Sigma) """
+R137_SDA_MISO_DRIVE_IC_1_Sigma = 0
+
+R137_SCL_SCLK_DRIVE_IC_1_Sigma = 0
+
+R137_SDA_MISO_DRIVE_IC_1_Sigma_MASK = 1
+
+R137_SDA_MISO_DRIVE_IC_1_Sigma_SHIFT = 0
+
+R137_SCL_SCLK_DRIVE_IC_1_Sigma_MASK = 2
+
+R137_SCL_SCLK_DRIVE_IC_1_Sigma_SHIFT = 1
+
+
+""" IRQ_CTRL1 (IC 1_Sigma) """
+R138_IRQ1_CLEAR_IC_1_Sigma = 0
+
+R138_IRQ2_CLEAR_IC_1_Sigma = 0
+
+R138_IRQ1_FUNC_IC_1_Sigma = 0
+
+R138_IRQ2_FUNC_IC_1_Sigma = 0
+
+R138_IRQ1_CLEAR_IC_1_Sigma_MASK = 1
+
+R138_IRQ1_CLEAR_IC_1_Sigma_SHIFT = 0
+
+R138_IRQ2_CLEAR_IC_1_Sigma_MASK = 2
+
+R138_IRQ2_CLEAR_IC_1_Sigma_SHIFT = 1
+
+R138_IRQ1_FUNC_IC_1_Sigma_MASK = 16
+
+R138_IRQ1_FUNC_IC_1_Sigma_SHIFT = 4
+
+R138_IRQ2_FUNC_IC_1_Sigma_MASK = 32
+
+R138_IRQ2_FUNC_IC_1_Sigma_SHIFT = 5
+
+
+""" IRQ1_MASK1 (IC 1_Sigma) """
+R139_IRQ1_DAC0_CLIP_MASK_IC_1_Sigma = 1
+
+R139_IRQ1_DAC1_CLIP_MASK_IC_1_Sigma = 1
+
+R139_IRQ1_ADC0_CLIP_MASK_IC_1_Sigma = 1
+
+R139_IRQ1_ADC1_CLIP_MASK_IC_1_Sigma = 1
+
+R139_IRQ1_ADC2_CLIP_MASK_IC_1_Sigma = 1
+
+R139_IRQ1_ADC3_CLIP_MASK_IC_1_Sigma = 1
+
+R139_IRQ1_DAC0_CLIP_MASK_IC_1_Sigma_MASK = 1
+
+R139_IRQ1_DAC0_CLIP_MASK_IC_1_Sigma_SHIFT = 0
+
+R139_IRQ1_DAC1_CLIP_MASK_IC_1_Sigma_MASK = 2
+
+R139_IRQ1_DAC1_CLIP_MASK_IC_1_Sigma_SHIFT = 1
+
+R139_IRQ1_ADC0_CLIP_MASK_IC_1_Sigma_MASK = 16
+
+R139_IRQ1_ADC0_CLIP_MASK_IC_1_Sigma_SHIFT = 4
+
+R139_IRQ1_ADC1_CLIP_MASK_IC_1_Sigma_MASK = 32
+
+R139_IRQ1_ADC1_CLIP_MASK_IC_1_Sigma_SHIFT = 5
+
+R139_IRQ1_ADC2_CLIP_MASK_IC_1_Sigma_MASK = 64
+
+R139_IRQ1_ADC2_CLIP_MASK_IC_1_Sigma_SHIFT = 6
+
+R139_IRQ1_ADC3_CLIP_MASK_IC_1_Sigma_MASK = 128
+
+R139_IRQ1_ADC3_CLIP_MASK_IC_1_Sigma_SHIFT = 7
+
+
+""" IRQ1_MASK2 (IC 1_Sigma) """
+R140_IRQ1_PLL_LOCKED_MASK_IC_1_Sigma = 1
+
+R140_IRQ1_PLL_UNLOCKED_MASK_IC_1_Sigma = 1
+
+R140_IRQ1_AVDD_UVW_MASK_IC_1_Sigma = 1
+
+R140_IRQ1_PRAMP_MASK_IC_1_Sigma = 1
+
+R140_IRQ1_ASRCI_LOCKED_MASK_IC_1_Sigma = 1
+
+R140_IRQ1_ASRCI_UNLOCKED_MASK_IC_1_Sigma = 1
+
+R140_IRQ1_ASRCO_LOCKED_MASK_IC_1_Sigma = 1
+
+R140_IRQ1_ASRCO_UNLOCKED_MASK_IC_1_Sigma = 1
+
+R140_IRQ1_PLL_LOCKED_MASK_IC_1_Sigma_MASK = 1
+
+R140_IRQ1_PLL_LOCKED_MASK_IC_1_Sigma_SHIFT = 0
+
+R140_IRQ1_PLL_UNLOCKED_MASK_IC_1_Sigma_MASK = 2
+
+R140_IRQ1_PLL_UNLOCKED_MASK_IC_1_Sigma_SHIFT = 1
+
+R140_IRQ1_AVDD_UVW_MASK_IC_1_Sigma_MASK = 4
+
+R140_IRQ1_AVDD_UVW_MASK_IC_1_Sigma_SHIFT = 2
+
+R140_IRQ1_PRAMP_MASK_IC_1_Sigma_MASK = 8
+
+R140_IRQ1_PRAMP_MASK_IC_1_Sigma_SHIFT = 3
+
+R140_IRQ1_ASRCI_LOCKED_MASK_IC_1_Sigma_MASK = 16
+
+R140_IRQ1_ASRCI_LOCKED_MASK_IC_1_Sigma_SHIFT = 4
+
+R140_IRQ1_ASRCI_UNLOCKED_MASK_IC_1_Sigma_MASK = 32
+
+R140_IRQ1_ASRCI_UNLOCKED_MASK_IC_1_Sigma_SHIFT = 5
+
+R140_IRQ1_ASRCO_LOCKED_MASK_IC_1_Sigma_MASK = 64
+
+R140_IRQ1_ASRCO_LOCKED_MASK_IC_1_Sigma_SHIFT = 6
+
+R140_IRQ1_ASRCO_UNLOCKED_MASK_IC_1_Sigma_MASK = 128
+
+R140_IRQ1_ASRCO_UNLOCKED_MASK_IC_1_Sigma_SHIFT = 7
+
+
+""" IRQ1_MASK3 (IC 1_Sigma) """
+R141_IRQ1_SDSP0_MASK_IC_1_Sigma = 1
+
+R141_IRQ1_SDSP1_MASK_IC_1_Sigma = 1
+
+R141_IRQ1_SDSP2_MASK_IC_1_Sigma = 1
+
+R141_IRQ1_SDSP3_MASK_IC_1_Sigma = 1
+
+R141_IRQ1_POWER_UP_COMPLETE_MASK_IC_1_Sigma = 1
+
+R141_IRQ1_SDSP0_MASK_IC_1_Sigma_MASK = 1
+
+R141_IRQ1_SDSP0_MASK_IC_1_Sigma_SHIFT = 0
+
+R141_IRQ1_SDSP1_MASK_IC_1_Sigma_MASK = 2
+
+R141_IRQ1_SDSP1_MASK_IC_1_Sigma_SHIFT = 1
+
+R141_IRQ1_SDSP2_MASK_IC_1_Sigma_MASK = 4
+
+R141_IRQ1_SDSP2_MASK_IC_1_Sigma_SHIFT = 2
+
+R141_IRQ1_SDSP3_MASK_IC_1_Sigma_MASK = 8
+
+R141_IRQ1_SDSP3_MASK_IC_1_Sigma_SHIFT = 3
+
+R141_IRQ1_POWER_UP_COMPLETE_MASK_IC_1_Sigma_MASK = 16
+
+R141_IRQ1_POWER_UP_COMPLETE_MASK_IC_1_Sigma_SHIFT = 4
+
+
+""" IRQ2_MASK1 (IC 1_Sigma) """
+R142_IRQ2_DAC0_CLIP_MASK_IC_1_Sigma = 1
+
+R142_IRQ2_DAC1_CLIP_MASK_IC_1_Sigma = 1
+
+R142_IRQ2_ADC0_CLIP_MASK_IC_1_Sigma = 1
+
+R142_IRQ2_ADC1_CLIP_MASK_IC_1_Sigma = 1
+
+R142_IRQ2_ADC2_CLIP_MASK_IC_1_Sigma = 1
+
+R142_IRQ2_ADC3_CLIP_MASK_IC_1_Sigma = 1
+
+R142_IRQ2_DAC0_CLIP_MASK_IC_1_Sigma_MASK = 1
+
+R142_IRQ2_DAC0_CLIP_MASK_IC_1_Sigma_SHIFT = 0
+
+R142_IRQ2_DAC1_CLIP_MASK_IC_1_Sigma_MASK = 2
+
+R142_IRQ2_DAC1_CLIP_MASK_IC_1_Sigma_SHIFT = 1
+
+R142_IRQ2_ADC0_CLIP_MASK_IC_1_Sigma_MASK = 16
+
+R142_IRQ2_ADC0_CLIP_MASK_IC_1_Sigma_SHIFT = 4
+
+R142_IRQ2_ADC1_CLIP_MASK_IC_1_Sigma_MASK = 32
+
+R142_IRQ2_ADC1_CLIP_MASK_IC_1_Sigma_SHIFT = 5
+
+R142_IRQ2_ADC2_CLIP_MASK_IC_1_Sigma_MASK = 64
+
+R142_IRQ2_ADC2_CLIP_MASK_IC_1_Sigma_SHIFT = 6
+
+R142_IRQ2_ADC3_CLIP_MASK_IC_1_Sigma_MASK = 128
+
+R142_IRQ2_ADC3_CLIP_MASK_IC_1_Sigma_SHIFT = 7
+
+
+""" IRQ2_MASK2 (IC 1_Sigma) """
+R143_IRQ2_PLL_LOCKED_MASK_IC_1_Sigma = 1
+
+R143_IRQ2_PLL_UNLOCKED_MASK_IC_1_Sigma = 1
+
+R143_IRQ2_AVDD_UVW_MASK_IC_1_Sigma = 1
+
+R143_IRQ2_PRAMP_MASK_IC_1_Sigma = 1
+
+R143_IRQ2_ASRCI_LOCKED_MASK_IC_1_Sigma = 1
+
+R143_IRQ2_ASRCI_UNLOCKED_MASK_IC_1_Sigma = 1
+
+R143_IRQ2_ASRCO_LOCKED_MASK_IC_1_Sigma = 1
+
+R143_IRQ2_ASRCO_UNLOCKED_MASK_IC_1_Sigma = 1
+
+R143_IRQ2_PLL_LOCKED_MASK_IC_1_Sigma_MASK = 1
+
+R143_IRQ2_PLL_LOCKED_MASK_IC_1_Sigma_SHIFT = 0
+
+R143_IRQ2_PLL_UNLOCKED_MASK_IC_1_Sigma_MASK = 2
+
+R143_IRQ2_PLL_UNLOCKED_MASK_IC_1_Sigma_SHIFT = 1
+
+R143_IRQ2_AVDD_UVW_MASK_IC_1_Sigma_MASK = 4
+
+R143_IRQ2_AVDD_UVW_MASK_IC_1_Sigma_SHIFT = 2
+
+R143_IRQ2_PRAMP_MASK_IC_1_Sigma_MASK = 8
+
+R143_IRQ2_PRAMP_MASK_IC_1_Sigma_SHIFT = 3
+
+R143_IRQ2_ASRCI_LOCKED_MASK_IC_1_Sigma_MASK = 16
+
+R143_IRQ2_ASRCI_LOCKED_MASK_IC_1_Sigma_SHIFT = 4
+
+R143_IRQ2_ASRCI_UNLOCKED_MASK_IC_1_Sigma_MASK = 32
+
+R143_IRQ2_ASRCI_UNLOCKED_MASK_IC_1_Sigma_SHIFT = 5
+
+R143_IRQ2_ASRCO_LOCKED_MASK_IC_1_Sigma_MASK = 64
+
+R143_IRQ2_ASRCO_LOCKED_MASK_IC_1_Sigma_SHIFT = 6
+
+R143_IRQ2_ASRCO_UNLOCKED_MASK_IC_1_Sigma_MASK = 128
+
+R143_IRQ2_ASRCO_UNLOCKED_MASK_IC_1_Sigma_SHIFT = 7
+
+
+""" IRQ2_MASK3 (IC 1_Sigma) """
+R144_IRQ2_SDSP0_MASK_IC_1_Sigma = 1
+
+R144_IRQ2_SDSP1_MASK_IC_1_Sigma = 1
+
+R144_IRQ2_SDSP2_MASK_IC_1_Sigma = 1
+
+R144_IRQ2_SDSP3_MASK_IC_1_Sigma = 1
+
+R144_IRQ2_POWER_UP_COMPLETE_MASK_IC_1_Sigma = 1
+
+R144_IRQ2_SDSP0_MASK_IC_1_Sigma_MASK = 1
+
+R144_IRQ2_SDSP0_MASK_IC_1_Sigma_SHIFT = 0
+
+R144_IRQ2_SDSP1_MASK_IC_1_Sigma_MASK = 2
+
+R144_IRQ2_SDSP1_MASK_IC_1_Sigma_SHIFT = 1
+
+R144_IRQ2_SDSP2_MASK_IC_1_Sigma_MASK = 4
+
+R144_IRQ2_SDSP2_MASK_IC_1_Sigma_SHIFT = 2
+
+R144_IRQ2_SDSP3_MASK_IC_1_Sigma_MASK = 8
+
+R144_IRQ2_SDSP3_MASK_IC_1_Sigma_SHIFT = 3
+
+R144_IRQ2_POWER_UP_COMPLETE_MASK_IC_1_Sigma_MASK = 16
+
+R144_IRQ2_POWER_UP_COMPLETE_MASK_IC_1_Sigma_SHIFT = 4
+
+
+""" RESETS (IC 1_Sigma) """
+R145_SOFT_FULL_RESET_IC_1_Sigma = 0
+
+R145_SOFT_RESET_IC_1_Sigma = 0
+
+R145_SOFT_FULL_RESET_IC_1_Sigma_MASK = 1
+
+R145_SOFT_FULL_RESET_IC_1_Sigma_SHIFT = 0
+
+R145_SOFT_RESET_IC_1_Sigma_MASK = 16
+
+R145_SOFT_RESET_IC_1_Sigma_SHIFT = 4
+
+
+""" READ_LAMBDA (IC 1_Sigma) """
+R146_FDSP_CURRENT_LAMBDA_IC_1_Sigma = 63
+
+R146_FDSP_CURRENT_LAMBDA_IC_1_Sigma_MASK = 63
+
+R146_FDSP_CURRENT_LAMBDA_IC_1_Sigma_SHIFT = 0
+
+
+""" STATUS1 (IC 1_Sigma) """
+R147_DAC0_CLIP_IC_1_Sigma = 0
+
+R147_DAC1_CLIP_IC_1_Sigma = 0
+
+R147_ADC0_CLIP_IC_1_Sigma = 0
+
+R147_ADC1_CLIP_IC_1_Sigma = 0
+
+R147_ADC2_CLIP_IC_1_Sigma = 0
+
+R147_ADC3_CLIP_IC_1_Sigma = 0
+
+R147_DAC0_CLIP_IC_1_Sigma_MASK = 1
+
+R147_DAC0_CLIP_IC_1_Sigma_SHIFT = 0
+
+R147_DAC1_CLIP_IC_1_Sigma_MASK = 2
+
+R147_DAC1_CLIP_IC_1_Sigma_SHIFT = 1
+
+R147_ADC0_CLIP_IC_1_Sigma_MASK = 16
+
+R147_ADC0_CLIP_IC_1_Sigma_SHIFT = 4
+
+R147_ADC1_CLIP_IC_1_Sigma_MASK = 32
+
+R147_ADC1_CLIP_IC_1_Sigma_SHIFT = 5
+
+R147_ADC2_CLIP_IC_1_Sigma_MASK = 64
+
+R147_ADC2_CLIP_IC_1_Sigma_SHIFT = 6
+
+R147_ADC3_CLIP_IC_1_Sigma_MASK = 128
+
+R147_ADC3_CLIP_IC_1_Sigma_SHIFT = 7
+
+
+""" STATUS2 (IC 1_Sigma) """
+R148_PLL_LOCK_IC_1_Sigma = 0
+
+R148_AVDD_UVW_IC_1_Sigma = 0
+
+R148_ASRCI_LOCK_IC_1_Sigma = 0
+
+R148_ASRCO_LOCK_IC_1_Sigma = 0
+
+R148_SPT0_LOCK_IC_1_Sigma = 0
+
+R148_SPT1_LOCK_IC_1_Sigma = 0
+
+R148_SYNC_LOCK_IC_1_Sigma = 0
+
+R148_POWER_UP_COMPLETE_IC_1_Sigma = 0
+
+R148_PLL_LOCK_IC_1_Sigma_MASK = 1
+
+R148_PLL_LOCK_IC_1_Sigma_SHIFT = 0
+
+R148_AVDD_UVW_IC_1_Sigma_MASK = 2
+
+R148_AVDD_UVW_IC_1_Sigma_SHIFT = 1
+
+R148_ASRCI_LOCK_IC_1_Sigma_MASK = 4
+
+R148_ASRCI_LOCK_IC_1_Sigma_SHIFT = 2
+
+R148_ASRCO_LOCK_IC_1_Sigma_MASK = 8
+
+R148_ASRCO_LOCK_IC_1_Sigma_SHIFT = 3
+
+R148_SPT0_LOCK_IC_1_Sigma_MASK = 16
+
+R148_SPT0_LOCK_IC_1_Sigma_SHIFT = 4
+
+R148_SPT1_LOCK_IC_1_Sigma_MASK = 32
+
+R148_SPT1_LOCK_IC_1_Sigma_SHIFT = 5
+
+R148_SYNC_LOCK_IC_1_Sigma_MASK = 64
+
+R148_SYNC_LOCK_IC_1_Sigma_SHIFT = 6
+
+R148_POWER_UP_COMPLETE_IC_1_Sigma_MASK = 128
+
+R148_POWER_UP_COMPLETE_IC_1_Sigma_SHIFT = 7
+
+
+""" GPI1 (IC 1_Sigma) """
+R149_GPIO0_IN_IC_1_Sigma = 0
+
+R149_GPIO1_IN_IC_1_Sigma = 0
+
+R149_GPIO2_IN_IC_1_Sigma = 0
+
+R149_GPIO3_IN_IC_1_Sigma = 0
+
+R149_GPIO4_IN_IC_1_Sigma = 0
+
+R149_GPIO5_IN_IC_1_Sigma = 0
+
+R149_GPIO6_IN_IC_1_Sigma = 0
+
+R149_GPIO7_IN_IC_1_Sigma = 0
+
+R149_GPIO0_IN_IC_1_Sigma_MASK = 1
+
+R149_GPIO0_IN_IC_1_Sigma_SHIFT = 0
+
+R149_GPIO1_IN_IC_1_Sigma_MASK = 2
+
+R149_GPIO1_IN_IC_1_Sigma_SHIFT = 1
+
+R149_GPIO2_IN_IC_1_Sigma_MASK = 4
+
+R149_GPIO2_IN_IC_1_Sigma_SHIFT = 2
+
+R149_GPIO3_IN_IC_1_Sigma_MASK = 8
+
+R149_GPIO3_IN_IC_1_Sigma_SHIFT = 3
+
+R149_GPIO4_IN_IC_1_Sigma_MASK = 16
+
+R149_GPIO4_IN_IC_1_Sigma_SHIFT = 4
+
+R149_GPIO5_IN_IC_1_Sigma_MASK = 32
+
+R149_GPIO5_IN_IC_1_Sigma_SHIFT = 5
+
+R149_GPIO6_IN_IC_1_Sigma_MASK = 64
+
+R149_GPIO6_IN_IC_1_Sigma_SHIFT = 6
+
+R149_GPIO7_IN_IC_1_Sigma_MASK = 128
+
+R149_GPIO7_IN_IC_1_Sigma_SHIFT = 7
+
+
+""" GPI2 (IC 1_Sigma) """
+R150_GPIO8_IN_IC_1_Sigma = 0
+
+R150_GPIO9_IN_IC_1_Sigma = 0
+
+R150_GPIO10_IN_IC_1_Sigma = 0
+
+R150_GPIO11_IN_IC_1_Sigma = 0
+
+R150_GPIO12_IN_IC_1_Sigma = 0
+
+R150_GPIO8_IN_IC_1_Sigma_MASK = 1
+
+R150_GPIO8_IN_IC_1_Sigma_SHIFT = 0
+
+R150_GPIO9_IN_IC_1_Sigma_MASK = 2
+
+R150_GPIO9_IN_IC_1_Sigma_SHIFT = 1
+
+R150_GPIO10_IN_IC_1_Sigma_MASK = 4
+
+R150_GPIO10_IN_IC_1_Sigma_SHIFT = 2
+
+R150_GPIO11_IN_IC_1_Sigma_MASK = 8
+
+R150_GPIO11_IN_IC_1_Sigma_SHIFT = 3
+
+R150_GPIO12_IN_IC_1_Sigma_MASK = 16
+
+R150_GPIO12_IN_IC_1_Sigma_SHIFT = 4
+
+
+""" DSP_STATUS (IC 1_Sigma) """
+R151_SDSP_WDOG_ERROR_IC_1_Sigma = 0
+
+R151_SDSP_WDOG_ERROR_IC_1_Sigma_MASK = 1
+
+R151_SDSP_WDOG_ERROR_IC_1_Sigma_SHIFT = 0
+
+
+""" IRQ1_STATUS1 (IC 1_Sigma) """
+R152_IRQ1_DAC0_CLIP_IC_1_Sigma = 0
+
+R152_IRQ1_DAC1_CLIP_IC_1_Sigma = 0
+
+R152_IRQ1_ADC0_CLIP_IC_1_Sigma = 0
+
+R152_IRQ1_ADC1_CLIP_IC_1_Sigma = 0
+
+R152_IRQ1_ADC2_CLIP_IC_1_Sigma = 0
+
+R152_IRQ1_ADC3_CLIP_IC_1_Sigma = 0
+
+R152_IRQ1_DAC0_CLIP_IC_1_Sigma_MASK = 1
+
+R152_IRQ1_DAC0_CLIP_IC_1_Sigma_SHIFT = 0
+
+R152_IRQ1_DAC1_CLIP_IC_1_Sigma_MASK = 2
+
+R152_IRQ1_DAC1_CLIP_IC_1_Sigma_SHIFT = 1
+
+R152_IRQ1_ADC0_CLIP_IC_1_Sigma_MASK = 16
+
+R152_IRQ1_ADC0_CLIP_IC_1_Sigma_SHIFT = 4
+
+R152_IRQ1_ADC1_CLIP_IC_1_Sigma_MASK = 32
+
+R152_IRQ1_ADC1_CLIP_IC_1_Sigma_SHIFT = 5
+
+R152_IRQ1_ADC2_CLIP_IC_1_Sigma_MASK = 64
+
+R152_IRQ1_ADC2_CLIP_IC_1_Sigma_SHIFT = 6
+
+R152_IRQ1_ADC3_CLIP_IC_1_Sigma_MASK = 128
+
+R152_IRQ1_ADC3_CLIP_IC_1_Sigma_SHIFT = 7
+
+
+""" IRQ1_STATUS2 (IC 1_Sigma) """
+R153_IRQ1_PLL_LOCKED_IC_1_Sigma = 0
+
+R153_IRQ1_PLL_UNLOCKED_IC_1_Sigma = 0
+
+R153_IRQ1_AVDD_UVW_IC_1_Sigma = 0
+
+R153_IRQ1_PRAMP_IC_1_Sigma = 0
+
+R153_IRQ1_ASRCI_LOCKED_IC_1_Sigma = 0
+
+R153_IRQ1_ASRCI_UNLOCKED_IC_1_Sigma = 0
+
+R153_IRQ1_ASRCO_LOCKED_IC_1_Sigma = 0
+
+R153_IRQ1_ASRCO_UNLOCKED_IC_1_Sigma = 0
+
+R153_IRQ1_PLL_LOCKED_IC_1_Sigma_MASK = 1
+
+R153_IRQ1_PLL_LOCKED_IC_1_Sigma_SHIFT = 0
+
+R153_IRQ1_PLL_UNLOCKED_IC_1_Sigma_MASK = 2
+
+R153_IRQ1_PLL_UNLOCKED_IC_1_Sigma_SHIFT = 1
+
+R153_IRQ1_AVDD_UVW_IC_1_Sigma_MASK = 4
+
+R153_IRQ1_AVDD_UVW_IC_1_Sigma_SHIFT = 2
+
+R153_IRQ1_PRAMP_IC_1_Sigma_MASK = 8
+
+R153_IRQ1_PRAMP_IC_1_Sigma_SHIFT = 3
+
+R153_IRQ1_ASRCI_LOCKED_IC_1_Sigma_MASK = 16
+
+R153_IRQ1_ASRCI_LOCKED_IC_1_Sigma_SHIFT = 4
+
+R153_IRQ1_ASRCI_UNLOCKED_IC_1_Sigma_MASK = 32
+
+R153_IRQ1_ASRCI_UNLOCKED_IC_1_Sigma_SHIFT = 5
+
+R153_IRQ1_ASRCO_LOCKED_IC_1_Sigma_MASK = 64
+
+R153_IRQ1_ASRCO_LOCKED_IC_1_Sigma_SHIFT = 6
+
+R153_IRQ1_ASRCO_UNLOCKED_IC_1_Sigma_MASK = 128
+
+R153_IRQ1_ASRCO_UNLOCKED_IC_1_Sigma_SHIFT = 7
+
+
+""" IRQ1_STATUS3 (IC 1_Sigma) """
+R154_IRQ1_SDSP0_IC_1_Sigma = 0
+
+R154_IRQ1_SDSP1_IC_1_Sigma = 0
+
+R154_IRQ1_SDSP2_IC_1_Sigma = 0
+
+R154_IRQ1_SDSP3_IC_1_Sigma = 0
+
+R154_IRQ1_POWER_UP_COMPLETE_IC_1_Sigma = 0
+
+R154_IRQ1_SDSP0_IC_1_Sigma_MASK = 1
+
+R154_IRQ1_SDSP0_IC_1_Sigma_SHIFT = 0
+
+R154_IRQ1_SDSP1_IC_1_Sigma_MASK = 2
+
+R154_IRQ1_SDSP1_IC_1_Sigma_SHIFT = 1
+
+R154_IRQ1_SDSP2_IC_1_Sigma_MASK = 4
+
+R154_IRQ1_SDSP2_IC_1_Sigma_SHIFT = 2
+
+R154_IRQ1_SDSP3_IC_1_Sigma_MASK = 8
+
+R154_IRQ1_SDSP3_IC_1_Sigma_SHIFT = 3
+
+R154_IRQ1_POWER_UP_COMPLETE_IC_1_Sigma_MASK = 16
+
+R154_IRQ1_POWER_UP_COMPLETE_IC_1_Sigma_SHIFT = 4
+
+
+""" IRQ2_STATUS1 (IC 1_Sigma) """
+R155_IRQ2_DAC0_CLIP_IC_1_Sigma = 0
+
+R155_IRQ2_DAC1_CLIP_IC_1_Sigma = 0
+
+R155_IRQ2_ADC0_CLIP_IC_1_Sigma = 0
+
+R155_IRQ2_ADC1_CLIP_IC_1_Sigma = 0
+
+R155_IRQ2_ADC2_CLIP_IC_1_Sigma = 0
+
+R155_IRQ2_ADC3_CLIP_IC_1_Sigma = 0
+
+R155_IRQ2_DAC0_CLIP_IC_1_Sigma_MASK = 1
+
+R155_IRQ2_DAC0_CLIP_IC_1_Sigma_SHIFT = 0
+
+R155_IRQ2_DAC1_CLIP_IC_1_Sigma_MASK = 2
+
+R155_IRQ2_DAC1_CLIP_IC_1_Sigma_SHIFT = 1
+
+R155_IRQ2_ADC0_CLIP_IC_1_Sigma_MASK = 16
+
+R155_IRQ2_ADC0_CLIP_IC_1_Sigma_SHIFT = 4
+
+R155_IRQ2_ADC1_CLIP_IC_1_Sigma_MASK = 32
+
+R155_IRQ2_ADC1_CLIP_IC_1_Sigma_SHIFT = 5
+
+R155_IRQ2_ADC2_CLIP_IC_1_Sigma_MASK = 64
+
+R155_IRQ2_ADC2_CLIP_IC_1_Sigma_SHIFT = 6
+
+R155_IRQ2_ADC3_CLIP_IC_1_Sigma_MASK = 128
+
+R155_IRQ2_ADC3_CLIP_IC_1_Sigma_SHIFT = 7
+
+
+""" IRQ2_STATUS2 (IC 1_Sigma) """
+R156_IRQ2_PLL_LOCKED_IC_1_Sigma = 0
+
+R156_IRQ2_PLL_UNLOCKED_IC_1_Sigma = 0
+
+R156_IRQ2_AVDD_UVW_IC_1_Sigma = 0
+
+R156_IRQ2_PRAMP_IC_1_Sigma = 0
+
+R156_IRQ2_ASRCI_LOCKED_IC_1_Sigma = 0
+
+R156_IRQ2_ASRCI_UNLOCKED_IC_1_Sigma = 0
+
+R156_IRQ2_ASRCO_LOCKED_IC_1_Sigma = 0
+
+R156_IRQ2_ASRCO_UNLOCKED_IC_1_Sigma = 0
+
+R156_IRQ2_PLL_LOCKED_IC_1_Sigma_MASK = 1
+
+R156_IRQ2_PLL_LOCKED_IC_1_Sigma_SHIFT = 0
+
+R156_IRQ2_PLL_UNLOCKED_IC_1_Sigma_MASK = 2
+
+R156_IRQ2_PLL_UNLOCKED_IC_1_Sigma_SHIFT = 1
+
+R156_IRQ2_AVDD_UVW_IC_1_Sigma_MASK = 4
+
+R156_IRQ2_AVDD_UVW_IC_1_Sigma_SHIFT = 2
+
+R156_IRQ2_PRAMP_IC_1_Sigma_MASK = 8
+
+R156_IRQ2_PRAMP_IC_1_Sigma_SHIFT = 3
+
+R156_IRQ2_ASRCI_LOCKED_IC_1_Sigma_MASK = 16
+
+R156_IRQ2_ASRCI_LOCKED_IC_1_Sigma_SHIFT = 4
+
+R156_IRQ2_ASRCI_UNLOCKED_IC_1_Sigma_MASK = 32
+
+R156_IRQ2_ASRCI_UNLOCKED_IC_1_Sigma_SHIFT = 5
+
+R156_IRQ2_ASRCO_LOCKED_IC_1_Sigma_MASK = 64
+
+R156_IRQ2_ASRCO_LOCKED_IC_1_Sigma_SHIFT = 6
+
+R156_IRQ2_ASRCO_UNLOCKED_IC_1_Sigma_MASK = 128
+
+R156_IRQ2_ASRCO_UNLOCKED_IC_1_Sigma_SHIFT = 7
+
+
+""" IRQ2_STATUS3 (IC 1_Sigma) """
+R157_IRQ2_SDSP0_IC_1_Sigma = 0
+
+R157_IRQ2_SDSP1_IC_1_Sigma = 0
+
+R157_IRQ2_SDSP2_IC_1_Sigma = 0
+
+R157_IRQ2_SDSP3_IC_1_Sigma = 0
+
+R157_IRQ2_POWER_UP_COMPLETE_IC_1_Sigma = 0
+
+R157_IRQ2_SDSP0_IC_1_Sigma_MASK = 1
+
+R157_IRQ2_SDSP0_IC_1_Sigma_SHIFT = 0
+
+R157_IRQ2_SDSP1_IC_1_Sigma_MASK = 2
+
+R157_IRQ2_SDSP1_IC_1_Sigma_SHIFT = 1
+
+R157_IRQ2_SDSP2_IC_1_Sigma_MASK = 4
+
+R157_IRQ2_SDSP2_IC_1_Sigma_SHIFT = 2
+
+R157_IRQ2_SDSP3_IC_1_Sigma_MASK = 8
+
+R157_IRQ2_SDSP3_IC_1_Sigma_SHIFT = 3
+
+R157_IRQ2_POWER_UP_COMPLETE_IC_1_Sigma_MASK = 16
+
+R157_IRQ2_POWER_UP_COMPLETE_IC_1_Sigma_SHIFT = 4
+
+
+""" SPT0_CTRL1 (IC 1_Sigma) """
+R158_SPT0_SAI_MODE_IC_1_Sigma = 0
+
+R158_SPT0_DATA_FORMAT_IC_1_Sigma = 0
+
+R158_SPT0_SLOT_WIDTH_IC_1_Sigma = 0
+
+R158_SPT0_TRI_STATE_IC_1_Sigma = 0
+
+R158_SPT0_SAI_MODE_IC_1_Sigma_MASK = 1
+
+R158_SPT0_SAI_MODE_IC_1_Sigma_SHIFT = 0
+
+R158_SPT0_DATA_FORMAT_IC_1_Sigma_MASK = 14
+
+R158_SPT0_DATA_FORMAT_IC_1_Sigma_SHIFT = 1
+
+R158_SPT0_SLOT_WIDTH_IC_1_Sigma_MASK = 48
+
+R158_SPT0_SLOT_WIDTH_IC_1_Sigma_SHIFT = 4
+
+R158_SPT0_TRI_STATE_IC_1_Sigma_MASK = 64
+
+R158_SPT0_TRI_STATE_IC_1_Sigma_SHIFT = 6
+
+
+""" SPT0_CTRL2 (IC 1_Sigma) """
+R159_SPT0_BCLK_SRC_IC_1_Sigma = 0
+
+R159_SPT0_BCLK_POL_IC_1_Sigma = 0
+
+R159_SPT0_LRCLK_SRC_IC_1_Sigma = 0
+
+R159_SPT0_LRCLK_POL_IC_1_Sigma = 0
+
+R159_SPT0_BCLK_SRC_IC_1_Sigma_MASK = 7
+
+R159_SPT0_BCLK_SRC_IC_1_Sigma_SHIFT = 0
+
+R159_SPT0_BCLK_POL_IC_1_Sigma_MASK = 8
+
+R159_SPT0_BCLK_POL_IC_1_Sigma_SHIFT = 3
+
+R159_SPT0_LRCLK_SRC_IC_1_Sigma_MASK = 112
+
+R159_SPT0_LRCLK_SRC_IC_1_Sigma_SHIFT = 4
+
+R159_SPT0_LRCLK_POL_IC_1_Sigma_MASK = 128
+
+R159_SPT0_LRCLK_POL_IC_1_Sigma_SHIFT = 7
+
+
+""" SPT0_ROUTE0 (IC 1_Sigma) """
+R160_SPT0_OUT_ROUTE0_IC_1_Sigma = 16
+
+R160_SPT0_OUT_ROUTE0_IC_1_Sigma_MASK = 63
+
+R160_SPT0_OUT_ROUTE0_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT0_ROUTE1 (IC 1_Sigma) """
+R161_SPT0_OUT_ROUTE1_IC_1_Sigma = 17
+
+R161_SPT0_OUT_ROUTE1_IC_1_Sigma_MASK = 63
+
+R161_SPT0_OUT_ROUTE1_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT0_ROUTE2 (IC 1_Sigma) """
+R162_SPT0_OUT_ROUTE2_IC_1_Sigma = 63
+
+R162_SPT0_OUT_ROUTE2_IC_1_Sigma_MASK = 63
+
+R162_SPT0_OUT_ROUTE2_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT0_ROUTE3 (IC 1_Sigma) """
+R163_SPT0_OUT_ROUTE3_IC_1_Sigma = 63
+
+R163_SPT0_OUT_ROUTE3_IC_1_Sigma_MASK = 63
+
+R163_SPT0_OUT_ROUTE3_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT0_ROUTE4 (IC 1_Sigma) """
+R164_SPT0_OUT_ROUTE4_IC_1_Sigma = 63
+
+R164_SPT0_OUT_ROUTE4_IC_1_Sigma_MASK = 63
+
+R164_SPT0_OUT_ROUTE4_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT0_ROUTE5 (IC 1_Sigma) """
+R165_SPT0_OUT_ROUTE5_IC_1_Sigma = 63
+
+R165_SPT0_OUT_ROUTE5_IC_1_Sigma_MASK = 63
+
+R165_SPT0_OUT_ROUTE5_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT0_ROUTE6 (IC 1_Sigma) """
+R166_SPT0_OUT_ROUTE6_IC_1_Sigma = 63
+
+R166_SPT0_OUT_ROUTE6_IC_1_Sigma_MASK = 63
+
+R166_SPT0_OUT_ROUTE6_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT0_ROUTE7 (IC 1_Sigma) """
+R167_SPT0_OUT_ROUTE7_IC_1_Sigma = 63
+
+R167_SPT0_OUT_ROUTE7_IC_1_Sigma_MASK = 63
+
+R167_SPT0_OUT_ROUTE7_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT0_ROUTE8 (IC 1_Sigma) """
+R168_SPT0_OUT_ROUTE8_IC_1_Sigma = 63
+
+R168_SPT0_OUT_ROUTE8_IC_1_Sigma_MASK = 63
+
+R168_SPT0_OUT_ROUTE8_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT0_ROUTE9 (IC 1_Sigma) """
+R169_SPT0_OUT_ROUTE9_IC_1_Sigma = 63
+
+R169_SPT0_OUT_ROUTE9_IC_1_Sigma_MASK = 63
+
+R169_SPT0_OUT_ROUTE9_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT0_ROUTE10 (IC 1_Sigma) """
+R170_SPT0_OUT_ROUTE10_IC_1_Sigma = 63
+
+R170_SPT0_OUT_ROUTE10_IC_1_Sigma_MASK = 63
+
+R170_SPT0_OUT_ROUTE10_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT0_ROUTE11 (IC 1_Sigma) """
+R171_SPT0_OUT_ROUTE11_IC_1_Sigma = 63
+
+R171_SPT0_OUT_ROUTE11_IC_1_Sigma_MASK = 63
+
+R171_SPT0_OUT_ROUTE11_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT0_ROUTE12 (IC 1_Sigma) """
+R172_SPT0_OUT_ROUTE12_IC_1_Sigma = 63
+
+R172_SPT0_OUT_ROUTE12_IC_1_Sigma_MASK = 63
+
+R172_SPT0_OUT_ROUTE12_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT0_ROUTE13 (IC 1_Sigma) """
+R173_SPT0_OUT_ROUTE13_IC_1_Sigma = 63
+
+R173_SPT0_OUT_ROUTE13_IC_1_Sigma_MASK = 63
+
+R173_SPT0_OUT_ROUTE13_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT0_ROUTE14 (IC 1_Sigma) """
+R174_SPT0_OUT_ROUTE14_IC_1_Sigma = 63
+
+R174_SPT0_OUT_ROUTE14_IC_1_Sigma_MASK = 63
+
+R174_SPT0_OUT_ROUTE14_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT0_ROUTE15 (IC 1_Sigma) """
+R175_SPT0_OUT_ROUTE15_IC_1_Sigma = 63
+
+R175_SPT0_OUT_ROUTE15_IC_1_Sigma_MASK = 63
+
+R175_SPT0_OUT_ROUTE15_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_CTRL1 (IC 1_Sigma) """
+R176_SPT1_SAI_MODE_IC_1_Sigma = 0
+
+R176_SPT1_DATA_FORMAT_IC_1_Sigma = 0
+
+R176_SPT1_SLOT_WIDTH_IC_1_Sigma = 0
+
+R176_SPT1_TRI_STATE_IC_1_Sigma = 0
+
+R176_SPT1_SAI_MODE_IC_1_Sigma_MASK = 1
+
+R176_SPT1_SAI_MODE_IC_1_Sigma_SHIFT = 0
+
+R176_SPT1_DATA_FORMAT_IC_1_Sigma_MASK = 14
+
+R176_SPT1_DATA_FORMAT_IC_1_Sigma_SHIFT = 1
+
+R176_SPT1_SLOT_WIDTH_IC_1_Sigma_MASK = 48
+
+R176_SPT1_SLOT_WIDTH_IC_1_Sigma_SHIFT = 4
+
+R176_SPT1_TRI_STATE_IC_1_Sigma_MASK = 64
+
+R176_SPT1_TRI_STATE_IC_1_Sigma_SHIFT = 6
+
+
+""" SPT1_CTRL2 (IC 1_Sigma) """
+R177_SPT1_BCLK_SRC_IC_1_Sigma = 0
+
+R177_SPT1_BCLK_POL_IC_1_Sigma = 0
+
+R177_SPT1_LRCLK_SRC_IC_1_Sigma = 0
+
+R177_SPT1_LRCLK_POL_IC_1_Sigma = 0
+
+R177_SPT1_BCLK_SRC_IC_1_Sigma_MASK = 7
+
+R177_SPT1_BCLK_SRC_IC_1_Sigma_SHIFT = 0
+
+R177_SPT1_BCLK_POL_IC_1_Sigma_MASK = 8
+
+R177_SPT1_BCLK_POL_IC_1_Sigma_SHIFT = 3
+
+R177_SPT1_LRCLK_SRC_IC_1_Sigma_MASK = 112
+
+R177_SPT1_LRCLK_SRC_IC_1_Sigma_SHIFT = 4
+
+R177_SPT1_LRCLK_POL_IC_1_Sigma_MASK = 128
+
+R177_SPT1_LRCLK_POL_IC_1_Sigma_SHIFT = 7
+
+
+""" SPT1_ROUTE0 (IC 1_Sigma) """
+R178_SPT1_OUT_ROUTE0_IC_1_Sigma = 16
+
+R178_SPT1_OUT_ROUTE0_IC_1_Sigma_MASK = 63
+
+R178_SPT1_OUT_ROUTE0_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_ROUTE1 (IC 1_Sigma) """
+R179_SPT1_OUT_ROUTE1_IC_1_Sigma = 17
+
+R179_SPT1_OUT_ROUTE1_IC_1_Sigma_MASK = 63
+
+R179_SPT1_OUT_ROUTE1_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_ROUTE2 (IC 1_Sigma) """
+R180_SPT1_OUT_ROUTE2_IC_1_Sigma = 63
+
+R180_SPT1_OUT_ROUTE2_IC_1_Sigma_MASK = 63
+
+R180_SPT1_OUT_ROUTE2_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_ROUTE3 (IC 1_Sigma) """
+R181_SPT1_OUT_ROUTE3_IC_1_Sigma = 63
+
+R181_SPT1_OUT_ROUTE3_IC_1_Sigma_MASK = 63
+
+R181_SPT1_OUT_ROUTE3_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_ROUTE4 (IC 1_Sigma) """
+R182_SPT1_OUT_ROUTE4_IC_1_Sigma = 63
+
+R182_SPT1_OUT_ROUTE4_IC_1_Sigma_MASK = 63
+
+R182_SPT1_OUT_ROUTE4_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_ROUTE5 (IC 1_Sigma) """
+R183_SPT1_OUT_ROUTE5_IC_1_Sigma = 63
+
+R183_SPT1_OUT_ROUTE5_IC_1_Sigma_MASK = 63
+
+R183_SPT1_OUT_ROUTE5_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_ROUTE6 (IC 1_Sigma) """
+R184_SPT1_OUT_ROUTE6_IC_1_Sigma = 63
+
+R184_SPT1_OUT_ROUTE6_IC_1_Sigma_MASK = 63
+
+R184_SPT1_OUT_ROUTE6_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_ROUTE7 (IC 1_Sigma) """
+R185_SPT1_OUT_ROUTE7_IC_1_Sigma = 63
+
+R185_SPT1_OUT_ROUTE7_IC_1_Sigma_MASK = 63
+
+R185_SPT1_OUT_ROUTE7_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_ROUTE8 (IC 1_Sigma) """
+R186_SPT1_OUT_ROUTE8_IC_1_Sigma = 63
+
+R186_SPT1_OUT_ROUTE8_IC_1_Sigma_MASK = 63
+
+R186_SPT1_OUT_ROUTE8_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_ROUTE9 (IC 1_Sigma) """
+R187_SPT1_OUT_ROUTE9_IC_1_Sigma = 63
+
+R187_SPT1_OUT_ROUTE9_IC_1_Sigma_MASK = 63
+
+R187_SPT1_OUT_ROUTE9_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_ROUTE10 (IC 1_Sigma) """
+R188_SPT1_OUT_ROUTE10_IC_1_Sigma = 63
+
+R188_SPT1_OUT_ROUTE10_IC_1_Sigma_MASK = 63
+
+R188_SPT1_OUT_ROUTE10_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_ROUTE11 (IC 1_Sigma) """
+R189_SPT1_OUT_ROUTE11_IC_1_Sigma = 63
+
+R189_SPT1_OUT_ROUTE11_IC_1_Sigma_MASK = 63
+
+R189_SPT1_OUT_ROUTE11_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_ROUTE12 (IC 1_Sigma) """
+R190_SPT1_OUT_ROUTE12_IC_1_Sigma = 63
+
+R190_SPT1_OUT_ROUTE12_IC_1_Sigma_MASK = 63
+
+R190_SPT1_OUT_ROUTE12_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_ROUTE13 (IC 1_Sigma) """
+R191_SPT1_OUT_ROUTE13_IC_1_Sigma = 63
+
+R191_SPT1_OUT_ROUTE13_IC_1_Sigma_MASK = 63
+
+R191_SPT1_OUT_ROUTE13_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_ROUTE14 (IC 1_Sigma) """
+R192_SPT1_OUT_ROUTE14_IC_1_Sigma = 63
+
+R192_SPT1_OUT_ROUTE14_IC_1_Sigma_MASK = 63
+
+R192_SPT1_OUT_ROUTE14_IC_1_Sigma_SHIFT = 0
+
+
+""" SPT1_ROUTE15 (IC 1_Sigma) """
+R193_SPT1_OUT_ROUTE15_IC_1_Sigma = 63
+
+R193_SPT1_OUT_ROUTE15_IC_1_Sigma_MASK = 63
+
+R193_SPT1_OUT_ROUTE15_IC_1_Sigma_SHIFT = 0
+
+
+""" MP_CTRL10 (IC 1_Sigma) """
+R194_MP12_MODE_IC_1_Sigma = 0
+
+R194_MP12_MODE_IC_1_Sigma_MASK = 15
+
+R194_MP12_MODE_IC_1_Sigma_SHIFT = 0
+
+
+""" SELFBOOT_CTRL (IC 1_Sigma) """
+R195_SELFBOOT_DRIVE_IC_1_Sigma = 1
+
+R195_SELFBOOT_IS_IC_1_Sigma = 0
+
+R195_SELFBOOT_PULL_EN_IC_1_Sigma = 0
+
+R195_SELFBOOT_PULL_SEL_IC_1_Sigma = 0
+
+R195_SELFBOOT_SLEW_IC_1_Sigma = 1
+
+R195_SELFBOOT_DRIVE_IC_1_Sigma_MASK = 3
+
+R195_SELFBOOT_DRIVE_IC_1_Sigma_SHIFT = 0
+
+R195_SELFBOOT_IS_IC_1_Sigma_MASK = 4
+
+R195_SELFBOOT_IS_IC_1_Sigma_SHIFT = 2
+
+R195_SELFBOOT_PULL_EN_IC_1_Sigma_MASK = 16
+
+R195_SELFBOOT_PULL_EN_IC_1_Sigma_SHIFT = 4
+
+R195_SELFBOOT_PULL_SEL_IC_1_Sigma_MASK = 32
+
+R195_SELFBOOT_PULL_SEL_IC_1_Sigma_SHIFT = 5
+
+R195_SELFBOOT_SLEW_IC_1_Sigma_MASK = 64
+
+R195_SELFBOOT_SLEW_IC_1_Sigma_SHIFT = 6
+
+
+""" SW_EN_CTRL (IC 1_Sigma) """
+R196_SW_EN_DRIVE_IC_1_Sigma = 1
+
+R196_SWEN_IS_IC_1_Sigma = 0
+
+R196_SW_PULL_EN_IC_1_Sigma = 0
+
+R196_SW_PULL_SEL_IC_1_Sigma = 0
+
+R196_SW_SLEW_IC_1_Sigma = 1
+
+R196_SW_EN_DRIVE_IC_1_Sigma_MASK = 3
+
+R196_SW_EN_DRIVE_IC_1_Sigma_SHIFT = 0
+
+R196_SWEN_IS_IC_1_Sigma_MASK = 4
+
+R196_SWEN_IS_IC_1_Sigma_SHIFT = 2
+
+R196_SW_PULL_EN_IC_1_Sigma_MASK = 16
+
+R196_SW_PULL_EN_IC_1_Sigma_SHIFT = 4
+
+R196_SW_PULL_SEL_IC_1_Sigma_MASK = 32
+
+R196_SW_PULL_SEL_IC_1_Sigma_SHIFT = 5
+
+R196_SW_SLEW_IC_1_Sigma_MASK = 64
+
+R196_SW_SLEW_IC_1_Sigma_SHIFT = 6
+
+
+""" PDM_CTRL1 (IC 1_Sigma) """
+R197_PDM_FS_IC_1_Sigma = 2
+
+R197_PDM_FCOMP_IC_1_Sigma = 0
+
+R197_PDM_RATE_IC_1_Sigma = 0
+
+R197_PDM_MORE_FILT_IC_1_Sigma = 0
+
+R197_PDM_FS_IC_1_Sigma_MASK = 7
+
+R197_PDM_FS_IC_1_Sigma_SHIFT = 0
+
+R197_PDM_FCOMP_IC_1_Sigma_MASK = 8
+
+R197_PDM_FCOMP_IC_1_Sigma_SHIFT = 3
+
+R197_PDM_RATE_IC_1_Sigma_MASK = 16
+
+R197_PDM_RATE_IC_1_Sigma_SHIFT = 4
+
+R197_PDM_MORE_FILT_IC_1_Sigma_MASK = 128
+
+R197_PDM_MORE_FILT_IC_1_Sigma_SHIFT = 7
+
+
+""" PDM_CTRL2 (IC 1_Sigma) """
+R198_PDM_VOL_LINK_IC_1_Sigma = 0
+
+R198_PDM_HARD_VOL_IC_1_Sigma = 0
+
+R198_PDM_VOL_ZC_IC_1_Sigma = 1
+
+R198_PDM0_HPF_EN_IC_1_Sigma = 0
+
+R198_PDM1_HPF_EN_IC_1_Sigma = 0
+
+R198_PDM0_MUTE_IC_1_Sigma = 1
+
+R198_PDM1_MUTE_IC_1_Sigma = 1
+
+R198_PDM_VOL_LINK_IC_1_Sigma_MASK = 1
+
+R198_PDM_VOL_LINK_IC_1_Sigma_SHIFT = 0
+
+R198_PDM_HARD_VOL_IC_1_Sigma_MASK = 2
+
+R198_PDM_HARD_VOL_IC_1_Sigma_SHIFT = 1
+
+R198_PDM_VOL_ZC_IC_1_Sigma_MASK = 4
+
+R198_PDM_VOL_ZC_IC_1_Sigma_SHIFT = 2
+
+R198_PDM0_HPF_EN_IC_1_Sigma_MASK = 16
+
+R198_PDM0_HPF_EN_IC_1_Sigma_SHIFT = 4
+
+R198_PDM1_HPF_EN_IC_1_Sigma_MASK = 32
+
+R198_PDM1_HPF_EN_IC_1_Sigma_SHIFT = 5
+
+R198_PDM0_MUTE_IC_1_Sigma_MASK = 64
+
+R198_PDM0_MUTE_IC_1_Sigma_SHIFT = 6
+
+R198_PDM1_MUTE_IC_1_Sigma_MASK = 128
+
+R198_PDM1_MUTE_IC_1_Sigma_SHIFT = 7
+
+
+""" PDM_VOL0 (IC 1_Sigma) """
+R199_PDM0_VOL_IC_1_Sigma = 64
+
+R199_PDM0_VOL_IC_1_Sigma_MASK = 255
+
+R199_PDM0_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" PDM_VOL1 (IC 1_Sigma) """
+R200_PDM1_VOL_IC_1_Sigma = 64
+
+R200_PDM1_VOL_IC_1_Sigma_MASK = 255
+
+R200_PDM1_VOL_IC_1_Sigma_SHIFT = 0
+
+
+""" PDM_ROUTE0 (IC 1_Sigma) """
+R201_PDM0_ROUTE_IC_1_Sigma = 0
+
+R201_PDM0_ROUTE_IC_1_Sigma_MASK = 127
+
+R201_PDM0_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" PDM_ROUTE1 (IC 1_Sigma) """
+R202_PDM1_ROUTE_IC_1_Sigma = 1
+
+R202_PDM1_ROUTE_IC_1_Sigma_MASK = 127
+
+R202_PDM1_ROUTE_IC_1_Sigma_SHIFT = 0
+
+
+""" PLLCalculator (IC 1_Sigma) """
+R203_PLLCALC_IC_1_Sigma = 412316860
+
+R203_PLLCALC_IC_1_Sigma_MASK = 2147483647
+
+R203_PLLCALC_IC_1_Sigma_SHIFT = 0
+
+
+#endif

@@ -1,4 +1,4 @@
-filepath = r'.\data\lvtemporary_813804.tmp.csv'
+filepath = r'..\data\lvtemporary_813804.tmp.csv'
 with open(filepath, 'r') as fo:
     ''' read file and skip first row (column header) '''
     fo_read_lines = fo.readlines()[1:]
