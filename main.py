@@ -1,16 +1,20 @@
-# This is a sample Python script.
+import ecdsa
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# 1. 產生 ECDSA 私鑰對，使用 NIST256p（即 SECP256r1）
+sk = ecdsa.SigningKey.generate(curve=ecdsa.NIST256p)
+vk = sk.get_verifying_key()
 
+# 2. 將私鑰與公鑰轉換為 PEM 格式
+pem_private = sk.to_pem()
+pem_public = vk.to_pem()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# 3. 將 PEM 格式的金鑰儲存到本機檔案中
+with open("private_key.pem", "wb") as f:
+    f.write(pem_private)
 
+with open("public_key.pem", "wb") as f:
+    f.write(pem_public)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(
+    "已生成 SECP256r1 (NIST256p) 的公私鑰，分別儲存於 private_key.pem 和 public_key.pem"
+)
