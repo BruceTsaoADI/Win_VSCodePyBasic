@@ -1,80 +1,64 @@
+#!/usr/bin/env python3
+"""
+Program: redfish_client.py
+Description: This program provides utility functions to send HTTP and HTTPS GET and PATCH requests with ECDSA signatures.
+             It supports normal operations as well as various attack tests by modifying request parameters (e.g., invalid timestamps,
+             missing headers, etc.). The program demonstrates how to sign messages using an ECDSA private key, generate a nonce,
+             and send secure requests to a Redfish service endpoint.
+Usage: Configure the server IP, ports, client ID, and certificate paths below. Then run the script to perform GET/PATCH requests
+       and optional attack tests.
+"""
+
 import os
 import json
 import time
 import base64
 import hashlib
 import requests
-from ecdsa import VerifyingKey, SigningKey, NIST256p
-
-# Configuration
-SERVER_IP = "10.0.0.21"
-# SERVER_IP = "127.0.0.1"
-SERVER_ENDPOINT = "redfish/v1/"
-SERVER_PORT_HTTP = "8000"
-SERVER_PORT_HTTPS = "8443"
-CLIENT_ID = "APT_123"
-CLIENT_PRIVATE_KEY_PATH = f"client_private_{CLIENT_ID}.pem"
-HTTPS_CERT_PATH = "fullchain.pem"  # Ensure HTTPS verification
-
-# Protocol
-IS_HTTPS = 0
-
-# Normal Process
-NORMAL_TEST = 1
-DO_GET = 1
-DO_PATCH = 1
-
-# Configure attack types (Set True to enable specific attack tests)
-ATTACK_TEST = 0  # Luanch Attack Test
-ATTACK_NULL = 0  # Null Attack (Missing Headers)
-ATTACK_MALICIOUS_INPUT = 1  # Malicious Input Attack (Invalid Timestamp)
-ATTACK_REPLAY = 0  # Replay Attack (Reuse Nonce)
-ATTACK_TIMESTAMP_FUTURE = 0  # Future Timestamp Attack
-ATTACK_TIMESTAMP_PAST = 0  # Expired Timestamp Attack
+from ecdsa import SigningKey
+from typing import Optional, Dict, Any
 
 
-def load_ecdsa_private_key(key_path):
-    """Load ECDSA private key"""
+def load_ecdsa_private_key(key_path: str) -> SigningKey:
+    """Load the ECDSA private key from a PEM file."""
     if not os.path.exists(key_path):
         raise FileNotFoundError(f"Private key file not found: {key_path}")
-
     with open(key_path, "r") as f:
-        return SigningKey.from_pem(f.read())  # Return ECDSA SigningKey object
+        return SigningKey.from_pem(f.read())
 
 
-def generate_nonce():
-    """Generate a random nonce"""
+def generate_nonce() -> str:
+    """Generate a random nonce."""
     return base64.urlsafe_b64encode(os.urandom(16)).decode("utf-8")
 
 
-def sign_message(private_key, message):
-    """Sign the message using ECDSA"""
-    message_bytes = message.encode("utf-8")
-    message_hash = hashlib.sha256(message_bytes).digest()
-    signature = private_key.sign(message_hash)
+def sign_message(private_key: SigningKey, message: str) -> str:
+    """Sign the message using ECDSA and return the base64 encoded signature."""
+    message_bytes: bytes = message.encode("utf-8")
+    message_hash: bytes = hashlib.sha256(message_bytes).digest()
+    signature: bytes = private_key.sign(message_hash)
     return base64.b64encode(signature).decode("utf-8")
 
 
-def send_get(
-    server_ip: str,  # Server IP (e.g., "10.0.0.21")
-    client_private_key: str,  # Client's ECDSA private key (PEM)
-    client_id: str,  # Client ID
-    verify_cert: bool,  # Whether to verify HTTPS certificate
-    cert_path: str = None,  # Path to the certificate (used if verify_cert=True)
-):
-    """Send a GET request with ECDSA signature"""
-    timestamp = int(time.time())
-    nonce = generate_nonce()
+def send_get_http(
+    server_url: str, client_ecdsa_private_key: SigningKey, client_id: str
+) -> requests.Response:
+    """
+    Send a GET request over HTTP with an ECDSA signature.
 
-    # **Sign only the timestamp and nonce for GET**
-    sign_data = json.dumps(
+    :param server_url: The complete HTTP URL (e.g., "http://10.0.0.21:8000/redfish/v1/")
+    :param client_ecdsa_private_key: The loaded ECDSA private key (SigningKey object)
+    :param client_id: Client ID
+    :return: The response object returned by the requests library
+    """
+    timestamp: int = int(time.time())
+    nonce: str = generate_nonce()
+    sign_data: str = json.dumps(
         {"timestamp": str(timestamp), "nonce": nonce}, separators=(",", ":")
     )
+    signature: str = sign_message(client_ecdsa_private_key, sign_data)
 
-    # Generate signature
-    signature = sign_message(client_private_key, sign_data)
-
-    headers = {
+    headers: Dict[str, str] = {
         "Content-Type": "application/json",
         "X-Timestamp": str(timestamp),
         "X-Nonce": nonce,
@@ -82,36 +66,37 @@ def send_get(
         "X-Signature": signature,
     }
 
-    # Determine protocol based on verify_cert and send GET request
-    if verify_cert:
-        url = f"https://{server_ip}:{SERVER_PORT_HTTPS}/{SERVER_ENDPOINT}"
-        response = requests.get(url, headers=headers, verify=cert_path)
-    else:
-        url = f"http://{server_ip}:{SERVER_PORT_HTTP}/{SERVER_ENDPOINT}"
-        response = requests.get(url, headers=headers, verify=False)
-
+    response: requests.Response = requests.get(
+        server_url, headers=headers, verify=False
+    )
     return response
 
 
-def send_patch(
-    server_ip: str,  # Server IP (e.g., "10.0.0.21")
-    client_private_key: str,  # Client's ECDSA private key (PEM)
-    client_id: str,  # Client ID
-    data: dict,  # Data to be sent in the PATCH request
-    verify_cert: bool,  # Whether to verify HTTPS certificate
-    cert_path: str = None,  # Path to the certificate (used if verify_cert=True)
-):
-    """Send a GET request with ECDSA signature"""
-    timestamp = int(time.time())
-    nonce = generate_nonce()
+def send_get_https(
+    server_url: str,
+    client_ecdsa_private_key: SigningKey,
+    client_id: str,
+    verify_cert: bool,
+    cert_path: str,
+) -> requests.Response:
+    """
+    Send a GET request over HTTPS with an ECDSA signature.
 
-    # **Sign only the timestamp and nonce for GET**
-    sign_data = json.dumps(data, separators=(",", ":"))
+    :param server_url: The complete HTTPS URL (e.g., "https://10.0.0.21:8443/redfish/v1/")
+    :param client_ecdsa_private_key: The loaded ECDSA private key (SigningKey object)
+    :param client_id: Client ID
+    :param verify_cert: Whether to verify the certificate (True/False)
+    :param cert_path: Path to the certificate file
+    :return: The response object returned by the requests library
+    """
+    timestamp: int = int(time.time())
+    nonce: str = generate_nonce()
+    sign_data: str = json.dumps(
+        {"timestamp": str(timestamp), "nonce": nonce}, separators=(",", ":")
+    )
+    signature: str = sign_message(client_ecdsa_private_key, sign_data)
 
-    # Generate signature
-    signature = sign_message(client_private_key, sign_data)
-
-    headers = {
+    headers: Dict[str, str] = {
         "Content-Type": "application/json",
         "X-Timestamp": str(timestamp),
         "X-Nonce": nonce,
@@ -119,63 +104,162 @@ def send_patch(
         "X-Signature": signature,
     }
 
-    # Determine protocol based on verify_cert and send GET request
-    if verify_cert:
-        url = f"https://{server_ip}:{SERVER_PORT_HTTPS}/{SERVER_ENDPOINT}"
-        response = requests.patch(url, headers=headers, json=data, verify=cert_path)
-    else:
-        url = f"http://{server_ip}:{SERVER_PORT_HTTP}/{SERVER_ENDPOINT}"
-        response = requests.patch(url, headers=headers, json=data, verify=False)
-
+    response: requests.Response = requests.get(
+        server_url, headers=headers, verify=cert_path if verify_cert else False
+    )
     return response
 
 
-# Simple test script
+def send_patch_http(
+    server_url: str,
+    client_ecdsa_private_key: SigningKey,
+    client_id: str,
+    data: Dict[str, Any],
+) -> requests.Response:
+    """
+    Send a PATCH request over HTTP with an ECDSA signature, using the provided data as the signing content.
+
+    :param server_url: The complete HTTP URL (e.g., "http://10.0.0.21:8000/redfish/v1/")
+    :param client_ecdsa_private_key: The loaded ECDSA private key (SigningKey object)
+    :param client_id: Client ID
+    :param data: The JSON data to be sent (dictionary)
+    :return: The response object returned by the requests library
+    """
+    timestamp: int = int(time.time())
+    nonce: str = generate_nonce()
+    sign_data: str = json.dumps(data, separators=(",", ":"))
+    signature: str = sign_message(client_ecdsa_private_key, sign_data)
+
+    headers: Dict[str, str] = {
+        "Content-Type": "application/json",
+        "X-Timestamp": str(timestamp),
+        "X-Nonce": nonce,
+        "X-Client-ID": client_id,
+        "X-Signature": signature,
+    }
+
+    response: requests.Response = requests.patch(
+        server_url, headers=headers, json=data, verify=False
+    )
+    return response
+
+
+def send_patch_https(
+    server_url: str,
+    client_ecdsa_private_key: SigningKey,
+    client_id: str,
+    data: Dict[str, Any],
+    verify_cert: bool,
+    cert_path: str,
+) -> requests.Response:
+    """
+    Send a PATCH request over HTTPS with an ECDSA signature, using the provided data as the signing content.
+
+    :param server_url: The complete HTTPS URL (e.g., "https://10.0.0.21:8443/redfish/v1/")
+    :param client_ecdsa_private_key: The loaded ECDSA private key (SigningKey object)
+    :param client_id: Client ID
+    :param data: The JSON data to be sent (dictionary)
+    :param verify_cert: Whether to verify the certificate (True/False)
+    :param cert_path: Path to the certificate file
+    :return: The response object returned by the requests library
+    """
+    timestamp: int = int(time.time())
+    nonce: str = generate_nonce()
+    sign_data: str = json.dumps(data, separators=(",", ":"))
+    signature: str = sign_message(client_ecdsa_private_key, sign_data)
+
+    headers: Dict[str, str] = {
+        "Content-Type": "application/json",
+        "X-Timestamp": str(timestamp),
+        "X-Nonce": nonce,
+        "X-Client-ID": client_id,
+        "X-Signature": signature,
+    }
+
+    response: requests.Response = requests.patch(
+        server_url,
+        headers=headers,
+        json=data,
+        verify=cert_path if verify_cert else False,
+    )
+    return response
+
+
+# ---------------------------------------------------------------------------
+# The following section is the test code.
+# From here on, the code sets configuration parameters and executes tests.
+# ---------------------------------------------------------------------------
+
 if __name__ == "__main__":
 
-    def attack_test(
-        server_ip, client_private_key, client_id, verify_cert, cert_path=None
-    ):
-        """Perform different types of attack tests based on enabled attack flags."""
+    # Configuration
+    SERVER_IP: str = "10.0.0.28"
+    SERVER_ENDPOINT: str = "redfish/v1/"
+    SERVER_PORT_HTTP: str = "8000"
+    SERVER_PORT_HTTPS: str = "8443"
+    CLIENT_ID: str = "APT_123"
+    CLIENT_PRIVATE_KEY_PATH: str = f"client_private_{CLIENT_ID}.pem"
+    HTTPS_CERT_PATH: str = "fullchain.pem"  # HTTPS certificate path
 
-        timestamp = int(time.time())
-        nonce = base64.urlsafe_b64encode(os.urandom(16)).decode("utf-8")
+    # Normal Test settings
+    NORMAL_TEST: int = 0
+    HTTPS: int = 0
+    DO_GET: int = 1
+    DO_PATCH: int = 1
+
+    # Configure attack types (attack test settings)
+    ATTACK_TEST: int = 1  # Launch Attack Test
+    ATTACK_NULL: int = 0  # Null Attack (missing headers)
+    ATTACK_MALICIOUS_INPUT: int = 0  # Malicious Input Attack (invalid timestamp)
+    ATTACK_REPLAY: int = 0  # Replay Attack (reuse nonce)
+    ATTACK_TIMESTAMP_FUTURE: int = 1  # Future Timestamp Attack
+    ATTACK_TIMESTAMP_PAST: int = 0  # Expired Timestamp Attack
+
+    def attack_test(
+        server_url: str,
+        client_ecdsa_private_key: SigningKey,
+        client_id: str,
+        verify_cert: bool,
+        cert_path: Optional[str] = None,
+    ) -> None:
+        """
+        Perform various attack tests based on the configured attack flags (same logic as the original program).
+
+        Global attack flags (ATTACK_NULL, ATTACK_MALICIOUS_INPUT, etc.) should be defined in the test section.
+        """
+        timestamp: int = int(time.time())
+        nonce: str = generate_nonce()
 
         print("\n=============================================")
         print("Starting Attack Test...")
 
-        # Modify timestamp/nonce based on attack types
         if ATTACK_NULL:
             print(
                 "[ATTACK] Null Attack: Sending request with missing security headers."
             )
-            headers = {}  # Send request without security headers
+            headers: Dict[str, str] = {}  # Do not send security headers
         else:
             if ATTACK_MALICIOUS_INPUT:
                 print(
                     "[ATTACK] Malicious Input Attack: Injecting an invalid timestamp."
                 )
-                timestamp = "INVALID_TIMESTAMP"  # Inject invalid timestamp
-
+                timestamp = "INVALID_TIMESTAMP"  # Invalid timestamp
             if ATTACK_REPLAY:
                 print("[ATTACK] Replay Attack: Using a fixed nonce for replay attack.")
-                nonce = "FIXED_NONCE"  # Use a constant nonce for replay attack
-
+                nonce = "FIXED_NONCE"
             if ATTACK_TIMESTAMP_FUTURE:
                 print(
                     "[ATTACK] Future Timestamp Attack: Setting timestamp too far in the future."
                 )
-                timestamp = int(time.time()) + 999999  # Set timestamp far in the future
-
+                timestamp = int(time.time()) + 999999
             if ATTACK_TIMESTAMP_PAST:
                 print("[ATTACK] Expired Timestamp Attack: Using an expired timestamp.")
-                timestamp = int(time.time()) - 999999  # Use an expired timestamp
+                timestamp = int(time.time()) - 999999
 
-            # Generate signed message
-            sign_data = json.dumps(
+            sign_data: str = json.dumps(
                 {"timestamp": str(timestamp), "nonce": nonce}, separators=(",", ":")
             )
-            signature = sign_message(client_private_key, sign_data)
+            signature: str = sign_message(client_ecdsa_private_key, sign_data)
 
             headers = {
                 "Content-Type": "application/json",
@@ -185,84 +269,105 @@ if __name__ == "__main__":
                 "X-Signature": signature,
             }
 
-        # Determine protocol based on verify_cert
-        if verify_cert:
-            url = f"https://{server_ip}:{SERVER_PORT_HTTPS}/{SERVER_ENDPOINT}"
-        else:
-            url = f"http://{server_ip}:{SERVER_PORT_HTTP}/{SERVER_ENDPOINT}"
-
-        # Send GET request
         print("\nSending attack test request to:")
-        print(f"{url}")
+        print(server_url)
         print("\nHeaders:")
         print(json.dumps(headers, indent=4))
 
-        if verify_cert:
-            response = requests.get(url, headers=headers, verify=cert_path)
-        else:
-            response = requests.get(url, headers=headers, verify=False)
-
-        # Print the response
+        response: requests.Response = requests.get(
+            server_url, headers=headers, verify=cert_path if verify_cert else False
+        )
         print("\nAttack Test Response:")
         print(f"Status Code: {response.status_code}")
         print(f"Response Body: {response.text}")
         print("=============================================\n")
 
     try:
-        # Load client ECDSA private key
+        # Load the ECDSA private key
         print("Loading ECDSA private key...")
-        private_key = load_ecdsa_private_key(CLIENT_PRIVATE_KEY_PATH)
-        print(" Private key loaded successfully.")
+        private_key: SigningKey = load_ecdsa_private_key(CLIENT_PRIVATE_KEY_PATH)
+        print("Private key loaded successfully.")
 
-        ########################### Normal Request ###########################
         if NORMAL_TEST:
             if DO_GET:
-                # Send Get
-                print(f"Sending {'HTTPS' if IS_HTTPS else 'HTTP'} GET request...")
-                response = send_get(
-                    server_ip=SERVER_IP,
-                    client_private_key=private_key,
-                    client_id=CLIENT_ID,
-                    verify_cert=IS_HTTPS,
-                    cert_path=HTTPS_CERT_PATH,
-                )
-                print(f" GET Status Code: {response.status_code}")
-                print(f" GET Response: {response.text}")
+                if HTTPS:
+                    # HTTPS GET test
+                    https_url: str = (
+                        f"https://{SERVER_IP}:{SERVER_PORT_HTTPS}/{SERVER_ENDPOINT}"
+                    )
+                    print("Sending HTTPS GET request...")
+                    response: requests.Response = send_get_https(
+                        https_url,
+                        private_key,
+                        CLIENT_ID,
+                        verify_cert=True,
+                        cert_path=HTTPS_CERT_PATH,
+                    )
+                    print(f"HTTPS GET Status Code: {response.status_code}")
+                    print(f"HTTPS GET Response: {response.text}")
+                else:
+                    # HTTP GET test
+                    http_url: str = (
+                        f"http://{SERVER_IP}:{SERVER_PORT_HTTP}/{SERVER_ENDPOINT}"
+                    )
+                    print("Sending HTTP GET request...")
+                    response = send_get_http(http_url, private_key, CLIENT_ID)
+                    print(f"HTTP GET Status Code: {response.status_code}")
+                    print(f"HTTP GET Response: {response.text}")
 
             if DO_PATCH:
-                # Send Patch
-                print(f"Sending {'HTTPS' if IS_HTTPS else 'HTTP'} PATCH request...")
-                patch_data = {"temperature": 25.5, "humidity": 60}
-                response = send_patch(
-                    server_ip=SERVER_IP,
-                    client_private_key=private_key,
-                    client_id=CLIENT_ID,
-                    data=patch_data,
-                    verify_cert=IS_HTTPS,
-                    cert_path=HTTPS_CERT_PATH,
-                )
-                print(f" GET Status Code: {response.status_code}")
-                print(f" GET Response: {response.text}")
-        #################################################################################
+                patch_data: Dict[str, Any] = {"temperature": 25.5, "humidity": 60}
+                if HTTPS:
+                    # HTTPS PATCH test
+                    https_url = (
+                        f"https://{SERVER_IP}:{SERVER_PORT_HTTPS}/{SERVER_ENDPOINT}"
+                    )
+                    print("Sending HTTPS PATCH request...")
+                    response = send_patch_https(
+                        https_url,
+                        private_key,
+                        CLIENT_ID,
+                        patch_data,
+                        verify_cert=True,
+                        cert_path=HTTPS_CERT_PATH,
+                    )
+                    print(f"HTTPS PATCH Status Code: {response.status_code}")
+                    print(f"HTTPS PATCH Response: {response.text}")
+                else:
+                    # HTTP PATCH test
+                    http_url = (
+                        f"http://{SERVER_IP}:{SERVER_PORT_HTTP}/{SERVER_ENDPOINT}"
+                    )
+                    print("Sending HTTP PATCH request...")
+                    response = send_patch_http(
+                        http_url, private_key, CLIENT_ID, patch_data
+                    )
+                    print(f"HTTP PATCH Status Code: {response.status_code}")
+                    print(f"HTTP PATCH Response: {response.text}")
 
-        ########################### ATTACK TEST ###########################
-        # Attack test
+        # Attack test (same logic as the original program)
         if ATTACK_TEST:
-            print(f"\n\nATTACK!! ATTACK!!")
+            if HTTPS:
+                test_url: str = (
+                    f"https://{SERVER_IP}:{SERVER_PORT_HTTPS}/{SERVER_ENDPOINT}"
+                )
+            else:
+                test_url: str = (
+                    f"http://{SERVER_IP}:{SERVER_PORT_HTTP}/{SERVER_ENDPOINT}"
+                )
             attack_test(
-                server_ip=SERVER_IP,
-                client_private_key=private_key,
-                client_id=CLIENT_ID,
-                verify_cert=IS_HTTPS,
+                test_url,
+                private_key,
+                CLIENT_ID,
+                verify_cert=True,
                 cert_path=HTTPS_CERT_PATH,
             )
-        #################################################################################
 
     except FileNotFoundError as e:
-        print(f" Error: {e}")
+        print(f"Error: {e}")
     except requests.exceptions.SSLError:
-        print(" SSL Error: Invalid HTTPS certificate.")
+        print("SSL Error: Invalid HTTPS certificate.")
     except requests.exceptions.ConnectionError:
-        print(" Connection Error: Unable to reach the server.")
+        print("Connection Error: Unable to reach the server.")
     except Exception as e:
-        print(f" Unexpected Error: {e}")
+        print(f"Unexpected Error: {e}")
