@@ -1,20 +1,37 @@
-import ecdsa
+import package.redfish_client as rf
 
-# 1. 產生 ECDSA 私鑰對，使用 NIST256p（即 SECP256r1）
-sk = ecdsa.SigningKey.generate(curve=ecdsa.NIST256p)
-vk = sk.get_verifying_key()
+if 1:
+    # Configuration
+    SERVER_IP = "10.0.0.28"
+    SERVER_ENDPOINT = "redfish/v1/"
+    SERVER_PORT_HTTP = "8000"
+    SERVER_PORT_HTTPS = "8443"
+    CLIENT_ID = "APT_123"
+    CLIENT_PRIVATE_KEY_PATH = f"client_private_{CLIENT_ID}.pem"
+    HTTPS_CERT_PATH = "fullchain.pem"  # HTTPS certificate path
 
-# 2. 將私鑰與公鑰轉換為 PEM 格式
-pem_private = sk.to_pem()
-pem_public = vk.to_pem()
 
-# 3. 將 PEM 格式的金鑰儲存到本機檔案中
-with open("private_key.pem", "wb") as f:
-    f.write(pem_private)
+if True:
+    if True:
+        # Load the ECDSA private key
+        print("Loading ECDSA private key...")
+        private_key = rf.load_ecdsa_private_key(CLIENT_PRIVATE_KEY_PATH)
+        print("Private key loaded successfully.")
 
-with open("public_key.pem", "wb") as f:
-    f.write(pem_public)
-
-print(
-    "已生成 SECP256r1 (NIST256p) 的公私鑰，分別儲存於 private_key.pem 和 public_key.pem"
-)
+        if 1:
+            if 1:
+                if 1:
+                    # HTTPS GET test
+                    https_url: str = (
+                        f"https://{SERVER_IP}:{SERVER_PORT_HTTPS}/{SERVER_ENDPOINT}"
+                    )
+                    print("Sending HTTPS GET request...")
+                    response = rf.send_get_https(
+                        https_url,
+                        private_key,
+                        CLIENT_ID,
+                        verify_cert=True,
+                        cert_path=HTTPS_CERT_PATH,
+                    )
+                    print(f"HTTPS GET Status Code: {response.status_code}")
+                    print(f"HTTPS GET Response: {response.text}")
