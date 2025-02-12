@@ -8,6 +8,7 @@ from ecdsa import VerifyingKey, SigningKey, NIST256p
 
 # Configuration
 SERVER_IP = "10.0.0.21"
+# SERVER_IP = "127.0.0.1"
 SERVER_ENDPOINT = "redfish/v1/"
 SERVER_PORT_HTTP = "8000"
 SERVER_PORT_HTTPS = "8443"
@@ -15,19 +16,24 @@ CLIENT_ID = "APT_123"
 CLIENT_PRIVATE_KEY_PATH = f"client_private_{CLIENT_ID}.pem"
 HTTPS_CERT_PATH = "fullchain.pem"  # Ensure HTTPS verification
 
+# Protocol
+IS_HTTPS = 0
+
 # Normal Process
-IS_HTTPS = False
+NORMAL_TEST = 1
+DO_GET = 1
+DO_PATCH = 1
 
 # Configure attack types (Set True to enable specific attack tests)
-ATTACK_TEST = 1  # Luanch Attack Test
+ATTACK_TEST = 0  # Luanch Attack Test
 ATTACK_NULL = 0  # Null Attack (Missing Headers)
-ATTACK_MALICIOUS_INPUT = 0  # Malicious Input Attack (Invalid Timestamp)
+ATTACK_MALICIOUS_INPUT = 1  # Malicious Input Attack (Invalid Timestamp)
 ATTACK_REPLAY = 0  # Replay Attack (Reuse Nonce)
 ATTACK_TIMESTAMP_FUTURE = 0  # Future Timestamp Attack
 ATTACK_TIMESTAMP_PAST = 0  # Expired Timestamp Attack
 
 
-def load_private_key(key_path):
+def load_ecdsa_private_key(key_path):
     """Load ECDSA private key"""
     if not os.path.exists(key_path):
         raise FileNotFoundError(f"Private key file not found: {key_path}")
@@ -203,43 +209,46 @@ if __name__ == "__main__":
         print("=============================================\n")
 
     try:
-        # Load client private key
-        print("Loading private key...")
-        private_key = load_private_key(CLIENT_PRIVATE_KEY_PATH)
+        # Load client ECDSA private key
+        print("Loading ECDSA private key...")
+        private_key = load_ecdsa_private_key(CLIENT_PRIVATE_KEY_PATH)
         print(" Private key loaded successfully.")
 
         ########################### Normal Request ###########################
-        # # Send Get
-        # print(f"Sending {'HTTPS' if IS_HTTPS else 'HTTP'} GET request...")
-        # response = send_get(
-        #     server_ip=SERVER_IP,
-        #     client_private_key=private_key,
-        #     client_id=CLIENT_ID,
-        #     verify_cert=IS_HTTPS,
-        #     cert_path=HTTPS_CERT_PATH,
-        # )
-        # print(f" GET Status Code: {response.status_code}")
-        # print(f" GET Response: {response.text}")
+        if NORMAL_TEST:
+            if DO_GET:
+                # Send Get
+                print(f"Sending {'HTTPS' if IS_HTTPS else 'HTTP'} GET request...")
+                response = send_get(
+                    server_ip=SERVER_IP,
+                    client_private_key=private_key,
+                    client_id=CLIENT_ID,
+                    verify_cert=IS_HTTPS,
+                    cert_path=HTTPS_CERT_PATH,
+                )
+                print(f" GET Status Code: {response.status_code}")
+                print(f" GET Response: {response.text}")
 
-        # # Send Patch
-        # print(f"Sending {'HTTPS' if IS_HTTPS else 'HTTP'} PATCH request...")
-        # patch_data = {"temperature": 25.5, "humidity": 60}
-        # response = send_patch(
-        #     server_ip=SERVER_IP,
-        #     client_private_key=private_key,
-        #     client_id=CLIENT_ID,
-        #     data=patch_data,
-        #     verify_cert=IS_HTTPS,
-        #     cert_path=HTTPS_CERT_PATH,
-        # )
-        # print(f" GET Status Code: {response.status_code}")
-        # print(f" GET Response: {response.text}")
+            if DO_PATCH:
+                # Send Patch
+                print(f"Sending {'HTTPS' if IS_HTTPS else 'HTTP'} PATCH request...")
+                patch_data = {"temperature": 25.5, "humidity": 60}
+                response = send_patch(
+                    server_ip=SERVER_IP,
+                    client_private_key=private_key,
+                    client_id=CLIENT_ID,
+                    data=patch_data,
+                    verify_cert=IS_HTTPS,
+                    cert_path=HTTPS_CERT_PATH,
+                )
+                print(f" GET Status Code: {response.status_code}")
+                print(f" GET Response: {response.text}")
         #################################################################################
 
         ########################### ATTACK TEST ###########################
         # Attack test
         if ATTACK_TEST:
-            print(f"\n\nATTACK!!ATTACK!!")
+            print(f"\n\nATTACK!! ATTACK!!")
             attack_test(
                 server_ip=SERVER_IP,
                 client_private_key=private_key,
