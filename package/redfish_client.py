@@ -189,26 +189,26 @@ def send_patch_https(
 if __name__ == "__main__":
 
     # Configuration
-    SERVER_IP = "10.0.0.28"
+    SERVER_IP = "10.0.0.35"
     SERVER_ENDPOINT = "redfish/v1/"
     SERVER_PORT_HTTP = "8000"
     SERVER_PORT_HTTPS = "8443"
-    CLIENT_ID = "APT_123"
+    CLIENT_ID = "comm"
     CLIENT_PRIVATE_KEY_PATH = f"client_private_{CLIENT_ID}.pem"
     HTTPS_CERT_PATH = "fullchain.pem"  # HTTPS certificate path
 
     # Protocol
-    HTTPS = 1
+    HTTPS = 0
 
     # Normal Process settings
     NORMAL_TEST = 1
     DO_GET = 1
-    DO_PATCH = 1
+    DO_PATCH = 0
 
     # Configure attack types (attack test settings)
-    ATTACK_TEST = 1  # Launch Attack Test
+    ATTACK_TEST = 0  # Launch Attack Test
     ATTACK_NULL = 0  # Null Attack (missing headers)
-    ATTACK_MALICIOUS_INPUT = 1  # Malicious Input Attack (invalid timestamp)
+    ATTACK_MALICIOUS_INPUT = 0  # Malicious Input Attack (invalid timestamp)
     ATTACK_REPLAY = 0  # Replay Attack (reuse nonce)
     ATTACK_TIMESTAMP_FUTURE = 0  # Future Timestamp Attack
     ATTACK_TIMESTAMP_PAST = 0  # Expired Timestamp Attack

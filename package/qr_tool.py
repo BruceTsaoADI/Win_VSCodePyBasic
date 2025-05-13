@@ -36,7 +36,7 @@ def decode_qr(image_path):
 
 if __name__ == "__main__":
     # 測試用數據
-    test_data = "https://www.example.com"
+    test_data = "https://www.analog.com"
     test_qr_file = "test_qrcode.png"
 
     # 1. 生成 QR Code

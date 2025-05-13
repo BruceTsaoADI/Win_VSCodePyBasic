@@ -1,3 +1,5 @@
+# This code is from Denny Wang which demostrates detailed algorithm of ECDSA. #
+
 import collections
 import hashlib
 import random

@@ -1,37 +1,25 @@
-import package.redfish_client as rf
+import package.searcher_pptx as searcher_pptx
 
-if 1:
-    # Configuration
-    SERVER_IP = "10.0.0.28"
-    SERVER_ENDPOINT = "redfish/v1/"
-    SERVER_PORT_HTTP = "8000"
-    SERVER_PORT_HTTPS = "8443"
-    CLIENT_ID = "APT_123"
-    CLIENT_PRIVATE_KEY_PATH = f"client_private_{CLIENT_ID}.pem"
-    HTTPS_CERT_PATH = "fullchain.pem"  # HTTPS certificate path
+# Define the folder containing PPTX files
+pptx_folder = r"C:\Users\btsao\OneDrive - Analog Devices, Inc\Documents\BruceTsao\02_Document\ADI\WeeklyReport"
 
+# Get keywords from user input
+keywords = input("Enter keywords to search (comma-separated): ").split(",")
+keywords = [kw.strip() for kw in keywords]  # Remove extra spaces
 
-if True:
-    if True:
-        # Load the ECDSA private key
-        print("Loading ECDSA private key...")
-        private_key = rf.load_ecdsa_private_key(CLIENT_PRIVATE_KEY_PATH)
-        print("Private key loaded successfully.")
+# Ask user if search should be case-sensitive
+case_sensitive = input("Enable case-sensitive search? (y/n): ").lower() == "y"
 
-        if 1:
-            if 1:
-                if 1:
-                    # HTTPS GET test
-                    https_url: str = (
-                        f"https://{SERVER_IP}:{SERVER_PORT_HTTPS}/{SERVER_ENDPOINT}"
-                    )
-                    print("Sending HTTPS GET request...")
-                    response = rf.send_get_https(
-                        https_url,
-                        private_key,
-                        CLIENT_ID,
-                        verify_cert=True,
-                        cert_path=HTTPS_CERT_PATH,
-                    )
-                    print(f"HTTPS GET Status Code: {response.status_code}")
-                    print(f"HTTPS GET Response: {response.text}")
+# Ask user if results should be saved to TXT
+save_txt = input("Save results to TXT file? (y/n): ").lower() == "y"
+
+# Perform the search
+results = searcher_pptx.search_pptx_keywords(pptx_folder, keywords, case_sensitive=case_sensitive, save_to_txt=save_txt)
+
+# Display results
+if results:
+    print("\nSearch results:")
+    for result in results:
+        print(f"{result[0]} - Slide {result[1]} - Keyword: {result[2]}")
+else:
+    print("No matches found.")
