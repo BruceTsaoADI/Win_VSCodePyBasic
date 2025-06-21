@@ -1,54 +1,63 @@
 import os
 from pptx import Presentation
+import csv
 
-def search_pptx_keywords(folder_path, keywords, case_sensitive=False, save_to_txt=False):
-    """
-    Search for keywords in all PPTX files within a specified folder.
 
-    :param folder_path: str, the directory containing PPTX files
-    :param keywords: list, the list of keywords to search for
-    :param case_sensitive: bool, whether the search should be case-sensitive
-    :param save_to_txt: bool, whether to save results to a TXT file
-    :return: list, containing (filename, slide number, keyword, text snippet)
-    """
-    results = []
+def extract_text_from_pptx(file_path):
+    prs = Presentation(file_path)
+    slide_texts = []
+    for i, slide in enumerate(prs.slides):
+        texts = []
+        for shape in slide.shapes:
+            if hasattr(shape, "text"):
+                texts.append(shape.text)
+        slide_texts.append((i + 1, "\n".join(texts)))
+    return slide_texts
 
-    # Convert keywords to lowercase if case-insensitive search is enabled
-    if not case_sensitive:
-        keywords = [kw.lower() for kw in keywords]
 
-    for filename in os.listdir(folder_path):
-        if filename.endswith(".pptx"):
-            file_path = os.path.join(folder_path, filename)
-            
-            # Ensure the file exists before opening
-            if not os.path.exists(file_path):
-                print(f"File not found or not downloaded: {file_path}")
-                continue
+def search_pptx_in_directory(
+    directory, keywords, save_result=True, output_csv="pptx_keyword_results.csv"
+):
+    if isinstance(keywords, str):
+        keywords = [keywords]  # allow single keyword as string
 
-            try:
-                presentation = Presentation(file_path)
-            except Exception as e:
-                print(f"Could not read {filename}. Possible corrupted file: {e}")
-                continue  # Skip this file and proceed to the next one
-
-            for i, slide in enumerate(presentation.slides):
-                for shape in slide.shapes:
-                    if hasattr(shape, "text"):
-                        text = shape.text
-                        text_lower = text.lower() if not case_sensitive else text  # Convert text if needed
-
+    matched_results = []
+    for root, _, files in os.walk(directory):
+        for filename in files:
+            if filename.endswith(".pptx"):
+                file_path = os.path.join(root, filename)
+                try:
+                    slides = extract_text_from_pptx(file_path)
+                    for slide_no, content in slides:
                         for keyword in keywords:
-                            if keyword in text_lower:
-                                results.append((filename, i + 1, keyword, text[:50]))  # Store first 50 chars
-                                print(f"Match found: {filename} | Slide {i+1} | Keyword: {keyword}")
+                            if keyword.lower() in content.lower():
+                                matched_results.append(
+                                    [file_path, slide_no, keyword, content]
+                                )
+                                break  # avoid duplicate entries for multiple matching keywords
+                except Exception as e:
+                    print(f"Error reading {file_path}: {e}")
 
-    # Save results to TXT if enabled
-    if save_to_txt and results:
-        txt_path = os.path.join(folder_path, "search_results.txt")
-        with open(txt_path, "w", encoding="utf-8") as f:
-            for result in results:
-                f.write(f"{result[0]} - Slide {result[1]} - Keyword: {result[2]} - Text: {result[3]}\n")
-        print(f"Search results saved to: {txt_path}")
+    if save_result:
+        with open(output_csv, mode="w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["File Path", "Slide No", "Matched Keyword", "Content"])
+            writer.writerows(matched_results)
+        print(
+            f"✅ Done! Found {len(matched_results)} slides. Results saved to '{os.path.abspath(output_csv)}'."
+        )
+    else:
+        print(f"✅ Done! Found {len(matched_results)} slides. No results saved.")
 
-    return results
+
+# 🔧 使用方式
+# 修改以下兩行即可：
+# 1️⃣ 指定你的 PPT 檔案資料夾
+# 2️⃣ 指定要搜尋的關鍵字（可以是 list）
+
+
+if __name__ == "__main__":
+    DIRECTORY = r"C:\Users\btsao\OneDrive - Analog Devices, Inc\Documents\BruceTsao\02_Document\ADI\WeeklyReport"  # 替換成你的資料夾路徑
+    KEYWORD = ["gmsl", "audio"]  # 替換成你要搜尋的關鍵字
+    SAVE_RESULT = False
+    search_pptx_in_directory(DIRECTORY, KEYWORD, SAVE_RESULT)

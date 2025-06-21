@@ -3,6 +3,7 @@ from PIL import Image
 
 # 打開圖片
 input_path = "input_image.png"
+input_path = r"C:\Users\btsao\Downloads\input_image.png"
 output_path = "output_image.png"
 
 with open(input_path, "rb") as input_file:
